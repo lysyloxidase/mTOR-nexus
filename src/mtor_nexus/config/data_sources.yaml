@@ -1,13 +1,41 @@
 sources:
   uniprot:
-    api: "https://rest.uniprot.org"
-    release: "2025_04"
+    version: "2025_03"
+    url: "https://rest.uniprot.org/uniprotkb/"
+    license: "CC-BY-4.0"
+    redistribution: "derived-identifiers-ok"
   pdb:
-    api: "https://data.rcsb.org"
-    snapshot: "live"
-  crossref:
-    api: "https://api.crossref.org"
-    snapshot: "live"
+    version: "2025-05-snapshot"
+    url: "https://files.rcsb.org/"
+    license: "CC0"
+    redistribution: "open"
+  reactome:
+    version: "v90"
+    pathway_root: "R-HSA-165159"
+    url: "https://reactome.org/ContentService"
+    license: "CC-BY-4.0"
+    redistribution: "open"
+  kegg:
+    version: "2025-05"
+    pathway: "hsa04150"
+    url: "https://rest.kegg.jp"
+    license: "academic-free"
+    redistribution: "metadata-only"
+  string:
+    version: "12.0"
+    species: 9606
+    confidence_threshold: 700
+    url: "https://string-db.org/api"
+    license: "CC-BY-4.0"
+    redistribution: "open"
+  biogrid:
+    version: "4.4.X"
+    url: "https://downloads.thebiogrid.org"
+    license: "MIT"
+    redistribution: "open"
   phosphositeplus:
-    homepage: "https://www.phosphosite.org"
-    access: "manual-license-required"
+    version: "2025-snapshot"
+    url: "https://www.phosphosite.org"
+    license: "CC-BY-NC-SA-2.0"
+    redistribution: "segregated-non-commercial"
+    note: "Required for every phosphorylation edge; raw licensed exports are never committed."

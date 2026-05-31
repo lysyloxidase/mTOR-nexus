@@ -11,7 +11,8 @@ export type NodeType =
   | "transcription_factor"
   | "receptor"
   | "sensor"
-  | "lipid";
+  | "lipid"
+  | "condition";
 
 export type Tier = "robust" | "plausible" | "speculative";
 
@@ -31,6 +32,8 @@ export interface MTORNode {
   node_type: NodeType;
   pathway_role: string;
   primary_citations: string[];
+  module: string;
+  source_refs: string[];
   gene_symbol?: string;
   uniprot_id?: string;
   aliases?: string[];
@@ -43,6 +46,8 @@ export interface MTOREdge {
   tier: Tier;
   species_evidence: SpeciesEvidence[];
   citations: string[];
+  evidence_sources: string[];
+  source_refs: string[];
   recruitment_mode?: RecruitmentMode;
   phospho_site?: string;
   phosphositeplus_id?: string;

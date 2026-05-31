@@ -1,6 +1,6 @@
-.PHONY: all quality test docs data graph train figs
+.PHONY: all quality test docs data graph graph-validate source-probe train figs
 
-all: quality test docs graph
+all: quality test docs graph-validate
 
 quality:
 	uv run ruff check .
@@ -14,10 +14,17 @@ docs:
 	uv run mkdocs build --strict
 
 data:
-	@echo "Phase 2 ingestion loaders are not implemented yet."
+	uv run python -m mtor_nexus.ingest.source_index
+	uv run python -m mtor_nexus.graph.build
 
 graph:
-	uv run python -m mtor_nexus.utils.tier_species_validation
+	uv run python -m mtor_nexus.graph.build
+
+graph-validate:
+	uv run python -m mtor_nexus.graph.validate
+
+source-probe:
+	uv run python -m mtor_nexus.ingest.live_probe
 
 train:
 	@echo "Phase 6 model training is not implemented yet."

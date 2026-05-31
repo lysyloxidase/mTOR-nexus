@@ -1,0 +1,855 @@
+{
+  "elements": {
+    "edges": [
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e0",
+          "mechanism": "phosphorylates",
+          "phospho_site": "S422",
+          "phosphositeplus_id": "PSP:SGK1:S422",
+          "recruitment_mode": "msin1",
+          "source": "MTORC2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:SGK1:S422"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "SGK1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e1",
+          "mechanism": "phosphorylates",
+          "phospho_site": "S657",
+          "phosphositeplus_id": "PSP:PRKCA:S657",
+          "recruitment_mode": "msin1",
+          "source": "MTORC2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:PRKCA:S657"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "PRKCA",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e2",
+          "mechanism": "phosphorylates",
+          "phospho_site": "S660",
+          "phosphositeplus_id": "PSP:PRKCB:S660",
+          "recruitment_mode": "msin1",
+          "source": "MTORC2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:PRKCB:S660"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "PRKCB",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e3",
+          "mechanism": "phosphorylates",
+          "phospho_site": "T24",
+          "phosphositeplus_id": "PSP:FOXO1:T24",
+          "recruitment_mode": "none",
+          "source": "AKT1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:FOXO1:T24"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "FOXO1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e4",
+          "mechanism": "phosphorylates",
+          "phospho_site": "T32",
+          "phosphositeplus_id": "PSP:FOXO3:T32",
+          "recruitment_mode": "none",
+          "source": "AKT1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:FOXO3:T32"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "FOXO3",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e5",
+          "mechanism": "phosphorylates",
+          "phospho_site": "T346",
+          "phosphositeplus_id": "PSP:NDRG1:T346",
+          "recruitment_mode": "none",
+          "source": "SGK1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:NDRG1:T346"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "NDRG1",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg",
+            "phosphositeplus"
+          ],
+          "id": "e6",
+          "mechanism": "phosphorylates",
+          "phospho_site": "S315",
+          "phosphositeplus_id": "PSP:FOXO3:S315",
+          "recruitment_mode": "none",
+          "source": "SGK1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150",
+            "phosphositeplus:PSP:FOXO3:S315"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "FOXO3",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e7",
+          "mechanism": "activates",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "MTORC2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "SGK1",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e8",
+          "mechanism": "activates",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "MTORC2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "PRKCA",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e9",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "AKT1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "FOXO1",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e10",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "AKT1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "FOXO3",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e11",
+          "mechanism": "recruits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "msin1",
+          "source": "MAPKAP1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "SGK1",
+          "tier": "robust"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "aliases": [
+            "MSIN1"
+          ],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [
+            "MTORC2"
+          ],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "MAPKAP1",
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MAPKAP1",
+          "node_type": "scaffold",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MAPKAP1",
+          "source_refs": [
+            "uniprot:Q9BPZ7"
+          ],
+          "uniprot_id": "Q9BPZ7"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "AKT1",
+          "localization": [],
+          "module": "02-growth-factor-pi3k-akt",
+          "node_id": "AKT1",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "AKT1",
+          "source_refs": [
+            "uniprot:P31749"
+          ],
+          "uniprot_id": "P31749"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SGK1",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "SGK1",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SGK1",
+          "source_refs": [
+            "uniprot:O00141"
+          ],
+          "uniprot_id": "O00141"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PRKCA",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PRKCA",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PRKCA",
+          "source_refs": [
+            "uniprot:P17252"
+          ],
+          "uniprot_id": "P17252"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PRKCB",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PRKCB",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PRKCB",
+          "source_refs": [
+            "uniprot:P05771"
+          ],
+          "uniprot_id": "P05771"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PRKCG",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PRKCG",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PRKCG",
+          "source_refs": [
+            "uniprot:P05129"
+          ],
+          "uniprot_id": "P05129"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PRKCE",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PRKCE",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PRKCE",
+          "source_refs": [
+            "uniprot:Q02156"
+          ],
+          "uniprot_id": "Q02156"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PRKCZ",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PRKCZ",
+          "node_type": "kinase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PRKCZ",
+          "source_refs": [
+            "uniprot:Q05513"
+          ],
+          "uniprot_id": "Q05513"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PXN",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PXN",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PXN",
+          "source_refs": [
+            "uniprot:P49023"
+          ],
+          "uniprot_id": "P49023"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RHOA",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "RHOA",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RHOA",
+          "source_refs": [
+            "uniprot:P61586"
+          ],
+          "uniprot_id": "P61586"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RAC1",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "RAC1",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RAC1",
+          "source_refs": [
+            "uniprot:P63000"
+          ],
+          "uniprot_id": "P63000"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "CDC42",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "CDC42",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "CDC42",
+          "source_refs": [
+            "uniprot:P60953"
+          ],
+          "uniprot_id": "P60953"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FOXO1",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "FOXO1",
+          "node_type": "transcription_factor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FOXO1",
+          "source_refs": [
+            "uniprot:Q12778"
+          ],
+          "uniprot_id": "Q12778"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FOXO3",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "FOXO3",
+          "node_type": "transcription_factor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FOXO3",
+          "source_refs": [
+            "uniprot:O43524"
+          ],
+          "uniprot_id": "O43524"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "NDRG1",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "NDRG1",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "NDRG1",
+          "source_refs": [
+            "uniprot:Q92597"
+          ],
+          "uniprot_id": "Q92597"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PHLPP1",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PHLPP1",
+          "node_type": "phosphatase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PHLPP1",
+          "source_refs": [
+            "uniprot:O60346"
+          ],
+          "uniprot_id": "O60346"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "PHLPP2",
+          "localization": [],
+          "module": "10-mtorc2-outputs",
+          "node_id": "PHLPP2",
+          "node_type": "phosphatase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PHLPP2",
+          "source_refs": [
+            "uniprot:Q6ZVD8"
+          ],
+          "uniprot_id": "Q6ZVD8"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MTORC2",
+          "node_type": "complex",
+          "pathway_role": "Growth-factor-responsive mTOR kinase complex.",
+          "pdb_ids": [
+            "6ZWM",
+            "6ZWO"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MTORC2",
+          "source_refs": [],
+          "uniprot_id": null
+        }
+      }
+    ]
+  }
+}

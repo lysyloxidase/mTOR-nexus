@@ -1,13 +1,24 @@
 # Data Sources
 
 Pinned source configuration lives in `src/mtor_nexus/config/data_sources.yaml`.
+The machine-readable handling index is `data/sources/source-index.json`.
 
-| Source | Purpose | Validation |
+| Source | Pin | Phase 2 handling |
 | --- | --- | --- |
-| UniProt | Protein accessions | Weekly REST resolution |
-| RCSB PDB | Structural identifiers | Weekly REST resolution |
-| Crossref | Bibliography DOIs | Weekly REST resolution |
-| PhosphoSitePlus | Phosphorylation-site identifiers | Manual licensed ingestion |
+| UniProt | `2025_03` | Committed derived human accession snapshot |
+| RCSB PDB | `2025-05-snapshot` | Resolved structural identifiers on nodes |
+| Reactome | `v90`, `R-HSA-165159` | Root-pathway reconciliation overlay |
+| KEGG | `2025-05`, `hsa04150` | Metadata-only pathway overlay |
+| STRING | `12.0`, score `>=700` | Configured PPI cross-validation overlay |
+| BioGRID | `4.4.X` | Configured PPI cross-validation overlay |
+| PhosphoSitePlus | `2025-snapshot` | Segregated raw snapshot; derived site IDs only |
 
-Phase 2 ingestion must record every downloaded snapshot in
-`data/provenance.jsonl` before normalization.
+## Refresh boundaries
+
+`uv run python -m mtor_nexus.ingest.uniprot_refresh` refreshes the committed
+derived UniProt map. `make source-probe` checks open KEGG, Reactome, and STRING
+endpoints without writing upstream records. `make data` regenerates normalized
+artifacts deterministically from the committed catalog and accession snapshot.
+
+The public live endpoints can move independently of the pins. A live probe is
+an availability check, not permission to mutate a release artifact.

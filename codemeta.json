@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "name": "mTOR-NEXUS",
   "description": "An interactive mTOR pathway atlas and AI drug-discovery engine.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "datePublished": "2026-05-31",
   "codeRepository": "https://github.com/lysyloxidase/mtor-nexus",
   "license": "https://spdx.org/licenses/Apache-2.0",

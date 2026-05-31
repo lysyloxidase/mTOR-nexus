@@ -16,10 +16,14 @@ Each edge requires:
 
 ## Provenance
 
-Raw source snapshots will be immutable and DVC-managed beginning in Phase 2.
-Each snapshot appends a source, pinned version, SHA-256 digest, and UTC timestamp
-to `data/provenance.jsonl`. Normalized JSON-LD is committed for exchange;
-Parquet exports will be generated as ingestion volume increases.
+Raw source snapshots are immutable and DVC-managed where redistribution rights
+allow it. Each snapshot appends a source, pinned version, SHA-256 digest, and
+UTC timestamp to `data/provenance.jsonl`. Normalized JSON-LD, GraphML, Parquet,
+and per-module Cytoscape exports are committed for exchange.
+
+PhosphoSitePlus raw exports are a deliberate exception: licensed snapshots stay
+segregated and uncommitted. Only derived site identifiers and phospho-site
+labels enter the open normalized graph.
 
 ## FAIR principles
 

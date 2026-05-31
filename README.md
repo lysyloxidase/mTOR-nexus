@@ -5,9 +5,9 @@ AI-assisted drug discovery.**
 
 mTOR-NEXUS models proteins, complexes, metabolites, and small molecules as a
 heterogeneous graph. Every interaction carries a pre-registered evidence tier,
-one or more species-provenance flags, and primary citations. The first phase
-ships the schema, curated seed graph, governance metadata, validation tools,
-container frame, and CI policy.
+one or more species-provenance flags, and primary citations. Phase 2 ships a
+curated pathway graph with 261 nodes and 234 evidence-tagged interactions,
+deterministic exchange formats, and a Neo4j loader.
 
 ## Why this atlas is strict
 
@@ -21,11 +21,12 @@ the [tier and species rubric](docs/tier-species-rubric.md) and the
 
 ```bash
 uv sync --all-extras
+make data
 uv run pytest
 docker compose up --build
 ```
 
-The API serves `GET /health` and `GET /graph` on port `8000`. The Phase 1
+The API serves `GET /health` and `GET /graph` on port `8000`. The Phase 2
 webapp is exposed on port `3000`, with Neo4j on ports `7474` and `7687`.
 
 ## Provenance and FAIR governance
@@ -33,12 +34,14 @@ webapp is exposed on port `3000`, with Neo4j on ports `7474` and `7687`.
 - Code is Apache-2.0 licensed.
 - Figures and data are CC-BY-4.0 licensed.
 - Downloaded source snapshots are recorded in `data/provenance.jsonl`.
+- Pinned source policy lives in `src/mtor_nexus/config/data_sources.yaml`.
+- Licensed PhosphoSitePlus raw exports remain segregated and uncommitted.
 - Citation metadata lives in `CITATION.cff`, `codemeta.json`, and `zenodo.json`.
 - Weekly CI resolves bibliography DOIs, UniProt accessions, and PDB IDs.
 
 ## AI model cards
 
-No predictive model ships in Phase 1. Each future model must receive a model
+No predictive model ships in Phase 2. Each future model must receive a model
 card before it can be surfaced by the application. The required template is
 documented in [AI model cards](docs/ai-model-cards.md).
 

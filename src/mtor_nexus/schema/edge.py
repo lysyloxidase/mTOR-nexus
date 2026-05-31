@@ -4,6 +4,7 @@ from enum import StrEnum
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from mtor_nexus.schema.source import EvidenceSource
 from mtor_nexus.schema.species import SpeciesEvidence
 from mtor_nexus.schema.tier import Tier
 
@@ -48,6 +49,8 @@ class MTOREdge(BaseModel):
     tier: Tier
     species_evidence: list[SpeciesEvidence] = Field(min_length=1)
     phosphositeplus_id: str | None = None
+    evidence_sources: list[EvidenceSource] = Field(min_length=1)
+    source_refs: list[str] = Field(min_length=1)
     citations: list[str] = Field(min_length=1)
 
     @model_validator(mode="after")

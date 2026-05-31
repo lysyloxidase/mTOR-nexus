@@ -21,7 +21,7 @@ def health() -> dict[str, str]:
 
 @app.get("/graph")
 def graph() -> dict[str, Any]:
-    """Return the Phase 1 seed graph."""
+    """Return the normalized pathway graph."""
 
     with Path(settings.graph_path).open(encoding="utf-8") as graph_file:
         return json.load(graph_file)

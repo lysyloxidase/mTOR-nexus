@@ -1,0 +1,91 @@
+{
+  "derived_artifacts": {
+    "normalized_graph": {
+      "fields": [
+        "nodes",
+        "edges",
+        "source_refs"
+      ],
+      "path": "data/processed/mtor-graph.json"
+    },
+    "uniprot_accessions": {
+      "fields": [
+        "gene_symbol",
+        "uniprot_accession"
+      ],
+      "path": "data/curated/uniprot-accessions.json",
+      "record_count": 219
+    }
+  },
+  "schema_version": "0.2.0",
+  "segregated_raw_sources": [
+    "phosphositeplus"
+  ],
+  "sources": {
+    "biogrid": {
+      "handling": "configured-cross-validation-overlay",
+      "license": "MIT",
+      "options": {},
+      "redistribution": "open",
+      "url": "https://downloads.thebiogrid.org",
+      "version": "4.4.X"
+    },
+    "kegg": {
+      "handling": "pinned-pathway-overlay-metadata-only",
+      "license": "academic-free",
+      "options": {
+        "pathway": "hsa04150"
+      },
+      "redistribution": "metadata-only",
+      "url": "https://rest.kegg.jp",
+      "version": "2025-05"
+    },
+    "pdb": {
+      "handling": "resolved-structure-identifiers",
+      "license": "CC0",
+      "options": {},
+      "redistribution": "open",
+      "url": "https://files.rcsb.org/",
+      "version": "2025-05-snapshot"
+    },
+    "phosphositeplus": {
+      "handling": "segregated-derived-site-identifiers-only",
+      "license": "CC-BY-NC-SA-2.0",
+      "options": {
+        "note": "Required for every phosphorylation edge; raw licensed exports are never committed."
+      },
+      "redistribution": "segregated-non-commercial",
+      "url": "https://www.phosphosite.org",
+      "version": "2025-snapshot"
+    },
+    "reactome": {
+      "handling": "pinned-root-pathway-overlay",
+      "license": "CC-BY-4.0",
+      "options": {
+        "pathway_root": "R-HSA-165159"
+      },
+      "redistribution": "open",
+      "url": "https://reactome.org/ContentService",
+      "version": "v90"
+    },
+    "string": {
+      "handling": "configured-cross-validation-overlay",
+      "license": "CC-BY-4.0",
+      "options": {
+        "confidence_threshold": 700,
+        "species": 9606
+      },
+      "redistribution": "open",
+      "url": "https://string-db.org/api",
+      "version": "12.0"
+    },
+    "uniprot": {
+      "handling": "resolved-accession-snapshot",
+      "license": "CC-BY-4.0",
+      "options": {},
+      "redistribution": "derived-identifiers-ok",
+      "url": "https://rest.uniprot.org/uniprotkb/",
+      "version": "2025_03"
+    }
+  }
+}

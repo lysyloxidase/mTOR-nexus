@@ -1,0 +1,22 @@
+{
+  "artifacts": {
+    "cytoscape/01-core-complexes.json": "799c25308f6d13531937861ae62d8daa84538f980418e7c8a6cb0ae6ae3d9799",
+    "cytoscape/02-growth-factor-pi3k-akt.json": "552d059a99160f807a219adb08f62623058a7aa286da79b5e83239011920b76f",
+    "cytoscape/03-tsc-rheb.json": "5f2d793a5bbfe0d113a8f90544f3f8ac60311f93c861d5b74dfe2257a3c40218",
+    "cytoscape/04-amino-acid-sensing.json": "71b35e4fb72524468b5bf08d2b4bc7fcb2fd3ca65539647f53856ad9be0ad808",
+    "cytoscape/05-energy-sensing.json": "04eb972e33e943f219880e724d5f879cdc004c3135a33ae1a28f381c842cd17d",
+    "cytoscape/06-stress-inputs.json": "cff552a7f14dd8e09618c70ede95c61f00002dc7d57a9681bc3696de85e84652",
+    "cytoscape/07-protein-synthesis.json": "e36f51dac6e126f079396fb09b62f7246ee70634ab2b85b7d5fbbac2be3c2da3",
+    "cytoscape/08-autophagy.json": "4c16d1e1414359e4d7b99775edc9cd2547ce822012b321df88f7536ec7dc7ab4",
+    "cytoscape/09-lipid-nucleotide-synthesis.json": "fc8db5c754b57941c3a48335517efa4dc1de823bc711cfb59868466aa4337b41",
+    "cytoscape/10-mtorc2-outputs.json": "9a139f0b689c7432b24d0af0ec704491331dc3f996792aa7c5b722de930e4715",
+    "cytoscape/11-feedback-crosstalk.json": "037664b30cd7894d7a2957f0ab0b94244c3a23e914eb948069540a81f6233ce0",
+    "cytoscape/12-drugs.json": "2e2494146ba33d7b53c8ea57ff428c8b67e319a0a9ffb738c1b58ce8e0ad7ee2",
+    "mtor-graph.graphml": "e8e206616d9d4c803fde5a0fad74d8293e3ed1dc267553e0e79ab354f825ac52",
+    "mtor-graph.json": "74864c8a22cf249c954f44b7016beefb4c7affe9acc690a0fcf7e00b54430bb1",
+    "mtor-graph.jsonld": "867399fb8494bebf89262471bd491882dfe45fe720d6d95b64f03a8f16c99402",
+    "parquet/edges.parquet": "3ecddebf4cefe2acacdaff7778fbd9ea492f0d0cfcd94c9196ff093a1ed8f485",
+    "parquet/nodes.parquet": "4c674333f60cfbeecc9e5da36e7bca9d0bbe7cbc0089a4cbf54d199bb3b88cff"
+  },
+  "schema_version": "0.2.0"
+}

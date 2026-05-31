@@ -1,0 +1,1266 @@
+{
+  "elements": {
+    "edges": [
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "e0",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FKBP1A",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "SIROLIMUS",
+          "tier": "speculative"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e1",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SIROLIMUS",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e2",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "TEMSIROLIMUS",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e3",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "EVEROLIMUS",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e4",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RIDAFOROLIMUS",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e5",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "ZOTAROLIMUS",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e6",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "TORIN1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e7",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "TORIN2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e8",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "PP242",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e9",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "AZD8055",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e10",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "VISTUSERTIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e11",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SAPANISERTIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e12",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "OSI-027",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e13",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "ONATASERTIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e14",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GDC-0349",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e15",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "DACTOLISIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e16",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GEDATOLISIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e17",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "OMIPALISIB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e18",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RAPALINK-1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e19",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RMC-5552",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e20",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RMC-6272",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTOR",
+          "tier": "speculative"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated"
+          ],
+          "id": "e21",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "JR-AB2-011",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTORC2",
+          "tier": "speculative"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [
+            "MTORC1",
+            "MTORC2"
+          ],
+          "disease_associations": [],
+          "domains": [
+            "HEAT",
+            "FAT",
+            "FRB",
+            "kinase",
+            "PRD",
+            "FATC"
+          ],
+          "druggable": false,
+          "gene_symbol": "MTOR",
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MTOR",
+          "node_type": "kinase",
+          "pathway_role": "Catalytic kinase shared by MTORC1 and MTORC2.",
+          "pdb_ids": [
+            "5H64",
+            "4JSV",
+            "6ZWM",
+            "6ZWO"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MTOR",
+          "source_refs": [
+            "uniprot:P42345"
+          ],
+          "uniprot_id": "P42345"
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "FKBP12"
+          ],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FKBP1A",
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "FKBP1A",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FKBP1A",
+          "source_refs": [
+            "uniprot:P62942"
+          ],
+          "uniprot_id": "P62942"
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MTORC1",
+          "node_type": "complex",
+          "pathway_role": "Nutrient-sensitive mTOR kinase complex.",
+          "pdb_ids": [
+            "5H64",
+            "4JSV",
+            "6SB2"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MTORC1",
+          "source_refs": [],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MTORC2",
+          "node_type": "complex",
+          "pathway_role": "Growth-factor-responsive mTOR kinase complex.",
+          "pdb_ids": [
+            "6ZWM",
+            "6ZWO"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MTORC2",
+          "source_refs": [],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "RAPAMYCIN"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL413",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "SIROLIMUS",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SIROLIMUS",
+          "source_refs": [
+            "chembl:CHEMBL413"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1201182",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "TEMSIROLIMUS",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "TEMSIROLIMUS",
+          "source_refs": [
+            "chembl:CHEMBL1201182"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1908360",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "EVEROLIMUS",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "EVEROLIMUS",
+          "source_refs": [
+            "chembl:CHEMBL1908360"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL2103839",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "RIDAFOROLIMUS",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RIDAFOROLIMUS",
+          "source_refs": [
+            "chembl:CHEMBL2103839"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL219410",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "ZOTAROLIMUS",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ZOTAROLIMUS",
+          "source_refs": [
+            "chembl:CHEMBL219410"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1256459",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "TORIN1",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "TORIN1",
+          "source_refs": [
+            "chembl:CHEMBL1256459"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1765602",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "TORIN2",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "TORIN2",
+          "source_refs": [
+            "chembl:CHEMBL1765602"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1241674",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "PP242",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "PP242",
+          "source_refs": [
+            "chembl:CHEMBL1241674"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1801204",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "AZD8055",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "AZD8055",
+          "source_refs": [
+            "chembl:CHEMBL1801204"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "AZD2014"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL2336325",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "VISTUSERTIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "VISTUSERTIB",
+          "source_refs": [
+            "chembl:CHEMBL2336325"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "MLN0128",
+            "INK128",
+            "TAK-228"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL3545097",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "SAPANISERTIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SAPANISERTIB",
+          "source_refs": [
+            "chembl:CHEMBL3545097"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL3120215",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "OSI-027",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "OSI-027",
+          "source_refs": [
+            "chembl:CHEMBL3120215"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "CC-223"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL3586404",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "ONATASERTIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ONATASERTIB",
+          "source_refs": [
+            "chembl:CHEMBL3586404"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL2139930",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "GDC-0349",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "GDC-0349",
+          "source_refs": [
+            "chembl:CHEMBL2139930"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "BEZ235"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1879463",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "DACTOLISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "DACTOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL1879463"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL592445",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "GEDATOLISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "GEDATOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL592445"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1236962",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "OMIPALISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "OMIPALISIB",
+          "source_refs": [
+            "chembl:CHEMBL1236962"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL4303783",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "RAPALINK-1",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RAPALINK-1",
+          "source_refs": [
+            "chembl:CHEMBL4303783"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL5314926",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "RMC-5552",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RMC-5552",
+          "source_refs": [
+            "chembl:CHEMBL5314926"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL5441038",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "RMC-6272",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RMC-6272",
+          "source_refs": [
+            "chembl:CHEMBL5441038"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL5274229",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "JR-AB2-011",
+          "node_type": "small_molecule",
+          "pathway_role": "Curated mTOR-pathway pharmacology node.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "JR-AB2-011",
+          "source_refs": [
+            "chembl:CHEMBL5274229"
+          ],
+          "uniprot_id": null
+        }
+      }
+    ]
+  }
+}

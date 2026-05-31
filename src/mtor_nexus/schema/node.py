@@ -21,6 +21,7 @@ class NodeType(StrEnum):
     RECEPTOR = "receptor"
     SENSOR = "sensor"
     LIPID = "lipid"
+    CONDITION = "condition"
 
 
 class SubcellularLocation(StrEnum):
@@ -62,13 +63,15 @@ class MTORNode(BaseModel):
     chembl_id: str | None = None
     node_type: NodeType
     pathway_role: str = Field(min_length=1)
-    localization: list[SubcellularLocation] = Field(default_factory=list)
+    localization: list[SubcellularLocation] = Field(default_factory=list[SubcellularLocation])
     domains: list[str] = Field(default_factory=list)
     pdb_ids: list[str] = Field(default_factory=list)
     complex_membership: list[str] = Field(default_factory=list)
     disease_associations: list[str] = Field(default_factory=list)
     aliases: list[str] = Field(default_factory=list)
     druggable: bool = False
+    module: str = Field(default="phase-1-seed", min_length=1)
+    source_refs: list[str] = Field(default_factory=list)
     primary_citations: list[str] = Field(min_length=1)
 
     @model_validator(mode="after")
@@ -77,4 +80,8 @@ class MTORNode(BaseModel):
 
         if self.node_type in PROTEIN_NODE_TYPES and not self.uniprot_id:
             raise ValueError("protein nodes require a UniProt accession")
+        if self.node_type == NodeType.SMALL_MOLECULE and not self.chembl_id:
+            raise ValueError("small-molecule nodes require a ChEMBL identifier")
+        if self.node_type in {NodeType.METABOLITE, NodeType.LIPID} and not self.chebi_id:
+            raise ValueError("metabolite and lipid nodes require a ChEBI identifier")
         return self

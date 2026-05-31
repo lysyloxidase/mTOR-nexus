@@ -2,6 +2,7 @@
 .env
 .venv/
 .pytest_cache/
+.coverage
 .ruff_cache/
 .mypy_cache/
 .next/
@@ -10,3 +11,6 @@ __pycache__/
 *.py[cod]
 node_modules/
 site/
+data/sources/restricted/*
+!data/sources/restricted/README.md
+!data/sources/restricted/phosphositeplus-manifest.json

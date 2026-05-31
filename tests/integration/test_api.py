@@ -12,7 +12,7 @@ def test_health_endpoint() -> None:
 
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "version": "0.1.0"}
+    assert response.json() == {"status": "ok", "version": "0.2.0"}
 
 
 def test_graph_endpoint() -> None:
@@ -20,4 +20,4 @@ def test_graph_endpoint() -> None:
 
     response = client.get("/graph")
     assert response.status_code == 200
-    assert len(response.json()["nodes"]) >= 20
+    assert len(response.json()["nodes"]) >= 215

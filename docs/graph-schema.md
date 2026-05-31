@@ -1,7 +1,9 @@
 # Graph Schema
 
 The source-of-truth Pydantic models live in `src/mtor_nexus/schema`. A mirrored
-TypeScript contract lives in `webapp/lib/schema.ts`.
+TypeScript contract lives in `webapp/lib/schema.ts`. Phase 2 also records a
+module and source references on nodes, and independent evidence sources plus
+source references on edges.
 
 ## Nodes
 
@@ -14,7 +16,8 @@ primary citations.
 
 Edges are directed by default and require a mechanism, tier, non-empty
 species-evidence list, and primary citations. Phosphorylation edges additionally
-require a phospho-site and a PhosphoSitePlus identifier.
+require a phospho-site and a PhosphoSitePlus identifier. The normalized graph
+ships as JSON, JSON-LD, GraphML, Parquet, and module-focused Cytoscape JSON.
 
 ## Recruitment modes
 

@@ -1,0 +1,11 @@
+{
+  "source": "PhosphoSitePlus",
+  "version": "2025-snapshot",
+  "license": "CC-BY-NC-SA-2.0",
+  "redistribution": "segregated-non-commercial",
+  "raw_snapshot_committed": false,
+  "derived_fields": [
+    "phosphositeplus_id",
+    "phospho_site"
+  ]
+}

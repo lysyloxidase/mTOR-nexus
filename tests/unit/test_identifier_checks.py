@@ -37,5 +37,9 @@ def test_required_pdb_ids_are_present() -> None:
 def test_seed_graph_provenance_digest_matches() -> None:
     """Keep the committed provenance ledger aligned with the seed bytes."""
 
-    first_record = Path("data/provenance.jsonl").read_text(encoding="utf-8").splitlines()[0]
-    assert json.loads(first_record)["sha256"] == sha256_file(GRAPH_PATH)
+    records = [
+        json.loads(line)
+        for line in Path("data/provenance.jsonl").read_text(encoding="utf-8").splitlines()
+    ]
+    graph_record = [record for record in records if record["path"] == GRAPH_PATH][-1]
+    assert graph_record["sha256"] == sha256_file(GRAPH_PATH)

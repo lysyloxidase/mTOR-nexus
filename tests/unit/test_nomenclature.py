@@ -2,7 +2,15 @@
 
 import pytest
 
-from mtor_nexus.schema import EdgeMechanism, MTOREdge, MTORNode, NodeType, SpeciesEvidence, Tier
+from mtor_nexus.schema import (
+    EdgeMechanism,
+    EvidenceSource,
+    MTOREdge,
+    MTORNode,
+    NodeType,
+    SpeciesEvidence,
+    Tier,
+)
 from mtor_nexus.utils.graph_io import validate_graph
 from mtor_nexus.utils.nomenclature import validate_nomenclature
 
@@ -14,6 +22,7 @@ def molecule(node_id: str, role: str, aliases: list[str] | None = None) -> MTORN
         node_id=node_id,
         protein_name=node_id,
         node_type=NodeType.SMALL_MOLECULE,
+        chembl_id="CHEMBL413",
         pathway_role=role,
         aliases=aliases or [],
         primary_citations=["10.1016/j.cell.2017.02.004"],
@@ -31,6 +40,11 @@ def phospho_edge(source: str, target: str, site: str) -> MTOREdge:
         tier=Tier.ROBUST,
         species_evidence=[SpeciesEvidence.HUMAN],
         phosphositeplus_id=f"PSP:{target}:{site}",
+        evidence_sources=[EvidenceSource.LITERATURE, EvidenceSource.PHOSPHOSITEPLUS],
+        source_refs=[
+            "literature:10.1016/j.cell.2017.02.004",
+            f"phosphositeplus:PSP:{target}:{site}",
+        ],
         citations=["10.1016/j.cell.2017.02.004"],
     )
 

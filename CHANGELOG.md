@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-05-31
+
+### Added
+
+- Curated Phase 2 pathway graph with 261 nodes and 234 evidence-tagged interactions.
+- Deterministic GraphML, JSON-LD, Parquet, Cytoscape, and Neo4j export paths.
+- Pinned source registry, UniProt-derived accession snapshot, live overlay probes,
+  and segregated PhosphoSitePlus handling.
+
 ## [0.1.0] - 2026-05-31
 
 ### Added
@@ -15,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Typed heterogeneous graph schema with tier and species evidence enforcement.
 - Curated seed graph, nomenclature guards, and identifier validation workflows.
 
-[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.2.0
 [0.1.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.1.0

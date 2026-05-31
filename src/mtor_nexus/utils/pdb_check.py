@@ -2,12 +2,19 @@
 
 import argparse
 import re
+from concurrent.futures import ThreadPoolExecutor
 
 from mtor_nexus.utils.graph_io import load_graph
 from mtor_nexus.utils.http_check import resolves
 
 PDB_ID_PATTERN = re.compile(r"^[0-9][A-Z0-9]{3}$")
 PDB_ENTRY_URL = "https://data.rcsb.org/rest/v1/core/entry/{pdb_id}"
+
+
+def _pdb_id_resolves(pdb_id: str) -> bool:
+    """Resolve one identifier against RCSB PDB."""
+
+    return resolves(PDB_ENTRY_URL.format(pdb_id=pdb_id))
 
 
 def graph_pdb_ids(graph_path: str) -> list[str]:
@@ -20,11 +27,12 @@ def graph_pdb_ids(graph_path: str) -> list[str]:
 def broken_pdb_ids(pdb_ids: list[str]) -> list[str]:
     """Return malformed or unresolved PDB identifiers."""
 
-    return [
-        pdb_id
-        for pdb_id in pdb_ids
-        if not PDB_ID_PATTERN.fullmatch(pdb_id) or not resolves(PDB_ENTRY_URL.format(pdb_id=pdb_id))
-    ]
+    malformed = [pdb_id for pdb_id in pdb_ids if not PDB_ID_PATTERN.fullmatch(pdb_id)]
+    candidates = [pdb_id for pdb_id in pdb_ids if pdb_id not in malformed]
+    with ThreadPoolExecutor(max_workers=12) as executor:
+        resolution = executor.map(_pdb_id_resolves, candidates)
+    unresolved = [pdb_id for pdb_id, valid in zip(candidates, resolution, strict=True) if not valid]
+    return sorted([*malformed, *unresolved])
 
 
 def main() -> int:

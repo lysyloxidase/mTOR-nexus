@@ -17,11 +17,26 @@ jobs:
       - run: uv run ruff check .
       - run: uv run ruff format --check .
       - run: uv run pyright
-      - run: uv run pytest
-      - run: uv run python -m mtor_nexus.utils.tier_species_validation
+      - run: uv run pytest --cov=mtor_nexus.graph --cov=mtor_nexus.schema --cov=mtor_nexus.ingest.source_registry --cov=mtor_nexus.ingest.source_index --cov-fail-under=85
+      - run: uv run python -m mtor_nexus.ingest.source_index
+      - run: uv run python -m mtor_nexus.graph.build
+      - run: uv run python -m mtor_nexus.graph.validate
+      - run: git diff --exit-code -- data/processed data/sources/source-index.json
       - run: uv run python -m mtor_nexus.utils.codemeta_check
       - run: uv run cffconvert --validate
       - run: uv run mkdocs build --strict
+      - run: docker compose up -d neo4j
+      - run: |
+          for attempt in $(seq 1 30); do
+            if docker compose exec -T neo4j cypher-shell -u neo4j -p mtor-nexus-dev 'RETURN 1' >/dev/null 2>&1; then
+              exit 0
+            fi
+            sleep 2
+          done
+          exit 1
+      - run: MTOR_NEXUS_NEO4J_URI=bolt://localhost:7687 MTOR_NEXUS_NEO4J_PASSWORD=mtor-nexus-dev uv run pytest tests/integration/test_neo4j.py
+      - if: always()
+        run: docker compose down --volumes
 
   lighthouse:
     runs-on: ubuntu-latest
