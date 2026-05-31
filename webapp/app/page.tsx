@@ -1,23 +1,29 @@
+import Link from "next/link";
+import { MTORGraph3D } from "@/components/three/MTORGraph3D";
+
 const principles = [
-  ["Evidence before confidence", "Every interaction carries a tier and primary citation."],
-  ["Species stays visible", "Human, rodent, structural, biochemical, and computational evidence remain distinct."],
-  ["Guard the vocabulary", "Known mTOR nomenclature errors fail validation before they reach the atlas."],
+  ["Dual-scale navigation", "Move from the global 3D pathway to seven publication-oriented SBGN-PD diagrams."],
+  ["Evidence remains visible", "Switch localization, tier, and species lenses without flattening the underlying provenance."],
+  ["Structure meets signaling", "Open curated phosphosites, protein domains, UniProt accessions, and linked PDB structures."],
 ];
 
 export default function Home() {
   return (
-    <main>
-      <section className="hero">
-        <p className="eyebrow">Phase 1 foundation</p>
-        <h1>mTOR<span>-NEXUS</span></h1>
-        <p className="lede">
-          A provenance-first interactive atlas of mTOR signaling and a foundation
-          for AI-assisted drug discovery.
-        </p>
-        <div className="actions">
-          <a className="primary" href="http://localhost:8000/graph">Explore seed graph</a>
-          <a href="https://github.com/lysyloxidase/mtor-nexus">View source</a>
+    <main className="home-main">
+      <section className="landing-grid">
+        <div className="hero">
+          <p className="eyebrow">Phase 3 pathway explorer</p>
+          <h1>mTOR<span>-NEXUS</span></h1>
+          <p className="lede">
+            A provenance-first interactive atlas for navigating mTOR signaling from
+            global architecture to evidence-bearing molecular detail.
+          </p>
+          <div className="actions">
+            <Link className="primary" href="/graph">Explore the 3D atlas</Link>
+            <Link href="/module/1">Open SBGN modules</Link>
+          </div>
         </div>
+        <MTORGraph3D compact />
       </section>
       <section className="principles" aria-label="Project principles">
         {principles.map(([title, description]) => (

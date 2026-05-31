@@ -1,4 +1,4 @@
-.PHONY: all quality test docs data graph graph-validate source-probe train figs
+.PHONY: all quality test docs data graph graph-validate source-probe web web-lint web-build train figs
 
 all: quality test docs graph-validate
 
@@ -25,6 +25,15 @@ graph-validate:
 
 source-probe:
 	uv run python -m mtor_nexus.ingest.live_probe
+
+web:
+	docker run --rm -v "$(CURDIR)/webapp:/app" -w /app node:20-alpine npm run dev
+
+web-lint:
+	docker run --rm -v "$(CURDIR)/webapp:/app" -w /app node:20-alpine npm run lint
+
+web-build:
+	docker run --rm -v "$(CURDIR)/webapp:/app" -w /app node:20-alpine npm run build
 
 train:
 	@echo "Phase 6 model training is not implemented yet."

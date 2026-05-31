@@ -10,6 +10,8 @@ __pycache__/
 *.egg-info/
 *.py[cod]
 node_modules/
+*.tsbuildinfo
+.lighthouseci/
 site/
 data/sources/restricted/*
 !data/sources/restricted/README.md

@@ -5,7 +5,8 @@ foundation for AI-assisted drug discovery.
 
 Phase 2 provides a 261-node, 234-edge pathway graph, evidence governance,
 stable-identifier checks, deterministic exchange artifacts, and a Neo4j load
-path. Predictive models arrive in later phases.
+path. Phase 3 adds a global 3D pathway explorer, seven synchronized SBGN-PD
+module views, structure embeds, and publication-oriented SVG export.
 
 !!! warning "Research use only"
     mTOR-NEXUS is not a clinical decision support system.

@@ -34,9 +34,17 @@ export interface MTORNode {
   primary_citations: string[];
   module: string;
   source_refs: string[];
-  gene_symbol?: string;
-  uniprot_id?: string;
+  gene_symbol?: string | null;
+  uniprot_id?: string | null;
   aliases?: string[];
+  localization: string[];
+  domains: string[];
+  pdb_ids: string[];
+  complex_membership: string[];
+  disease_associations: string[];
+  druggable: boolean;
+  chebi_id?: string | null;
+  chembl_id?: string | null;
 }
 
 export interface MTOREdge {
@@ -49,6 +57,49 @@ export interface MTOREdge {
   evidence_sources: string[];
   source_refs: string[];
   recruitment_mode?: RecruitmentMode;
-  phospho_site?: string;
-  phosphositeplus_id?: string;
+  phospho_site?: string | null;
+  phosphositeplus_id?: string | null;
+}
+
+export interface GraphDocument {
+  schema_version: string;
+  nodes: MTORNode[];
+  edges: MTOREdge[];
+}
+
+export interface LayoutNode {
+  id: string;
+  x: number;
+  y: number;
+  z: number;
+}
+
+export interface LayoutDocument {
+  schema_version: string;
+  layout: string;
+  nodes: LayoutNode[];
+}
+
+export interface CytoscapeNode {
+  data: MTORNode & { id: string };
+  position: { x: number; y: number };
+}
+
+export interface CytoscapeEdge {
+  data: MTOREdge & { id: string };
+}
+
+export interface ModuleDocument {
+  schema_version: string;
+  module: {
+    id: string;
+    slug: string;
+    title: string;
+    figure: string;
+    source_modules: string[];
+  };
+  elements: {
+    nodes: CytoscapeNode[];
+    edges: CytoscapeEdge[];
+  };
 }

@@ -1,6 +1,6 @@
 {
   "name": "mtor-nexus-webapp",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,9 +10,14 @@
     "lighthouse": "lhci autorun --config=./lighthouserc.json"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "cytoscape": "^3.33.4",
     "next": "^15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.184.0",
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@lhci/cli": "^0.14.0",

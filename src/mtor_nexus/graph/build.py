@@ -347,6 +347,9 @@ class MTORGraphBuilder:
             + "\n",
             encoding="utf-8",
         )
+        from mtor_nexus.graph.web_exports import write_web_exports
+
+        write_web_exports(graph.nodes, graph.edges)
 
 
 def main() -> int:

@@ -7,6 +7,7 @@ nav:
   - Home: index.md
   - Methodology: methodology.md
   - Graph schema: graph-schema.md
+  - Visualization: visualization.md
   - Tier and species rubric: tier-species-rubric.md
   - Data sources: data-sources.md
   - Nomenclature guards: nomenclature-guards.md

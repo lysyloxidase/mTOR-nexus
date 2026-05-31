@@ -21,7 +21,7 @@ jobs:
       - run: uv run python -m mtor_nexus.ingest.source_index
       - run: uv run python -m mtor_nexus.graph.build
       - run: uv run python -m mtor_nexus.graph.validate
-      - run: git diff --exit-code -- data/processed data/sources/source-index.json
+      - run: git diff --exit-code -- data/processed data/sources/source-index.json webapp/public/data
       - run: uv run python -m mtor_nexus.utils.codemeta_check
       - run: uv run cffconvert --validate
       - run: uv run mkdocs build --strict

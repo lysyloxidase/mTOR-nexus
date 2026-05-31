@@ -1,0 +1,2188 @@
+{
+  "elements": {
+    "edges": [
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e0",
+          "mechanism": "recruits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RRAGA",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e1",
+          "mechanism": "recruits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RRAGC",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "MTORC1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e2",
+          "mechanism": "activates",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "LAMTOR1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RAGULATOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e3",
+          "mechanism": "activates",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SLC38A9",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RAGULATOR",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e4",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GATOR1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGA",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e5",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GATOR2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "GATOR1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e6",
+          "mechanism": "recruits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "KICSTOR",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "GATOR1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e7",
+          "mechanism": "activates",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FLCN",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGC",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e8",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RRAGA",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGC",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e9",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "RRAGB",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGD",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e10",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FLCN",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "FNIP1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e11",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FLCN",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "FNIP2",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e12",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SESN2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "GATOR2",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e13",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "CASTOR1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "GATOR2",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e14",
+          "mechanism": "binds",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SAMTOR",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "GATOR1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e15",
+          "mechanism": "gap_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FLCN",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "RRAGC",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e16",
+          "mechanism": "gap_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "FLCN",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGD",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e17",
+          "mechanism": "gap_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GATOR1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGA",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e18",
+          "mechanism": "gap_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GATOR1",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGB",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e19",
+          "mechanism": "gef_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "LAMTOR2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "RRAGA",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e20",
+          "mechanism": "gef_for",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "LAMTOR2",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "RRAGB",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e21",
+          "mechanism": "senses",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "LEUCINE",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "SESN2",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e22",
+          "mechanism": "senses",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "LEUCINE",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "LARS1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e23",
+          "mechanism": "senses",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "ARGININE",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "CASTOR1",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e24",
+          "mechanism": "senses",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "ARGININE",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "rodent"
+          ],
+          "target": "SLC38A9",
+          "tier": "robust"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "literature",
+            "curated",
+            "reactome",
+            "kegg"
+          ],
+          "id": "m3-e25",
+          "mechanism": "senses",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "SAM",
+          "source_refs": [
+            "literature:10.1016/j.cell.2017.02.004",
+            "reactome:pathway:R-HSA-165159",
+            "kegg:pathway:hsa04150"
+          ],
+          "species_evidence": [
+            "human_and_rodent"
+          ],
+          "target": "SAMTOR",
+          "tier": "robust"
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": "CHEBI:29016",
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "ARGININE",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "ARGININE",
+          "node_type": "metabolite",
+          "pathway_role": "L-arginine.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ARGININE",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 74.0,
+          "y": 0.0
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "ATP6V0D1",
+          "id": "ATP6V0D1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "ATP6V0D1",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ATP6V0D1",
+          "source_refs": [
+            "uniprot:P61421"
+          ],
+          "uniprot_id": "P61421"
+        },
+        "position": {
+          "x": -82.585,
+          "y": 75.655
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "ATP6V1A",
+          "id": "ATP6V1A",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "ATP6V1A",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ATP6V1A",
+          "source_refs": [
+            "uniprot:P38606"
+          ],
+          "uniprot_id": "P38606"
+        },
+        "position": {
+          "x": 9.792,
+          "y": -111.571
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "CASTOR1",
+          "id": "CASTOR1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "CASTOR1",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "CASTOR1",
+          "source_refs": [
+            "uniprot:Q8WTX7"
+          ],
+          "uniprot_id": "Q8WTX7"
+        },
+        "position": {
+          "x": 68.145,
+          "y": 88.883
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "CASTOR2",
+          "id": "CASTOR2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "CASTOR2",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "CASTOR2",
+          "source_refs": [
+            "uniprot:A6NHX0"
+          ],
+          "uniprot_id": "A6NHX0"
+        },
+        "position": {
+          "x": -147.707,
+          "y": -26.127
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "DEPDC5",
+          "id": "DEPDC5",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "DEPDC5",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "DEPDC5",
+          "source_refs": [
+            "uniprot:O75140"
+          ],
+          "uniprot_id": "O75140"
+        },
+        "position": {
+          "x": 126.563,
+          "y": -80.509
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FLCN",
+          "id": "FLCN",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "FLCN",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [
+            "7UXH"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FLCN",
+          "source_refs": [
+            "uniprot:Q8NFG4"
+          ],
+          "uniprot_id": "Q8NFG4"
+        },
+        "position": {
+          "x": -38.941,
+          "y": 144.857
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FNIP1",
+          "id": "FNIP1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "FNIP1",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FNIP1",
+          "source_refs": [
+            "uniprot:Q8TF40"
+          ],
+          "uniprot_id": "Q8TF40"
+        },
+        "position": {
+          "x": -69.136,
+          "y": -133.117
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "FNIP2",
+          "id": "FNIP2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "FNIP2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "FNIP2",
+          "source_refs": [
+            "uniprot:Q9P278"
+          ],
+          "uniprot_id": "Q9P278"
+        },
+        "position": {
+          "x": 140.898,
+          "y": 51.456
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "GATOR1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "GATOR1",
+          "node_type": "complex",
+          "pathway_role": "DEPDC5-NPRL2-NPRL3 GAP complex.",
+          "pdb_ids": [
+            "6CET"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "GATOR1",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": -173.777,
+          "y": 71.733
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "GATOR2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "GATOR2",
+          "node_type": "complex",
+          "pathway_role": "Amino-acid signaling complex.",
+          "pdb_ids": [
+            "7UHY",
+            "9LWF"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "GATOR2",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 79.683,
+          "y": -170.278
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "ITFG2",
+          "id": "ITFG2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "ITFG2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "ITFG2",
+          "source_refs": [
+            "uniprot:Q969R8"
+          ],
+          "uniprot_id": "Q969R8"
+        },
+        "position": {
+          "x": 56.265,
+          "y": 179.383
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "KICS2",
+          "id": "KICS2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "KICS2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "KICS2",
+          "source_refs": [
+            "uniprot:Q96MD2"
+          ],
+          "uniprot_id": "Q96MD2"
+        },
+        "position": {
+          "x": -162.66,
+          "y": -94.265
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "KICSTOR",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "KICSTOR",
+          "node_type": "complex",
+          "pathway_role": "Lysosomal GATOR1-recruitment complex.",
+          "pdb_ids": [
+            "9O5A"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "KICSTOR",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 183.615,
+          "y": -40.367
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "KPTN",
+          "id": "KPTN",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "KPTN",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "KPTN",
+          "source_refs": [
+            "uniprot:Q9Y664"
+          ],
+          "uniprot_id": "Q9Y664"
+        },
+        "position": {
+          "x": -108.124,
+          "y": 153.796
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LAMTOR1",
+          "id": "LAMTOR1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LAMTOR1",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LAMTOR1",
+          "source_refs": [
+            "uniprot:Q6IAA8"
+          ],
+          "uniprot_id": "Q6IAA8"
+        },
+        "position": {
+          "x": -24.16,
+          "y": -186.441
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LAMTOR2",
+          "id": "LAMTOR2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LAMTOR2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LAMTOR2",
+          "source_refs": [
+            "uniprot:Q9Y2Q5"
+          ],
+          "uniprot_id": "Q9Y2Q5"
+        },
+        "position": {
+          "x": 172.811,
+          "y": 145.645
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LAMTOR3",
+          "id": "LAMTOR3",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LAMTOR3",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LAMTOR3",
+          "source_refs": [
+            "uniprot:Q9UHA4"
+          ],
+          "uniprot_id": "Q9UHA4"
+        },
+        "position": {
+          "x": -225.807,
+          "y": 9.338
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LAMTOR4",
+          "id": "LAMTOR4",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LAMTOR4",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LAMTOR4",
+          "source_refs": [
+            "uniprot:Q0VGL1"
+          ],
+          "uniprot_id": "Q0VGL1"
+        },
+        "position": {
+          "x": 160.195,
+          "y": -159.416
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LAMTOR5",
+          "id": "LAMTOR5",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LAMTOR5",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LAMTOR5",
+          "source_refs": [
+            "uniprot:O43504"
+          ],
+          "uniprot_id": "O43504"
+        },
+        "position": {
+          "x": -10.439,
+          "y": 225.759
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "LARS1",
+          "id": "LARS1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LARS1",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LARS1",
+          "source_refs": [
+            "uniprot:Q9P2J5"
+          ],
+          "uniprot_id": "Q9P2J5"
+        },
+        "position": {
+          "x": -144.8,
+          "y": -173.519
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": "CHEBI:25017",
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "LEUCINE",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "LEUCINE",
+          "node_type": "metabolite",
+          "pathway_role": "L-leucine.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "LEUCINE",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 223.982,
+          "y": 30.136
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "MIOS",
+          "id": "MIOS",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "MIOS",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MIOS",
+          "source_refs": [
+            "uniprot:Q9NXC5"
+          ],
+          "uniprot_id": "Q9NXC5"
+        },
+        "position": {
+          "x": -185.514,
+          "y": 129.076
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "MTORC1",
+          "localization": [],
+          "module": "01-core-complexes",
+          "node_id": "MTORC1",
+          "node_type": "complex",
+          "pathway_role": "Nutrient-sensitive mTOR kinase complex.",
+          "pdb_ids": [
+            "5H64",
+            "4JSV",
+            "6SB2"
+          ],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "MTORC1",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 49.603,
+          "y": -220.489
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "NPRL2",
+          "id": "NPRL2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "NPRL2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "NPRL2",
+          "source_refs": [
+            "uniprot:Q8WTW4"
+          ],
+          "uniprot_id": "Q8WTW4"
+        },
+        "position": {
+          "x": 112.363,
+          "y": 196.088
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "NPRL3",
+          "id": "NPRL3",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "NPRL3",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "NPRL3",
+          "source_refs": [
+            "uniprot:Q12980"
+          ],
+          "uniprot_id": "Q12980"
+        },
+        "position": {
+          "x": -251.511,
+          "y": -80.239
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "RAGULATOR",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "RAGULATOR",
+          "node_type": "complex",
+          "pathway_role": "LAMTOR1-5 lysosomal Rag scaffold.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RAGULATOR",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 239.657,
+          "y": -110.728
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RRAGA",
+          "id": "RRAGA",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "RRAGA",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RRAGA",
+          "source_refs": [
+            "uniprot:Q7L523"
+          ],
+          "uniprot_id": "Q7L523"
+        },
+        "position": {
+          "x": -101.92,
+          "y": 243.533
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RRAGB",
+          "id": "RRAGB",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "RRAGB",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RRAGB",
+          "source_refs": [
+            "uniprot:Q5VZM2"
+          ],
+          "uniprot_id": "Q5VZM2"
+        },
+        "position": {
+          "x": -89.351,
+          "y": -248.42
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RRAGC",
+          "id": "RRAGC",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "RRAGC",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RRAGC",
+          "source_refs": [
+            "uniprot:Q9HB90"
+          ],
+          "uniprot_id": "Q9HB90"
+        },
+        "position": {
+          "x": 233.69,
+          "y": 122.821
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "RRAGD",
+          "id": "RRAGD",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "RRAGD",
+          "node_type": "gtpase",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "RRAGD",
+          "source_refs": [
+            "uniprot:Q9NQL2"
+          ],
+          "uniprot_id": "Q9NQL2"
+        },
+        "position": {
+          "x": -255.28,
+          "y": 67.291
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": "CHEBI:15414",
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "SAM",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SAM",
+          "node_type": "metabolite",
+          "pathway_role": "S-adenosyl-L-methionine.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SAM",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 142.781,
+          "y": -222.058
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SAMTOR",
+          "id": "SAMTOR",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SAMTOR",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SAMTOR",
+          "source_refs": [
+            "uniprot:Q1RMZ1"
+          ],
+          "uniprot_id": "Q1RMZ1"
+        },
+        "position": {
+          "x": 44.715,
+          "y": 260.186
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SEC13",
+          "id": "SEC13",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SEC13",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SEC13",
+          "source_refs": [
+            "uniprot:P55735"
+          ],
+          "uniprot_id": "P55735"
+        },
+        "position": {
+          "x": -208.725,
+          "y": -161.648
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SEH1L",
+          "id": "SEH1L",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SEH1L",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SEH1L",
+          "source_refs": [
+            "uniprot:Q96EE3"
+          ],
+          "uniprot_id": "Q96EE3"
+        },
+        "position": {
+          "x": 263.099,
+          "y": -21.797
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SESN1",
+          "id": "SESN1",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SESN1",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SESN1",
+          "source_refs": [
+            "uniprot:Q9Y6P5"
+          ],
+          "uniprot_id": "Q9Y6P5"
+        },
+        "position": {
+          "x": -179.277,
+          "y": 193.793
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SESN2",
+          "id": "SESN2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SESN2",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SESN2",
+          "source_refs": [
+            "uniprot:P58004"
+          ],
+          "uniprot_id": "P58004"
+        },
+        "position": {
+          "x": 1.473,
+          "y": -301.996
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SESN3",
+          "id": "SESN3",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SESN3",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SESN3",
+          "source_refs": [
+            "uniprot:P58005"
+          ],
+          "uniprot_id": "P58005"
+        },
+        "position": {
+          "x": 202.909,
+          "y": 223.678
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SLC38A9",
+          "id": "SLC38A9",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SLC38A9",
+          "node_type": "sensor",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SLC38A9",
+          "source_refs": [
+            "uniprot:Q8NBW4"
+          ],
+          "uniprot_id": "Q8NBW4"
+        },
+        "position": {
+          "x": -300.711,
+          "y": -27.87
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SLC3A2",
+          "id": "SLC3A2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SLC3A2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SLC3A2",
+          "source_refs": [
+            "uniprot:P08195"
+          ],
+          "uniprot_id": "P08195"
+        },
+        "position": {
+          "x": 240.561,
+          "y": -182.577
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SLC7A5",
+          "id": "SLC7A5",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SLC7A5",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SLC7A5",
+          "source_refs": [
+            "uniprot:Q01650"
+          ],
+          "uniprot_id": "Q01650"
+        },
+        "position": {
+          "x": -54.053,
+          "y": 297.123
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "SZT2",
+          "id": "SZT2",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "SZT2",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "SZT2",
+          "source_refs": [
+            "uniprot:Q5T011"
+          ],
+          "uniprot_id": "Q5T011"
+        },
+        "position": {
+          "x": -160.847,
+          "y": -255.602
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "id": "V-ATPASE",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "V-ATPASE",
+          "node_type": "complex",
+          "pathway_role": "Vacuolar ATPase amino-acid signaling complex.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "V-ATPASE",
+          "source_refs": [],
+          "uniprot_id": null
+        },
+        "position": {
+          "x": 291.26,
+          "y": 79.822
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "WDR24",
+          "id": "WDR24",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "WDR24",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "WDR24",
+          "source_refs": [
+            "uniprot:Q96S15"
+          ],
+          "uniprot_id": "Q96S15"
+        },
+        "position": {
+          "x": -268.685,
+          "y": 137.885
+        }
+      },
+      {
+        "data": {
+          "aliases": [],
+          "chebi_id": null,
+          "chembl_id": null,
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": "WDR59",
+          "id": "WDR59",
+          "localization": [],
+          "module": "04-amino-acid-sensing",
+          "node_id": "WDR59",
+          "node_type": "regulator",
+          "pathway_role": "Curated mTOR pathway protein.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "WDR59",
+          "source_refs": [
+            "uniprot:Q6PJI9"
+          ],
+          "uniprot_id": "Q6PJI9"
+        },
+        "position": {
+          "x": 104.98,
+          "y": -283.166
+        }
+      }
+    ]
+  },
+  "module": {
+    "figure": "Fig 3",
+    "id": "3",
+    "slug": "amino-acid-sensing",
+    "source_modules": [
+      "04-amino-acid-sensing"
+    ],
+    "title": "Amino-acid sensing: Rag-Ragulator-GATOR-KICSTOR"
+  },
+  "schema_version": "0.3.0"
+}
