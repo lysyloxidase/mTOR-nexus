@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.10
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: local
+    hooks:
+      - id: cff-lint
+        name: Validate CITATION.cff
+        entry: cffconvert --validate
+        language: system
+        files: ^CITATION\.cff$
+        pass_filenames: false
+      - id: codemeta
+        name: Validate codemeta.json
+        entry: python -m mtor_nexus.utils.codemeta_check
+        language: system
+        files: ^codemeta\.json$
+        pass_filenames: false

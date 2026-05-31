@@ -1,0 +1,15 @@
+site_name: mTOR-NEXUS
+site_description: Provenance-first interactive mTOR signaling atlas
+repo_url: https://github.com/lysyloxidase/mtor-nexus
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Methodology: methodology.md
+  - Graph schema: graph-schema.md
+  - Tier and species rubric: tier-species-rubric.md
+  - Data sources: data-sources.md
+  - Nomenclature guards: nomenclature-guards.md
+  - Caveats: caveats.md
+  - AI model cards: ai-model-cards.md
+  - API reference: api-reference.md

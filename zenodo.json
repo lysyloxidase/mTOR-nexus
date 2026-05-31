@@ -1,0 +1,19 @@
+{
+  "title": "mTOR-NEXUS: An Interactive mTOR Pathway Atlas and AI Drug-Discovery Engine",
+  "description": "A provenance-first heterogeneous graph atlas of mTOR signaling and foundation for AI-assisted drug discovery.",
+  "creators": [
+    {
+      "name": "Stanczak, Mikolaj",
+      "affiliation": "Independent"
+    }
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "mTOR signaling",
+    "knowledge graph",
+    "kinase selectivity",
+    "drug discovery"
+  ],
+  "upload_type": "software",
+  "access_right": "open"
+}

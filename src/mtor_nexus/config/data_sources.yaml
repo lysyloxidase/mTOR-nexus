@@ -1,0 +1,13 @@
+sources:
+  uniprot:
+    api: "https://rest.uniprot.org"
+    release: "2025_04"
+  pdb:
+    api: "https://data.rcsb.org"
+    snapshot: "live"
+  crossref:
+    api: "https://api.crossref.org"
+    snapshot: "live"
+  phosphositeplus:
+    homepage: "https://www.phosphosite.org"
+    access: "manual-license-required"

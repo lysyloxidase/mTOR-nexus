@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mtor-nexus"
+version = "0.1.0"
+description = "Interactive mTOR pathway atlas and AI drug-discovery engine"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Mikolaj Stanczak" }]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "pydantic>=2.10,<3",
+  "pyyaml>=6.0,<7",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "cffconvert>=2.0,<3",
+  "httpx>=0.28,<1",
+  "mkdocs-material>=9.6,<10",
+  "pre-commit>=4.0,<5",
+  "pyright>=1.1.390,<2",
+  "pytest>=8.3,<9",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+mtor-nexus-doi-check = "mtor_nexus.utils.doi_check:main"
+mtor-nexus-pdb-check = "mtor_nexus.utils.pdb_check:main"
+mtor-nexus-uniprot-check = "mtor_nexus.utils.uniprot_check:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mtor_nexus"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pyright]
+include = ["src", "tests"]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"

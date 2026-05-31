@@ -1,0 +1,407 @@
+{
+  "@context": {
+    "@vocab": "https://w3id.org/mtor-nexus/schema/",
+    "citations": "http://purl.org/dc/terms/references",
+    "node_id": "@id"
+  },
+  "schema_version": "0.1.0",
+  "nodes": [
+    {
+      "node_id": "MTOR",
+      "gene_symbol": "MTOR",
+      "protein_name": "Serine/threonine-protein kinase mTOR",
+      "uniprot_id": "P42345",
+      "node_type": "kinase",
+      "pathway_role": "Catalytic kinase shared by mTORC1 and mTORC2.",
+      "localization": ["lysosome", "cytoplasm", "plasma_membrane"],
+      "domains": ["HEAT", "FAT", "FRB", "kinase", "FATC"],
+      "pdb_ids": ["5H64", "6ZWM", "6ZWO", "7DL2", "6CET"],
+      "complex_membership": ["MTORC1", "MTORC2"],
+      "druggable": true,
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RPTOR",
+      "gene_symbol": "RPTOR",
+      "protein_name": "Regulatory-associated protein of mTOR",
+      "uniprot_id": "Q8N122",
+      "node_type": "scaffold",
+      "pathway_role": "mTORC1 scaffold that recognizes TOS-motif substrates.",
+      "localization": ["lysosome", "cytoplasm"],
+      "complex_membership": ["MTORC1"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RICTOR",
+      "gene_symbol": "RICTOR",
+      "protein_name": "Rapamycin-insensitive companion of mTOR",
+      "uniprot_id": "Q6R327",
+      "node_type": "scaffold",
+      "pathway_role": "mTORC2-defining scaffold.",
+      "localization": ["plasma_membrane", "cytoplasm"],
+      "complex_membership": ["MTORC2"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "MLST8",
+      "gene_symbol": "MLST8",
+      "protein_name": "Target of rapamycin complex subunit LST8",
+      "uniprot_id": "Q9BVC4",
+      "node_type": "scaffold",
+      "pathway_role": "Shared mTOR complex subunit.",
+      "localization": ["cytoplasm"],
+      "complex_membership": ["MTORC1", "MTORC2"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "AKT1",
+      "gene_symbol": "AKT1",
+      "protein_name": "RAC-alpha serine/threonine-protein kinase",
+      "uniprot_id": "P31749",
+      "node_type": "kinase",
+      "pathway_role": "Growth-factor-responsive kinase upstream of TSC2 and downstream of mTORC2.",
+      "localization": ["cytoplasm", "plasma_membrane"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "TSC2",
+      "gene_symbol": "TSC2",
+      "protein_name": "Tuberin",
+      "uniprot_id": "P49815",
+      "node_type": "regulator",
+      "pathway_role": "GAP-complex subunit that inhibits RHEB.",
+      "localization": ["lysosome", "cytoplasm"],
+      "disease_associations": ["tuberous sclerosis complex"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RHEB",
+      "gene_symbol": "RHEB",
+      "protein_name": "GTP-binding protein Rheb",
+      "uniprot_id": "Q15382",
+      "node_type": "gtpase",
+      "pathway_role": "Lysosomal GTPase that directly activates mTORC1.",
+      "localization": ["lysosome"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RPS6KB1",
+      "gene_symbol": "RPS6KB1",
+      "protein_name": "Ribosomal protein S6 kinase beta-1",
+      "uniprot_id": "P23443",
+      "node_type": "kinase",
+      "pathway_role": "Canonical TOS-motif mTORC1 substrate and feedback kinase.",
+      "localization": ["cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "EIF4EBP1",
+      "gene_symbol": "EIF4EBP1",
+      "protein_name": "Eukaryotic translation initiation factor 4E-binding protein 1",
+      "uniprot_id": "Q13541",
+      "node_type": "substrate",
+      "pathway_role": "TOS-motif mTORC1 substrate controlling cap-dependent translation.",
+      "localization": ["cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RRAGA",
+      "gene_symbol": "RRAGA",
+      "protein_name": "Ras-related GTP-binding protein A",
+      "uniprot_id": "Q7L523",
+      "node_type": "gtpase",
+      "pathway_role": "Rag heterodimer subunit that recruits mTORC1 to lysosomes.",
+      "localization": ["lysosome"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RRAGC",
+      "gene_symbol": "RRAGC",
+      "protein_name": "Ras-related GTP-binding protein C",
+      "uniprot_id": "Q9HB90",
+      "node_type": "gtpase",
+      "pathway_role": "Rag heterodimer subunit and FLCN GAP target.",
+      "localization": ["lysosome"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "FLCN",
+      "gene_symbol": "FLCN",
+      "protein_name": "Folliculin",
+      "uniprot_id": "Q8NFG4",
+      "node_type": "regulator",
+      "pathway_role": "RagC/D GAP involved in canonical and TFEB-oriented lysosomal signaling.",
+      "localization": ["lysosome", "cytoplasm"],
+      "pdb_ids": ["7UXH"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "TFEB",
+      "gene_symbol": "TFEB",
+      "protein_name": "Transcription factor EB",
+      "uniprot_id": "P19484",
+      "node_type": "transcription_factor",
+      "pathway_role": "Lysosome biogenesis transcription factor regulated by mTORC1.",
+      "localization": ["lysosome", "nucleus", "cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "SESN2",
+      "gene_symbol": "SESN2",
+      "protein_name": "Sestrin-2",
+      "uniprot_id": "P58004",
+      "node_type": "sensor",
+      "pathway_role": "Leucine-responsive regulator of GATOR2.",
+      "localization": ["cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "GATOR2",
+      "protein_name": "GATOR2 complex",
+      "node_type": "complex",
+      "pathway_role": "Amino-acid signaling complex upstream of Rag GTPases.",
+      "localization": ["lysosome", "cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "MTORC1",
+      "protein_name": "mTOR complex 1",
+      "node_type": "complex",
+      "pathway_role": "Nutrient-sensitive mTOR kinase complex.",
+      "localization": ["lysosome", "cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "MTORC2",
+      "protein_name": "mTOR complex 2",
+      "node_type": "complex",
+      "pathway_role": "Growth-factor-responsive mTOR kinase complex.",
+      "localization": ["plasma_membrane", "cytoplasm"],
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RAPAMYCIN",
+      "protein_name": "Rapamycin",
+      "chembl_id": "CHEMBL413",
+      "node_type": "small_molecule",
+      "pathway_role": "Allosteric FRB-directed mTOR inhibitor in complex with FKBP12.",
+      "aliases": ["sirolimus"],
+      "druggable": true,
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "RAPALINK-1",
+      "protein_name": "RapaLink-1",
+      "node_type": "small_molecule",
+      "pathway_role": "Third-generation bivalent FRB and kinase-domain mTOR inhibitor.",
+      "druggable": true,
+      "primary_citations": ["10.1038/nature17963"]
+    },
+    {
+      "node_id": "RMC-5552",
+      "protein_name": "RMC-5552",
+      "node_type": "small_molecule",
+      "pathway_role": "Clinical-stage bi-steric mTORC1-selective inhibitor.",
+      "druggable": true,
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "SAPANISERTIB",
+      "protein_name": "Sapanisertib",
+      "node_type": "small_molecule",
+      "pathway_role": "ATP-competitive mTOR kinase inhibitor.",
+      "aliases": ["MLN0128", "INK128", "TAK-228"],
+      "druggable": true,
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "node_id": "JR-AB2-011",
+      "protein_name": "JR-AB2-011",
+      "node_type": "small_molecule",
+      "pathway_role": "Reported mTORC2-selective inhibitor with disputed selectivity.",
+      "druggable": true,
+      "primary_citations": ["10.1016/j.cell.2017.02.004"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "AKT1",
+      "target": "TSC2",
+      "mechanism": "phosphorylates",
+      "phospho_site": "T1462",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:TSC2:T1462",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "TSC2",
+      "target": "RHEB",
+      "mechanism": "gap_for",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RHEB",
+      "target": "MTORC1",
+      "mechanism": "activates",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "MTORC1",
+      "target": "RPS6KB1",
+      "mechanism": "phosphorylates",
+      "phospho_site": "T389",
+      "recruitment_mode": "tos_motif",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:RPS6KB1:T389",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "MTORC1",
+      "target": "EIF4EBP1",
+      "mechanism": "phosphorylates",
+      "phospho_site": "T37/T46",
+      "recruitment_mode": "tos_motif",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:EIF4EBP1:T37/T46",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RRAGA",
+      "target": "MTORC1",
+      "mechanism": "recruits",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RRAGC",
+      "target": "MTORC1",
+      "mechanism": "recruits",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "FLCN",
+      "target": "RRAGC",
+      "mechanism": "gap_for",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "FLCN",
+      "target": "TFEB",
+      "mechanism": "recruits",
+      "recruitment_mode": "flcn_ragc_gdp",
+      "tier": "robust",
+      "species_evidence": ["structural"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "MTORC1",
+      "target": "TFEB",
+      "mechanism": "phosphorylates",
+      "phospho_site": "S211",
+      "recruitment_mode": "flcn_ragc_gdp",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:TFEB:S211",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "SESN2",
+      "target": "GATOR2",
+      "mechanism": "binds",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "GATOR2",
+      "target": "RRAGA",
+      "mechanism": "activates",
+      "tier": "plausible",
+      "species_evidence": ["human"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "MTORC2",
+      "target": "AKT1",
+      "mechanism": "phosphorylates",
+      "phospho_site": "S473",
+      "recruitment_mode": "msin1",
+      "tier": "robust",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:AKT1:S473",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RAPAMYCIN",
+      "target": "MTOR",
+      "mechanism": "binds",
+      "tier": "robust",
+      "species_evidence": ["structural", "human_and_rodent"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RAPALINK-1",
+      "target": "MTOR",
+      "mechanism": "binds",
+      "tier": "robust",
+      "species_evidence": ["structural", "human"],
+      "citations": ["10.1038/nature17963"]
+    },
+    {
+      "source": "RMC-5552",
+      "target": "MTOR",
+      "mechanism": "binds",
+      "tier": "plausible",
+      "species_evidence": ["in_vitro_biochemical"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "SAPANISERTIB",
+      "target": "MTOR",
+      "mechanism": "binds",
+      "tier": "robust",
+      "species_evidence": ["human", "in_vitro_biochemical"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "JR-AB2-011",
+      "target": "MTORC2",
+      "mechanism": "inhibits",
+      "tier": "plausible",
+      "species_evidence": ["in_vitro_biochemical"],
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "RPS6KB1",
+      "target": "MTOR",
+      "mechanism": "phosphorylates",
+      "phospho_site": "S2448",
+      "tier": "plausible",
+      "species_evidence": ["human_and_rodent"],
+      "phosphositeplus_id": "PSP:MTOR:S2448",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    },
+    {
+      "source": "MTOR",
+      "target": "MTOR",
+      "mechanism": "phosphorylates",
+      "phospho_site": "S2481",
+      "tier": "robust",
+      "species_evidence": ["in_vitro_biochemical"],
+      "phosphositeplus_id": "PSP:MTOR:S2481",
+      "citations": ["10.1016/j.cell.2017.02.004"]
+    }
+  ]
+}

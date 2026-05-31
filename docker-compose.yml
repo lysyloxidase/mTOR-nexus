@@ -1,0 +1,50 @@
+services:
+  neo4j:
+    image: neo4j:5.26-community
+    environment:
+      NEO4J_AUTH: neo4j/mtor-nexus-dev
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "mtor-nexus-dev", "RETURN 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474"
+      - "${NEO4J_BOLT_PORT:-7687}:7687"
+    volumes:
+      - neo4j-data:/data
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      MTOR_NEXUS_GRAPH_PATH: data/processed/mtor-graph.json
+      NEO4J_URI: bolt://neo4j:7687
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    ports:
+      - "${API_PORT:-8000}:8000"
+
+  webapp:
+    build:
+      context: webapp
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEBAPP_PORT:-3000}:3000"
+
+volumes:
+  neo4j-data:

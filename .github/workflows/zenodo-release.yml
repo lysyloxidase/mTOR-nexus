@@ -1,0 +1,23 @@
+name: Zenodo Production DOI
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+jobs:
+  production-deposit:
+    runs-on: ubuntu-latest
+    env:
+      ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require production token
+        run: test -n "$ZENODO_TOKEN"
+      - name: Package repository
+        run: git archive --format=zip --output="mtor-nexus-${GITHUB_REF_NAME}.zip" HEAD
+      - name: Mint production DOI
+        run: scripts/zenodo-deposit.sh https://zenodo.org/api "$ZENODO_TOKEN" "mtor-nexus-${GITHUB_REF_NAME}.zip"

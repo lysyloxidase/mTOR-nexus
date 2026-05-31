@@ -1,0 +1,9 @@
+.git
+.github
+.venv
+.pytest_cache
+.ruff_cache
+node_modules
+site
+webapp/node_modules
+webapp/.next

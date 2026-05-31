@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use mTOR-NEXUS, please cite it using these metadata."
+title: "mTOR-NEXUS: An Interactive mTOR Pathway Atlas and AI Drug-Discovery Engine"
+version: 0.1.0
+date-released: 2026-05-31
+authors:
+  - family-names: "Stanczak"
+    given-names: "Mikolaj"
+    affiliation: "Independent"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/lysyloxidase/mtor-nexus"
+keywords:
+  - mTOR signaling
+  - knowledge graph
+  - kinase selectivity
+  - graph neural network
+  - drug discovery
+  - rapamycin
+  - bi-steric inhibitor
+references:
+  - type: article
+    title: "mTOR Signaling in Growth, Metabolism, and Disease"
+    authors:
+      - family-names: "Saxton"
+        given-names: "Ruth A."
+      - family-names: "Sabatini"
+        given-names: "David M."
+    doi: "10.1016/j.cell.2017.02.004"
+    year: 2017
+  - type: article
+    title: "Overcoming mTOR resistance mutations with a new-generation mTOR inhibitor"
+    authors:
+      - family-names: "Rodrik-Outmezguine"
+        given-names: "Valeria S."
+    doi: "10.1038/nature17963"
+    year: 2016

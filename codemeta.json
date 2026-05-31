@@ -1,0 +1,25 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "mTOR-NEXUS",
+  "description": "An interactive mTOR pathway atlas and AI drug-discovery engine.",
+  "version": "0.1.0",
+  "datePublished": "2026-05-31",
+  "codeRepository": "https://github.com/lysyloxidase/mtor-nexus",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "programmingLanguage": ["Python", "TypeScript"],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Mikolaj",
+      "familyName": "Stanczak",
+      "affiliation": "Independent"
+    }
+  ],
+  "keywords": [
+    "mTOR signaling",
+    "knowledge graph",
+    "drug discovery",
+    "rapamycin"
+  ]
+}
