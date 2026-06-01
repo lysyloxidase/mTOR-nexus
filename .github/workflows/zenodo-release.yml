@@ -1,23 +1,112 @@
-name: Zenodo Production DOI
+name: Validated v1.0.0 Production Release
 
 on:
   push:
     tags:
-      - "v*"
+      - "v1.0.0"
 
 permissions:
-  contents: read
+  contents: write
+  packages: write
+  pull-requests: write
+
+env:
+  IMAGE: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
 
 jobs:
-  production-deposit:
+  publish-reproduction-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.11"
+      - run: uv sync --all-extras --locked
+      - name: Require an annotated signed release tag
+        run: git cat-file -p "${GITHUB_REF}" | grep -q "BEGIN PGP SIGNATURE"
+      - name: Block unvalidated production releases before image publication
+        run: >-
+          uv run python -m mtor_nexus.release.readiness
+          --require-production
+          --allow-pending-independent-reproduction
+          --allow-pending-zenodo-doi
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.repro
+          push: true
+          tags: ${{ env.IMAGE }}
+
+  independent-reproduction:
+    needs: publish-reproduction-image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - run: docker pull "${IMAGE}"
+      - name: Reproduce code, docs, and deterministic validators from image alone
+        run: timeout 18h docker run --rm "${IMAGE}" make all
+      - name: Verify normalized graph, figure bytes, and Torin2 production gate
+        run: >-
+          docker run --rm "${IMAGE}"
+          uv run python scripts/independent_reproduction.py
+          --require-production
+          --allow-pending-independent-reproduction
+          --allow-pending-zenodo-doi
+      - name: Record the clean-runner image attestation
+        run: >-
+          python scripts/write_independent_reproduction_attestation.py
+          --image "${IMAGE}"
+          --commit-sha "${GITHUB_SHA}"
+          --github-run-id "${GITHUB_RUN_ID}"
+          --repository "${GITHUB_REPOSITORY}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-reproduction-attestation
+          path: data/release/independent-reproduction-passed.json
+
+  zenodo-production-doi:
+    needs: independent-reproduction
     runs-on: ubuntu-latest
     env:
       ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - name: Require production token
-        run: test -n "$ZENODO_TOKEN"
-      - name: Package repository
-        run: git archive --format=zip --output="mtor-nexus-${GITHUB_REF_NAME}.zip" HEAD
-      - name: Mint production DOI
-        run: scripts/zenodo-deposit.sh https://zenodo.org/api "$ZENODO_TOKEN" "mtor-nexus-${GITHUB_REF_NAME}.zip"
+        with:
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.11"
+      - run: uv sync --all-extras --locked
+      - uses: actions/download-artifact@v4
+        with:
+          name: production-reproduction-attestation
+          path: data/release
+      - name: Mint production DOI after independent reproduction
+        run: uv run python scripts/zenodo_release.py --publish --require-production --release-tag "${GITHUB_REF_NAME}"
+      - name: Open DOI metadata pull request
+        run: |
+          branch="zenodo-doi-${GITHUB_REF_NAME}"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git switch -c "${branch}"
+          git add README.md CITATION.cff
+          git commit -m "docs: record minted Zenodo DOI for ${GITHUB_REF_NAME}"
+          git push origin "${branch}"
+          gh pr create \
+            --base main \
+            --head "${branch}" \
+            --title "docs: record minted Zenodo DOI for ${GITHUB_REF_NAME}" \
+            --body "Records the production DOI minted after the validated independent-reproduction gate."

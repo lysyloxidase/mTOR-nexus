@@ -1,7 +1,7 @@
 # mTOR-NEXUS
 
-**A provenance-first interactive atlas of mTOR signaling and a foundation for
-AI-assisted drug discovery.**
+**A provenance-first interactive atlas of mTOR signaling with a refusal-bound
+AI-assisted research-triage prerelease.**
 
 mTOR-NEXUS models proteins, complexes, metabolites, and small molecules as a
 heterogeneous graph. Every interaction carries a pre-registered evidence tier,
@@ -48,7 +48,7 @@ with Neo4j on ports `7474` and `7687`.
 - Licensed PhosphoSitePlus raw exports remain segregated and uncommitted.
 - Licensed COSMIC raw exports remain local-only; open artifacts retain a reconciliation boundary.
 - Public ChEMBL-derived structures and counter-screen labels are refreshed with `make drug-refresh`.
-- Citation metadata lives in `CITATION.cff`, `codemeta.json`, and `zenodo.json`.
+- Citation metadata lives in `CITATION.cff`, `codemeta.json`, and `.zenodo.json`.
 - Weekly CI resolves bibliography DOIs, UniProt accessions, and PDB IDs.
 
 ## AI model cards
@@ -56,6 +56,21 @@ with Neo4j on ports `7474` and `7687`.
 The Phase 6 prerelease model cards document the exact refusal policy and the
 scientific gates that remain blocked. See
 [AI model cards](docs/ai-model-cards.md).
+
+## Publication readiness
+
+The repository includes a fail-closed Zenodo preflight, deterministic
+publication SVGs, an image-only independent-reproduction workflow, a
+[selectivity datasheet](docs/selectivity-datasheet.md), and a
+[submission checklist](docs/submission-checklist.md). The production DOI,
+bioRxiv preprint, validated Torin2 benchmark, A100 run, and independent
+production-image attestation remain pending. Run:
+
+```bash
+uv run python scripts/zenodo_release.py
+```
+
+to inspect the machine-readable blockers without contacting Zenodo.
 
 ## Research-use notice
 

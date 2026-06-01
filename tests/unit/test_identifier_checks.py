@@ -17,6 +17,7 @@ def test_seed_reference_dois_are_extractable() -> None:
     assert extract_dois("refs.bib") == [
         "10.1016/j.cell.2017.02.004",
         "10.1038/nature17963",
+        "10.1038/s41586-022-05652-7",
     ]
 
 

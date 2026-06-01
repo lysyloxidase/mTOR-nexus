@@ -22,7 +22,12 @@ jobs:
       - run: uv run python -m mtor_nexus.graph.build
       - run: uv run python -m mtor_nexus.graph.validate
       - run: uv run python -m mtor_nexus.disease.validate
-      - run: git diff --exit-code -- data/processed data/sources/source-index.json webapp/public/data
+      - run: uv run python -m mtor_nexus.drugs.validate
+      - run: uv run python -m mtor_nexus.ai.validate
+      - run: uv run python -m mtor_nexus.release.figures --check
+      - run: uv run python scripts/independent_reproduction.py
+      - run: uv run python -m mtor_nexus.release.readiness
+      - run: git diff --exit-code -- data/processed data/release data/sources/source-index.json figures webapp/public/data
       - run: uv run python -m mtor_nexus.utils.codemeta_check
       - run: uv run cffconvert --validate
       - run: uv run mkdocs build --strict

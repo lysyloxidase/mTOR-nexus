@@ -1,0 +1,13 @@
+FROM python:3.11-slim
+
+ENV PATH="/root/.local/bin:/opt/mtor-nexus/.venv/bin:${PATH}" \
+    UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates curl git libatomic1 make \
+    && rm -rf /var/lib/apt/lists/* \
+    && curl -LsSf https://astral.sh/uv/install.sh | sh
+WORKDIR /opt/mtor-nexus
+COPY . .
+RUN uv sync --frozen --all-extras
+CMD ["make", "all"]

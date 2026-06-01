@@ -1,0 +1,21 @@
+name: Independent Reproduction Preflight
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build reproduction image without cached layers
+        run: docker build --no-cache --file Dockerfile.repro --tag mtor-nexus-reproduction:preflight .
+      - name: Re-run repository gates from the image alone
+        run: timeout 18h docker run --rm mtor-nexus-reproduction:preflight make all
+      - name: Verify committed deterministic artifacts
+        run: docker run --rm mtor-nexus-reproduction:preflight uv run python scripts/independent_reproduction.py

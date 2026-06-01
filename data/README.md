@@ -15,3 +15,7 @@ ChEMBL bioactivity overlay is `processed/drug-layer.json`.
 `sources/source-index.json` records pinned source handling. Raw
 PhosphoSitePlus and COSMIC snapshots remain under `sources/restricted/` locally
 and are never committed because their licenses require segregation.
+
+`release/publication-readiness.json` records fail-closed `v1.0.0` publication
+gates. It must not be interpreted as a production DOI, model validation, or
+independent-reproduction attestation.

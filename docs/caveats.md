@@ -36,3 +36,6 @@ no-OOM gate has not been run.
 Boltz-2 output is prepared as an external handoff only. Scaffold-explorer and
 resistance outputs are computational hypotheses requiring experimental
 validation.
+
+The complete source Research Report has still not been supplied. Consequently,
+the project cannot claim that every report caveat has been imported verbatim.

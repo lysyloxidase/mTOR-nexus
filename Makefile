@@ -1,6 +1,6 @@
-.PHONY: all quality test docs data graph graph-validate disease-validate drug-validate ai-validate drug-refresh source-probe disease-probe web web-lint web-build train figs
+.PHONY: all quality test docs data graph graph-validate disease-validate drug-validate ai-validate publication-readiness reproduction-verify drug-refresh source-probe disease-probe web web-lint web-build train figs
 
-all: quality test docs graph-validate disease-validate drug-validate ai-validate
+all: quality test docs graph-validate disease-validate drug-validate ai-validate reproduction-verify publication-readiness
 
 quality:
 	uv run ruff check .
@@ -33,6 +33,12 @@ drug-validate:
 ai-validate:
 	uv run python -m mtor_nexus.ai.validate
 
+publication-readiness:
+	uv run python -m mtor_nexus.release.readiness
+
+reproduction-verify:
+	uv run python scripts/independent_reproduction.py
+
 drug-refresh:
 	uv run python -m mtor_nexus.drugs.bioactivity
 
@@ -55,4 +61,4 @@ train:
 	@echo "Blocked: ingest adequate five-target ChEMBL + KLIFS data before training the locked Phase 6 architecture."
 
 figs:
-	@echo "Reproducible figure notebooks will arrive with curated Phase 2 data."
+	uv run python -m mtor_nexus.release.figures

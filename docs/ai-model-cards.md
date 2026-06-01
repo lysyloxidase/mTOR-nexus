@@ -106,3 +106,6 @@ the following without waiver:
 
 The current selectivity release state is `blocked`. A commit message must not
 claim that the Torin2 benchmark passed until a measured artifact proves it.
+
+The accompanying [selectivity training-set datasheet](selectivity-datasheet.md)
+records the committed snapshot composition and limitations.

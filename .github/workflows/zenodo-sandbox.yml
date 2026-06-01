@@ -1,37 +1,20 @@
-name: Zenodo Sandbox DOI
+name: Zenodo Publication Preflight
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pull-requests: write
 
 jobs:
-  sandbox-deposit:
+  preflight:
     runs-on: ubuntu-latest
-    env:
-      ZENODO_SANDBOX_TOKEN: ${{ secrets.ZENODO_SANDBOX_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - name: Explain missing token
-        if: env.ZENODO_SANDBOX_TOKEN == ''
-        run: echo "ZENODO_SANDBOX_TOKEN is not configured; skipping sandbox deposit."
-      - name: Package repository
-        if: env.ZENODO_SANDBOX_TOKEN != ''
-        run: git archive --format=zip --output=mtor-nexus-sandbox.zip HEAD
-      - name: Mint sandbox DOI
-        if: env.ZENODO_SANDBOX_TOKEN != ''
-        id: deposit
-        run: |
-          doi="$(scripts/zenodo-deposit.sh https://sandbox.zenodo.org/api "$ZENODO_SANDBOX_TOKEN" mtor-nexus-sandbox.zip)"
-          echo "doi=$doi" >> "$GITHUB_OUTPUT"
-      - name: Comment DOI on pull request
-        if: env.ZENODO_SANDBOX_TOKEN != '' && github.event_name == 'pull_request'
-        env:
-          GH_TOKEN: ${{ github.token }}
-          DOI: ${{ steps.deposit.outputs.doi }}
-        run: |
-          gh pr comment "${{ github.event.pull_request.number }}" --body "Zenodo sandbox DOI: \`$DOI\`"
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.11"
+      - run: uv sync --all-extras --locked
+      - name: Report production blockers without creating a deposition
+        run: uv run python scripts/zenodo_release.py

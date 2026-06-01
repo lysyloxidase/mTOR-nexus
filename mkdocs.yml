@@ -15,4 +15,9 @@ nav:
   - Nomenclature guards: nomenclature-guards.md
   - Caveats: caveats.md
   - AI model cards: ai-model-cards.md
+  - Selectivity datasheet: selectivity-datasheet.md
+  - Reviewer rebuttal kit: reviewer-rebuttal.md
+  - Submission checklist: submission-checklist.md
+  - Preprint status: preprint-status.md
+  - Release runbook: release-runbook.md
   - API reference: api-reference.md

@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- Fail-closed `v1.0.0` Zenodo publication preflight and signed-tag workflow.
+- Reproduction-only Docker image, clean-runner image workflow, deterministic
+  seven-module SVG and 3D-hero export, checksums, and figure provenance.
+- Reviewer rebuttal kit, selectivity training-set datasheet, preprint status,
+  release runbook, and auditable submission checklist.
+
+### Changed
+
+- Lighthouse enforcement now covers all route families and treats the
+  performance threshold as a release error.
+- Zenodo GitHub metadata now uses the documented `.zenodo.json` filename.
+
 ## [0.6.0] - 2026-06-01
 
 ### Added
