@@ -26,3 +26,13 @@ until the report source is available.
 The Phase 5 bi-steric viewer highlights FRB and ATP sites simultaneously as a
 mechanistic composite. It does not claim that a deposited ternary bi-steric
 co-complex structure exists.
+
+The Phase 6 selectivity GNN is an architecture contract and refusal-bound
+serving shell, not a validated numerical model. The committed ChEMBL snapshot
+is too sparse for the registered five-target quality gates, KLIFS descriptors
+are not yet ingested, the Torin2 benchmark is not measured, and the A100
+no-OOM gate has not been run.
+
+Boltz-2 output is prepared as an external handoff only. Scaffold-explorer and
+resistance outputs are computational hypotheses requiring experimental
+validation.

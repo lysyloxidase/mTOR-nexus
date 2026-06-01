@@ -1,0 +1,17 @@
+{
+  "scientific_release_ready": false,
+  "selectivity_release_status": "blocked",
+  "training_compound_count": 23,
+  "training_label_count": 275,
+  "refusal_checks_passed": true,
+  "cofolding_handoff_check_passed": true,
+  "resistance_triage_check_passed": true,
+  "scaffold_policy_check_passed": true,
+  "documentation_check_passed": true,
+  "blocking_reasons": [
+    "counter-screen training data are too sparse for locked train/validation/test gates: MTOR=16, PIK3CA=11, ATM=2, ATR=7, PRKDC=7",
+    "KLIFS pocket descriptors have not been ingested",
+    "no validated selectivity-GNN artifact is present",
+    "1x A100 no-OOM training gate has not been executed in this environment"
+  ]
+}

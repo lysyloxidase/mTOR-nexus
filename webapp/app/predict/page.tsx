@@ -1,5 +1,5 @@
-import { PlaceholderPage } from "@/components/ui/PlaceholderPage";
+import { PredictionWorkbench } from "@/components/predict/PredictionWorkbench";
 
 export default function PredictPage() {
-  return <PlaceholderPage phase="Phase 6" title="AI prediction interface" />;
+  return <PredictionWorkbench />;
 }

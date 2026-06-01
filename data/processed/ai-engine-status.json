@@ -1,0 +1,122 @@
+{
+  "architecture_contract": {
+    "applicability_domain": "Morgan radius=2, 2048-bit Tanimoto nearest-neighbor threshold >= 0.3",
+    "calibration": "temperature scaling plus split conformal prediction",
+    "depth": 5,
+    "dropout": 0.2,
+    "encoder": "directed_message_passing_neural_network",
+    "ensemble_size": 5,
+    "hidden_size": 300,
+    "pocket_descriptor": "KLIFS 85-residue aligned pocket descriptor, frozen per target",
+    "targets": [
+      "MTOR",
+      "PIK3CA",
+      "ATM",
+      "ATR",
+      "PRKDC"
+    ],
+    "uncertainty": "deep ensemble plus Monte-Carlo dropout"
+  },
+  "cofolding": {
+    "implementation": "external-boltz-2-handoff",
+    "required_experimental_validation": true,
+    "weights_bundled": false
+  },
+  "release": "phase6-prerelease",
+  "resistance": {
+    "implementation": "curated-binding-mode-liability-triage",
+    "required_experimental_validation": true
+  },
+  "scaffold_explorer": {
+    "implementation": "deterministic-heuristic-enumeration",
+    "required_experimental_validation": true,
+    "tag": "red_computational_only_unvalidated",
+    "trained_generator": false
+  },
+  "schema_version": "0.6.0",
+  "scientific_release_ready": false,
+  "selectivity_gnn": {
+    "a100_no_oom_tested": false,
+    "blocking_reasons": [
+      "counter-screen training data are too sparse for locked train/validation/test gates: MTOR=16, PIK3CA=11, ATM=2, ATR=7, PRKDC=7",
+      "KLIFS pocket descriptors have not been ingested",
+      "no validated selectivity-GNN artifact is present",
+      "1x A100 no-OOM training gate has not been executed in this environment"
+    ],
+    "conformal_coverage": {
+      "ATM": null,
+      "ATR": null,
+      "MTOR": null,
+      "PIK3CA": null,
+      "PRKDC": null
+    },
+    "deterministic_weights_passed": null,
+    "klifs_descriptors_loaded": false,
+    "locked_acceptance": {
+      "a100_no_oom_required": true,
+      "conformal_coverage_maximum": 0.92,
+      "conformal_coverage_minimum": 0.88,
+      "deterministic_weights_required": true,
+      "selectivity_auroc_minimum": 0.8,
+      "target_r2_minimums": {
+        "ATM": 0.5,
+        "ATR": 0.5,
+        "MTOR": 0.6,
+        "PIK3CA": 0.55,
+        "PRKDC": 0.5
+      },
+      "torin2_benchmark_required": true
+    },
+    "release_status": "blocked",
+    "selectivity_auroc": null,
+    "target_audit": [
+      {
+        "compound_count": 16,
+        "label_count": 157,
+        "minimum_compounds": 30,
+        "ready": false,
+        "target": "MTOR"
+      },
+      {
+        "compound_count": 11,
+        "label_count": 95,
+        "minimum_compounds": 30,
+        "ready": false,
+        "target": "PIK3CA"
+      },
+      {
+        "compound_count": 2,
+        "label_count": 3,
+        "minimum_compounds": 30,
+        "ready": false,
+        "target": "ATM"
+      },
+      {
+        "compound_count": 7,
+        "label_count": 9,
+        "minimum_compounds": 30,
+        "ready": false,
+        "target": "ATR"
+      },
+      {
+        "compound_count": 7,
+        "label_count": 11,
+        "minimum_compounds": 30,
+        "ready": false,
+        "target": "PRKDC"
+      }
+    ],
+    "target_r2": {
+      "ATM": null,
+      "ATR": null,
+      "MTOR": null,
+      "PIK3CA": null,
+      "PRKDC": null
+    },
+    "torin2_benchmark_passed": null,
+    "training_compound_count": 23,
+    "training_label_count": 275,
+    "training_snapshot": "data/curated/chembl-bioactivity.json",
+    "validated_model_artifact_loaded": false
+  }
+}

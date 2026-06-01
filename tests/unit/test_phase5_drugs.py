@@ -309,7 +309,7 @@ def test_source_index_cli_includes_chembl(
         == "rdkit-standardized-bioactivity-counter-screen-snapshot"
     )
     assert index["derived_artifacts"]["drug_layer"]["path"] == "data/processed/drug-layer.json"
-    assert "indexed 11 pinned source(s)" in capsys.readouterr().out
+    assert "indexed 12 pinned source(s)" in capsys.readouterr().out
 
 
 def test_binding_mode_viewer_contains_site_and_resistance_labels() -> None:

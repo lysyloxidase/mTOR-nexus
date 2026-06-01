@@ -6547,6 +6547,7 @@
       "clinvar": "2026-06-live-eutils",
       "cosmic": "licensed-local-snapshot",
       "kegg": "2025-05",
+      "klifs": "3.2-descriptor-ingestion-pending",
       "pdb": "2025-05-snapshot",
       "phosphositeplus": "2025-snapshot",
       "reactome": "v90",

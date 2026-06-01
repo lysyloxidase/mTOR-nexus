@@ -12,6 +12,10 @@ Phase 4 adds eight disease overlays with open mutation-source references,
 species caveats, and a segregated licensed-source boundary for COSMIC.
 Phase 5 adds 23 alias-normalized inhibitor nodes, ChEMBL bioactivity labels for
 the five-target PIKK counter-screen panel, and a Mol* binding-mode viewer.
+Phase 6 adds a refusal-bound AI triage prerelease: the prediction workbench,
+machine-readable model-readiness audit, external Boltz-2 handoff, resistance
+triage, and red-tagged scaffold explorer are live, while unsupported numerical
+selectivity output remains locked.
 
 !!! warning "Research use only"
     mTOR-NEXUS is not a clinical decision support system.

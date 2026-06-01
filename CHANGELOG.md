@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-01
+
+### Added
+
+- Refusal-bound mTOR-vs-PIKK/PI3K selectivity architecture contract, readiness
+  audit, Morgan-fingerprint domain gate, and machine-readable blocked metrics.
+- External Boltz-2 YAML handoff, binding-mode resistance triage, AKT feedback
+  combination hypothesis, and red-tagged deterministic scaffold explorer.
+- Prediction workbench, AI API routes, complete model cards, and Phase 6
+  prerelease validator.
+
 ## [0.5.0] - 2026-06-01
 
 ### Added
@@ -59,7 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Typed heterogeneous graph schema with tier and species evidence enforcement.
 - Curated seed graph, nomenclature guards, and identifier validation workflows.
 
-[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.6.0
 [0.5.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.5.0
 [0.4.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.4.0
 [0.3.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.3.0

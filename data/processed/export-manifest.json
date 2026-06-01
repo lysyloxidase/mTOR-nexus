@@ -1,5 +1,7 @@
 {
   "artifacts": {
+    "ai-engine-status.json": "b62a6b494597ed87f161059f9bb9b9bf01577539d952b5356e07d89700769605",
+    "ai-validation.json": "50bf09be991fade54e7b33e55068bd88950b953606ede931c5ddd1241ca1d71a",
     "cytoscape/01-core-complexes.json": "8269be156d0a6629350c39d634207220c60110387e6fb3f583a8fdce5c1f38ed",
     "cytoscape/02-growth-factor-pi3k-akt.json": "cf57b5fad073bc02838b05db02df80417f5f7fee9573663b3e8b2e2c12d7697c",
     "cytoscape/03-tsc-rheb.json": "5f2d793a5bbfe0d113a8f90544f3f8ac60311f93c861d5b74dfe2257a3c40218",
@@ -15,7 +17,7 @@
     "disease-layer.json": "6cb812f8d85e8a33f387fb1ee259dcd4b4c73c57987881331fcd7759910f96d8",
     "drug-layer.json": "dacf68478af5b388949668a433d266f0ef699a0954dc38a22652a9dac26b633f",
     "mtor-graph.graphml": "3f78da137f2bb4f9a456cd40f9ba4cf8cc6cf30f5e4c3cb7b07c08708628a228",
-    "mtor-graph.json": "662fbbc072354afdf81f424b650e3c2e41e82f3372d42a97bedc770e5bea3971",
+    "mtor-graph.json": "55f69b51d5481cc9a023775d8b5d9dbb6f21ffe03788d7fc2d92f1964304befd",
     "mtor-graph.jsonld": "32d76a88ae1ede65beb1dfa55eec0989fbcb579b4d421d730f7e5de945d324d3",
     "parquet/edges.parquet": "4feef29bd1b6d724f3242a8ba00611eb719d5fe6209bec1bfbeba1856ed2f797",
     "parquet/nodes.parquet": "f91684bbd0fb1fcdbb0185ce24c754f339c47bec148f33a2229291a4cf529b24"

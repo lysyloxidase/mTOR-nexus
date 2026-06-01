@@ -16,6 +16,7 @@ The machine-readable handling index is `data/sources/source-index.json`.
 | cBioPortal | `2026-06-public-api` | Derived cohort frequencies and API references |
 | COSMIC | `licensed-local-snapshot` | Segregated local reconciliation overlay only |
 | ChEMBL | `2026-06-public-api-derived-snapshot` | RDKit-standardized structures and PIKK counter-screen labels |
+| KLIFS | `3.2`, descriptor ingestion pending | Metadata-only registration for future aligned 85-residue pocket descriptors |
 
 ## Refresh boundaries
 
@@ -27,6 +28,10 @@ artifacts deterministically from the committed catalog and accession snapshot.
 `make disease-probe` calculates the current TCGA Firehose Legacy ER-positive
 breast PIK3CA mutation-only frequency through cBioPortal and verifies the MTOR
 `p.Glu1799Lys` ClinVar search surface. Raw COSMIC rows are never committed.
+
+KLIFS is registered for the Phase 6 architecture contract, but no KLIFS
+descriptor artifact has been ingested. The status document records that
+scientific-release blocker explicitly.
 
 The public live endpoints can move independently of the pins. A live probe is
 an availability check, not permission to mutate a release artifact.

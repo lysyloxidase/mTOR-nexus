@@ -1,6 +1,6 @@
-.PHONY: all quality test docs data graph graph-validate disease-validate drug-validate drug-refresh source-probe disease-probe web web-lint web-build train figs
+.PHONY: all quality test docs data graph graph-validate disease-validate drug-validate ai-validate drug-refresh source-probe disease-probe web web-lint web-build train figs
 
-all: quality test docs graph-validate disease-validate drug-validate
+all: quality test docs graph-validate disease-validate drug-validate ai-validate
 
 quality:
 	uv run ruff check .
@@ -14,6 +14,7 @@ docs:
 	uv run mkdocs build --strict
 
 data:
+	uv run python -m mtor_nexus.ai.validate
 	uv run python -m mtor_nexus.ingest.source_index
 	uv run python -m mtor_nexus.graph.build
 
@@ -28,6 +29,9 @@ disease-validate:
 
 drug-validate:
 	uv run python -m mtor_nexus.drugs.validate
+
+ai-validate:
+	uv run python -m mtor_nexus.ai.validate
 
 drug-refresh:
 	uv run python -m mtor_nexus.drugs.bioactivity
@@ -48,7 +52,7 @@ web-build:
 	docker run --rm -v "$(CURDIR)/webapp:/app" -w /app node:20-alpine npm run build
 
 train:
-	@echo "Phase 6 model training is not implemented yet."
+	@echo "Blocked: ingest adequate five-target ChEMBL + KLIFS data before training the locked Phase 6 architecture."
 
 figs:
 	@echo "Reproducible figure notebooks will arrive with curated Phase 2 data."

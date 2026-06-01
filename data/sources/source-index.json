@@ -1,5 +1,13 @@
 {
   "derived_artifacts": {
+    "ai_engine_status": {
+      "fields": [
+        "scientific_release_ready",
+        "selectivity_gnn",
+        "architecture_contract"
+      ],
+      "path": "data/processed/ai-engine-status.json"
+    },
     "disease_layer": {
       "fields": [
         "disease_classes",
@@ -34,7 +42,7 @@
       "record_count": 219
     }
   },
-  "schema_version": "0.5.0",
+  "schema_version": "0.6.0",
   "segregated_raw_sources": [
     "cosmic",
     "phosphositeplus"
@@ -95,6 +103,16 @@
       "redistribution": "metadata-only",
       "url": "https://rest.kegg.jp",
       "version": "2025-05"
+    },
+    "klifs": {
+      "handling": "aligned-pocket-descriptor-ingestion-pending",
+      "license": "open-use-see-klifs-faq",
+      "options": {
+        "note": "The Phase 6 architecture contract requires aligned kinase-pocket descriptors; no descriptor snapshot is committed yet."
+      },
+      "redistribution": "metadata-only",
+      "url": "https://klifs.net",
+      "version": "3.2-descriptor-ingestion-pending"
     },
     "pdb": {
       "handling": "resolved-structure-identifiers",

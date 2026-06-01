@@ -19,6 +19,7 @@ SOURCE_HANDLING = {
     "cbioportal": "derived-cohort-frequency-overlay",
     "cosmic": "segregated-licensed-local-reconciliation-overlay",
     "chembl": "rdkit-standardized-bioactivity-counter-screen-snapshot",
+    "klifs": "aligned-pocket-descriptor-ingestion-pending",
 }
 
 
@@ -30,7 +31,7 @@ def build_source_index(
     registry = load_source_registry()
     accession_count = len(json.loads(Path(accession_path).read_text(encoding="utf-8")))
     return {
-        "schema_version": "0.5.0",
+        "schema_version": "0.6.0",
         "sources": {
             name: {
                 "version": source.version,
@@ -59,6 +60,10 @@ def build_source_index(
             "drug_layer": {
                 "path": "data/processed/drug-layer.json",
                 "fields": ["generations", "drugs", "target_links", "bioactivity"],
+            },
+            "ai_engine_status": {
+                "path": "data/processed/ai-engine-status.json",
+                "fields": ["scientific_release_ready", "selectivity_gnn", "architecture_contract"],
             },
         },
         "segregated_raw_sources": sorted(restricted_sources(registry)),

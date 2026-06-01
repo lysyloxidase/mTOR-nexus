@@ -30,3 +30,12 @@ labels enter the open normalized graph.
 The project includes machine-readable citation metadata, CodeMeta metadata,
 Zenodo deposit metadata, stable biological identifiers, explicit licensing,
 and scheduled identifier-resolution checks.
+
+## AI prerelease policy
+
+The Phase 6 serving surface is fail-closed. RDKit standardization runs before
+Morgan radius-2 fingerprint comparison against committed ChEMBL-derived
+structures. Queries with nearest-neighbor Tanimoto below `0.3` are refused as
+out of domain. In-domain queries are also refused until the registered
+five-target architecture passes its locked metrics, Torin2 benchmark,
+deterministic-weight check, and single-A100 no-OOM run.

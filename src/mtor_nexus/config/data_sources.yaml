@@ -62,3 +62,9 @@ sources:
     license: "CC-BY-SA-3.0"
     redistribution: "open"
     note: "Committed drug overlays retain RDKit-standardized structures and selected bioactivity labels."
+  klifs:
+    version: "3.2-descriptor-ingestion-pending"
+    url: "https://klifs.net"
+    license: "open-use-see-klifs-faq"
+    redistribution: "metadata-only"
+    note: "The Phase 6 architecture contract requires aligned kinase-pocket descriptors; no descriptor snapshot is committed yet."

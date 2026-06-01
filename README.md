@@ -13,6 +13,10 @@ Fiber global explorer and seven synchronized Cytoscape.js SBGN-PD diagrams.
 Phase 4 adds eight disease-class overlays and HGVS-validated mutation mappings.
 Phase 5 adds an alias-normalized inhibitor catalog, RDKit-standardized ChEMBL
 counter-screen labels, and a Mol* binding-mode viewer.
+Phase 6 adds a refusal-bound AI triage prerelease with a machine-readable
+readiness audit, explicit out-of-domain handling, an external Boltz-2 handoff,
+resistance triage, and red-tagged scaffold exploration. Numerical selectivity
+prediction remains locked until the registered scientific gates pass.
 
 ## Why this atlas is strict
 
@@ -31,9 +35,9 @@ uv run pytest
 docker compose up --build
 ```
 
-The API serves `GET /health`, `GET /graph`, `GET /diseases`, and `GET /drugs` on
-port `8000`. The webapp is exposed on port `3000`, with Neo4j on ports `7474`
-and `7687`.
+The API serves the graph overlays plus `GET /ai/status`, `POST /ai/predict`,
+and `GET /ai/scaffolds` on port `8000`. The webapp is exposed on port `3000`,
+with Neo4j on ports `7474` and `7687`.
 
 ## Provenance and FAIR governance
 
@@ -49,9 +53,9 @@ and `7687`.
 
 ## AI model cards
 
-No predictive model ships in Phase 2. Each future model must receive a model
-card before it can be surfaced by the application. The required template is
-documented in [AI model cards](docs/ai-model-cards.md).
+The Phase 6 prerelease model cards document the exact refusal policy and the
+scientific gates that remain blocked. See
+[AI model cards](docs/ai-model-cards.md).
 
 ## Research-use notice
 
