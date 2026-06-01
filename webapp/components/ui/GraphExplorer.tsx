@@ -1,63 +1,35 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import { ModuleDiagram } from "@/components/cytoscape/ModuleDiagram";
-import { MTORGraph3D } from "@/components/three/MTORGraph3D";
-import { DiseaseOverlay } from "@/components/disease/DiseaseOverlay";
-import type { GraphDocument } from "@/lib/schema";
-import { manuscriptModules } from "@/lib/visual";
-import { useMTORStore } from "@/store/mtor";
-import { LegendPanel } from "./LegendPanel";
-import { NodeCard } from "./NodeCard";
-import { PathwayLensSwitcher } from "./PathwayLensSwitcher";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+
+const ActiveGraphExplorer = dynamic(
+  () => import("./ActiveGraphExplorer").then((module) => module.ActiveGraphExplorer),
+  {
+    loading: () => <p className="graph-loading">Loading pathway explorer...</p>,
+    ssr: false,
+  },
+);
 
 export function GraphExplorer() {
-  const [graph, setGraph] = useState<GraphDocument | null>(null);
-  const selectedNode = useMTORStore((state) => state.selectedNode);
-  const selectedModule = useMTORStore((state) => state.selectedModule);
-  const selectModule = useMTORStore((state) => state.selectModule);
-  useEffect(() => {
-    fetch("/data/mtor-graph.json")
-      .then((response) => response.json() as Promise<GraphDocument>)
-      .then(setGraph);
-  }, []);
-  const node = useMemo(
-    () => graph?.nodes.find((candidate) => candidate.node_id === selectedNode),
-    [graph, selectedNode],
-  );
+  const [active, setActive] = useState(false);
   return (
     <main className="explorer-main">
-      <section className="explorer-heading">
-        <div>
+      {active ? (
+        <ActiveGraphExplorer />
+      ) : (
+        <section className="explorer-intro">
           <p className="eyebrow">Global 3D pathway explorer</p>
           <h1>Pathway atlas</h1>
-        </div>
-        <PathwayLensSwitcher />
-      </section>
-      <section className="explorer-grid">
-        <MTORGraph3D />
-        <aside className="explorer-sidebar">
-          <DiseaseOverlay />
-          <LegendPanel />
-          {node && graph ? <NodeCard compact edges={graph.edges} node={node} /> : (
-            <article className="node-card">
-              <p className="panel-kicker">Selection</p>
-              <h2>Choose a node</h2>
-              <p>Click a 3D shape or a glyph in the module diagram to inspect its evidence.</p>
-            </article>
-          )}
-        </aside>
-      </section>
-      <section className="module-section">
-        <div className="module-tabs" aria-label="Manuscript module">
-          {manuscriptModules.map(([id, label]) => (
-            <button className={selectedModule === id ? "active" : ""} key={id} onClick={() => selectModule(id)}>
-              {id}. {label}
-            </button>
-          ))}
-        </div>
-        <ModuleDiagram compact moduleId={selectedModule} />
-      </section>
+          <p className="lede">
+            Load the interactive workspace to explore synchronized 3D and SBGN-PD
+            views, evidence lenses, disease overlays, and node-level citations.
+          </p>
+          <button className="graph-activation-button" onClick={() => setActive(true)}>
+            Launch pathway explorer
+          </button>
+        </section>
+      )}
     </main>
   );
 }

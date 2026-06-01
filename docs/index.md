@@ -3,6 +3,8 @@
 mTOR-NEXUS is a provenance-first interactive atlas of mTOR signaling and a
 foundation for AI-assisted drug discovery.
 
+Maintainer: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 The current release provides a 263-node, 240-edge pathway graph, evidence
 governance,
 stable-identifier checks, deterministic exchange artifacts, and a Neo4j load

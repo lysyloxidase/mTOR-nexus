@@ -1,6 +1,7 @@
 site_name: mTOR-NEXUS
 site_description: Provenance-first interactive mTOR signaling atlas
 repo_url: https://github.com/lysyloxidase/mtor-nexus
+copyright: Maintained by lysyloxidase
 theme:
   name: material
 nav:

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MTORGraph3D } from "@/components/three/MTORGraph3D";
+import { LazyMTORGraph3D } from "@/components/three/LazyMTORGraph3D";
 
 const principles = [
   ["Dual-scale navigation", "Move from the global 3D pathway to seven publication-oriented SBGN-PD diagrams."],
@@ -23,7 +23,7 @@ export default function Home() {
             <Link href="/module/1">Open SBGN modules</Link>
           </div>
         </div>
-        <MTORGraph3D compact />
+        <LazyMTORGraph3D compact />
       </section>
       <section className="principles" aria-label="Project principles">
         {principles.map(([title, description]) => (

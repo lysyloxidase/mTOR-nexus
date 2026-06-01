@@ -121,6 +121,18 @@ footer { margin-top: 4rem; }
 .graph-3d-compact { height: 34rem; min-height: 28rem; }
 .graph-loading { color: #9db6a5; left: 1.2rem; position: absolute; top: 1rem; }
 .floating-action { left: 1rem; position: absolute; top: 1rem; z-index: 5; }
+.graph-activation { align-items: center; display: flex; padding: 2rem; }
+.graph-activation div, .explorer-intro { max-width: 42rem; }
+.graph-activation p, .explorer-intro p { color: #a9c0b0; line-height: 1.6; }
+.graph-activation-button {
+  background: #8be7aa;
+  border: 0;
+  border-radius: 999px;
+  color: #0a1c12;
+  font-weight: 800;
+  padding: 0.72rem 1rem;
+}
+.explorer-intro { padding-top: 4rem; }
 .fps-counter, .phospho-sprite {
   background: rgba(8, 19, 15, 0.84);
   border: 1px solid rgba(139, 231, 170, 0.4);

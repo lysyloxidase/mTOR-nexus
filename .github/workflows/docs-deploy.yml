@@ -6,6 +6,12 @@ on:
     paths:
       - "docs/**"
       - "mkdocs.yml"
+      - "README.md"
+      - "CITATION.cff"
+      - ".zenodo.json"
+      - "codemeta.json"
+      - "LICENSE"
+      - "pyproject.toml"
 
 permissions:
   contents: write
@@ -19,4 +25,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: uv sync --all-extras --locked
+      - name: Attribute published documentation
+        run: |
+          git config user.name lysyloxidase
+          git config user.email 230636274+lysyloxidase@users.noreply.github.com
       - run: uv run mkdocs gh-deploy --force
