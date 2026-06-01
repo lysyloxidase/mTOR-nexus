@@ -12,7 +12,7 @@ def test_health_endpoint() -> None:
 
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "version": "0.4.0"}
+    assert response.json() == {"status": "ok", "version": "0.5.0"}
 
 
 def test_graph_endpoint() -> None:
@@ -29,3 +29,11 @@ def test_disease_endpoint() -> None:
     response = client.get("/diseases")
     assert response.status_code == 200
     assert len(response.json()["disease_classes"]) == 8
+
+
+def test_drug_endpoint() -> None:
+    """Serve the normalized Phase 5 inhibitor and bioactivity overlay."""
+
+    response = client.get("/drugs")
+    assert response.status_code == 200
+    assert len(response.json()["drugs"]) == 23

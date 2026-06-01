@@ -13,5 +13,6 @@ class EvidenceSource(StrEnum):
     STRING = "string"
     BIOGRID = "biogrid"
     PHOSPHOSITEPLUS = "phosphositeplus"
+    CHEMBL = "chembl"
     LITERATURE = "literature"
     CURATED = "curated"

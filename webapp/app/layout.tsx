@@ -21,6 +21,7 @@ export default function RootLayout({
             <Link href="/graph">3D atlas</Link>
             <Link href="/module/1">SBGN modules</Link>
             <Link href="/disease/cancer">Disease</Link>
+            <Link href="/drug/sirolimus">Drugs</Link>
             <Link href="/predict">Predict</Link>
           </nav>
         </header>

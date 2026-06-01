@@ -1,4 +1,4 @@
-"""API surface for health checks, pathway retrieval, and disease overlays."""
+"""API surface for health checks, pathway retrieval, and overlay documents."""
 
 import json
 from pathlib import Path
@@ -33,3 +33,11 @@ def diseases() -> dict[str, Any]:
 
     with Path(settings.disease_path).open(encoding="utf-8") as disease_file:
         return json.load(disease_file)
+
+
+@app.get("/drugs")
+def drugs() -> dict[str, Any]:
+    """Return the normalized inhibitor pharmacology and bioactivity layer."""
+
+    with Path(settings.drug_path).open(encoding="utf-8") as drug_file:
+        return json.load(drug_file)

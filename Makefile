@@ -1,6 +1,6 @@
-.PHONY: all quality test docs data graph graph-validate disease-validate source-probe disease-probe web web-lint web-build train figs
+.PHONY: all quality test docs data graph graph-validate disease-validate drug-validate drug-refresh source-probe disease-probe web web-lint web-build train figs
 
-all: quality test docs graph-validate disease-validate
+all: quality test docs graph-validate disease-validate drug-validate
 
 quality:
 	uv run ruff check .
@@ -25,6 +25,12 @@ graph-validate:
 
 disease-validate:
 	uv run python -m mtor_nexus.disease.validate
+
+drug-validate:
+	uv run python -m mtor_nexus.drugs.validate
+
+drug-refresh:
+	uv run python -m mtor_nexus.drugs.bioactivity
 
 source-probe:
 	uv run python -m mtor_nexus.ingest.live_probe

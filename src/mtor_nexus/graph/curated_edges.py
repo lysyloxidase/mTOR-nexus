@@ -8,6 +8,8 @@ replace primary literature or PhosphoSitePlus site review.
 
 from dataclasses import dataclass
 
+from mtor_nexus.drugs.catalog import drug_target_links
+from mtor_nexus.drugs.models import DrugTargetLink
 from mtor_nexus.graph.catalog import SAxton_2017
 from mtor_nexus.schema import (
     EdgeMechanism,
@@ -297,30 +299,6 @@ TURNOVER_SPECS = [
     EdgeSeed("KLHL22", "DEPDC5", EdgeMechanism.UBIQUITINATES),
 ]
 
-DRUG_SPECS = [
-    EdgeSeed("SIROLIMUS", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("TEMSIROLIMUS", "MTORC1", EdgeMechanism.INHIBITS),
-    EdgeSeed("EVEROLIMUS", "MTORC1", EdgeMechanism.INHIBITS),
-    EdgeSeed("RIDAFOROLIMUS", "MTORC1", EdgeMechanism.INHIBITS),
-    EdgeSeed("ZOTAROLIMUS", "MTORC1", EdgeMechanism.INHIBITS),
-    EdgeSeed("TORIN1", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("TORIN2", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("PP242", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("AZD8055", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("VISTUSERTIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("SAPANISERTIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("OSI-027", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("ONATASERTIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("GDC-0349", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("DACTOLISIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("GEDATOLISIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("OMIPALISIB", "MTOR", EdgeMechanism.INHIBITS),
-    EdgeSeed("RAPALINK-1", "MTOR", EdgeMechanism.BINDS),
-    EdgeSeed("RMC-5552", "MTOR", EdgeMechanism.BINDS),
-    EdgeSeed("RMC-6272", "MTOR", EdgeMechanism.BINDS),
-    EdgeSeed("JR-AB2-011", "MTORC2", EdgeMechanism.INHIBITS),
-]
-
 
 def _species_for(spec: EdgeSeed, index: int) -> list[SpeciesEvidence]:
     """Assign explicit initial provenance flags for curator review."""
@@ -367,6 +345,24 @@ def _materialize(
     )
 
 
+def _materialize_drug(link: DrugTargetLink) -> MTOREdge:
+    """Convert a typed pharmacology link into a graph mechanism edge."""
+
+    citations = [
+        ref.removeprefix("literature:") for ref in link.source_refs if ref.startswith("literature:")
+    ] or [SAxton_2017]
+    return MTOREdge(
+        source=link.drug_id.upper(),
+        target=link.target_node_id,
+        mechanism=link.mechanism,
+        tier=link.tier,
+        species_evidence=link.species_evidence,
+        evidence_sources=[EvidenceSource.CHEMBL, EvidenceSource.CURATED],
+        source_refs=link.source_refs,
+        citations=citations,
+    )
+
+
 def curated_edges() -> list[MTOREdge]:
     """Return the normalized Phase 2 edge inventory."""
 
@@ -382,7 +378,5 @@ def curated_edges() -> list[MTOREdge]:
     for section in sections:
         for spec, tier in section:
             edges.append(_materialize(spec, tier, len(edges)))
-    for index, spec in enumerate(DRUG_SPECS):
-        tier = Tier.ROBUST if index < 12 else Tier.PLAUSIBLE if index < 19 else Tier.SPECULATIVE
-        edges.append(_materialize(spec, tier, len(edges), pathway_overlay=False))
+    edges.extend(_materialize_drug(link) for link in drug_target_links())
     return edges

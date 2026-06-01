@@ -7,6 +7,7 @@ The Phase 1 FastAPI service exposes:
 | `GET` | `/health` | Readiness check and package version |
 | `GET` | `/graph` | Curated normalized Phase 2 pathway graph |
 | `GET` | `/diseases` | Phase 4 disease, association, and mutation overlay |
+| `GET` | `/drugs` | Phase 5 inhibitor, target-link, structure, and ChEMBL bioactivity overlay |
 
 Run the development service with:
 

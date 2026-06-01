@@ -22,3 +22,7 @@ until the report source is available.
 
 > mTOR S2481 is an autophosphorylation site (rapamycin-insensitive),
 > predominant in mTORC2 - not an external-kinase target.
+
+The Phase 5 bi-steric viewer highlights FRB and ATP sites simultaneously as a
+mechanistic composite. It does not claim that a deposited ternary bi-steric
+co-complex structure exists.

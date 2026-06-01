@@ -18,6 +18,7 @@ SOURCE_HANDLING = {
     "clinvar": "open-germline-variant-references",
     "cbioportal": "derived-cohort-frequency-overlay",
     "cosmic": "segregated-licensed-local-reconciliation-overlay",
+    "chembl": "rdkit-standardized-bioactivity-counter-screen-snapshot",
 }
 
 
@@ -29,7 +30,7 @@ def build_source_index(
     registry = load_source_registry()
     accession_count = len(json.loads(Path(accession_path).read_text(encoding="utf-8")))
     return {
-        "schema_version": "0.4.0",
+        "schema_version": "0.5.0",
         "sources": {
             name: {
                 "version": source.version,
@@ -54,6 +55,10 @@ def build_source_index(
             "disease_layer": {
                 "path": "data/processed/disease-layer.json",
                 "fields": ["disease_classes", "associations", "mutations"],
+            },
+            "drug_layer": {
+                "path": "data/processed/drug-layer.json",
+                "fields": ["generations", "drugs", "target_links", "bioactivity"],
             },
         },
         "segregated_raw_sources": sorted(restricted_sources(registry)),

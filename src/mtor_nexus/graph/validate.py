@@ -5,6 +5,7 @@ import re
 from collections import Counter
 from dataclasses import asdict, dataclass
 
+from mtor_nexus.drugs.catalog import DRUGS
 from mtor_nexus.graph.build import DEFAULT_JSON
 from mtor_nexus.graph.curated_edges import KEGG_ROOT, REACTOME_ROOT
 from mtor_nexus.schema import EdgeMechanism, MTOREdge, RecruitmentMode, Tier
@@ -68,8 +69,12 @@ def validate_phase2_graph(path: str = DEFAULT_JSON) -> ValidationReport:
     mechanism_counts = Counter(edge.mechanism.value for edge in edges)
     tier_counts = Counter(edge.tier.value for edge in edges)
     tier_distribution = {tier.value: _ratio(tier_counts[tier.value], len(edges)) for tier in Tier}
-    reactome = _ratio(sum(REACTOME_ROOT in edge.source_refs for edge in edges), len(edges))
-    kegg = _ratio(sum(KEGG_ROOT in edge.source_refs for edge in edges), len(edges))
+    drug_ids = {drug_id.upper() for drug_id in DRUGS}
+    pathway_edges = [edge for edge in edges if edge.source not in drug_ids]
+    reactome = _ratio(
+        sum(REACTOME_ROOT in edge.source_refs for edge in pathway_edges), len(pathway_edges)
+    )
+    kegg = _ratio(sum(KEGG_ROOT in edge.source_refs for edge in pathway_edges), len(pathway_edges))
     report = ValidationReport(
         node_count=len(nodes),
         edge_count=len(edges),

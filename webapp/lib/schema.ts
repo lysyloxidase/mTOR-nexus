@@ -191,3 +191,115 @@ export interface DiseaseDocument {
   associations: DiseaseAssociation[];
   mutations: MutationRecord[];
 }
+
+export type BindingMode =
+  | "frb_allosteric"
+  | "atp_competitive"
+  | "dual_pi3k_mtor_atp"
+  | "bisteric_frb_atp"
+  | "rictor_mtor_association";
+
+export interface DrugGeneration {
+  generation_id: string;
+  title: string;
+  mechanism: string;
+  binding_mode: BindingMode;
+  binding_site: string;
+  drug_ids: string[];
+  limitation?: string | null;
+  advantage?: string | null;
+  co_receptor?: string | null;
+}
+
+export interface DrugRecord {
+  drug_id: string;
+  name: string;
+  generation_id: string;
+  chembl_id: string;
+  aliases: string[];
+  mechanism: string;
+  approvals: string[];
+  trials: string[];
+  status?: string | null;
+  use?: string | null;
+  off_target?: string | null;
+  doi?: string | null;
+  potency?: string | null;
+  cns_penetrant: boolean;
+  caveat?: string | null;
+  source_refs: string[];
+}
+
+export interface DrugTargetLink {
+  drug_id: string;
+  target_node_id: string;
+  mechanism: string;
+  binding_mode: BindingMode;
+  tier: Tier;
+  species_evidence: SpeciesEvidence[];
+  source_refs: string[];
+}
+
+export interface StructuralSite {
+  site_id: string;
+  label: string;
+  domain: string;
+  pdb_id: string;
+  color: string;
+  description: string;
+}
+
+export interface ResistanceMutation {
+  mutation_id: string;
+  domain: string;
+  site_id: string;
+  effect: string;
+  color: string;
+  source_refs: string[];
+}
+
+export interface ChemblTarget {
+  gene_symbol: string;
+  chembl_id: string;
+  preferred_name: string;
+}
+
+export interface AssayMetadata {
+  assay_chembl_id: string;
+  assay_type: string;
+  description: string;
+  confidence_score: number;
+}
+
+export interface BioactivityRecord {
+  activity_id: number;
+  drug_id: string;
+  molecule_chembl_id: string;
+  target_gene_symbol: string;
+  target_chembl_id: string;
+  standard_type: string;
+  standard_relation: string;
+  standard_value: number;
+  standard_units: string;
+  assay: AssayMetadata;
+}
+
+export interface CompoundBioactivity {
+  drug_id: string;
+  molecule_chembl_id: string;
+  canonical_smiles: string;
+  rdkit_standardized_smiles: string;
+  activities: BioactivityRecord[];
+}
+
+export interface DrugDocument {
+  schema_version: string;
+  metadata: Record<string, string | boolean | number>;
+  generations: DrugGeneration[];
+  drugs: DrugRecord[];
+  target_links: DrugTargetLink[];
+  structural_sites: StructuralSite[];
+  resistance_mutations: ResistanceMutation[];
+  counter_screen_targets: ChemblTarget[];
+  bioactivity: CompoundBioactivity[];
+}

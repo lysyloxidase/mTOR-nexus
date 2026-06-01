@@ -8,6 +8,15 @@
       ],
       "path": "data/processed/disease-layer.json"
     },
+    "drug_layer": {
+      "fields": [
+        "generations",
+        "drugs",
+        "target_links",
+        "bioactivity"
+      ],
+      "path": "data/processed/drug-layer.json"
+    },
     "normalized_graph": {
       "fields": [
         "nodes",
@@ -25,7 +34,7 @@
       "record_count": 219
     }
   },
-  "schema_version": "0.4.0",
+  "schema_version": "0.5.0",
   "segregated_raw_sources": [
     "cosmic",
     "phosphositeplus"
@@ -48,6 +57,16 @@
       "redistribution": "metadata-only",
       "url": "https://www.cbioportal.org/api",
       "version": "2026-06-public-api"
+    },
+    "chembl": {
+      "handling": "rdkit-standardized-bioactivity-counter-screen-snapshot",
+      "license": "CC-BY-SA-3.0",
+      "options": {
+        "note": "Committed drug overlays retain RDKit-standardized structures and selected bioactivity labels."
+      },
+      "redistribution": "open",
+      "url": "https://www.ebi.ac.uk/chembl/api/data",
+      "version": "2026-06-public-api-derived-snapshot"
     },
     "clinvar": {
       "handling": "open-germline-variant-references",

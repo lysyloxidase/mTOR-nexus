@@ -1,7 +1,7 @@
 {
   "artifacts": {
-    "cytoscape/01-core-complexes.json": "799c25308f6d13531937861ae62d8daa84538f980418e7c8a6cb0ae6ae3d9799",
-    "cytoscape/02-growth-factor-pi3k-akt.json": "552d059a99160f807a219adb08f62623058a7aa286da79b5e83239011920b76f",
+    "cytoscape/01-core-complexes.json": "8269be156d0a6629350c39d634207220c60110387e6fb3f583a8fdce5c1f38ed",
+    "cytoscape/02-growth-factor-pi3k-akt.json": "cf57b5fad073bc02838b05db02df80417f5f7fee9573663b3e8b2e2c12d7697c",
     "cytoscape/03-tsc-rheb.json": "5f2d793a5bbfe0d113a8f90544f3f8ac60311f93c861d5b74dfe2257a3c40218",
     "cytoscape/04-amino-acid-sensing.json": "71b35e4fb72524468b5bf08d2b4bc7fcb2fd3ca65539647f53856ad9be0ad808",
     "cytoscape/05-energy-sensing.json": "04eb972e33e943f219880e724d5f879cdc004c3135a33ae1a28f381c842cd17d",
@@ -11,13 +11,14 @@
     "cytoscape/09-lipid-nucleotide-synthesis.json": "fc8db5c754b57941c3a48335517efa4dc1de823bc711cfb59868466aa4337b41",
     "cytoscape/10-mtorc2-outputs.json": "9a139f0b689c7432b24d0af0ec704491331dc3f996792aa7c5b722de930e4715",
     "cytoscape/11-feedback-crosstalk.json": "037664b30cd7894d7a2957f0ab0b94244c3a23e914eb948069540a81f6233ce0",
-    "cytoscape/12-drugs.json": "2e2494146ba33d7b53c8ea57ff428c8b67e319a0a9ffb738c1b58ce8e0ad7ee2",
+    "cytoscape/12-drugs.json": "7b791a87ca95d165c971fa3fd654f648cce8983c42c780a725ac501ba3e2234c",
     "disease-layer.json": "6cb812f8d85e8a33f387fb1ee259dcd4b4c73c57987881331fcd7759910f96d8",
-    "mtor-graph.graphml": "e8e206616d9d4c803fde5a0fad74d8293e3ed1dc267553e0e79ab354f825ac52",
-    "mtor-graph.json": "25199ac1381bda9cd5dbe5b175bafc4794d4bbebecf129c65d66dcd193025d2c",
-    "mtor-graph.jsonld": "867399fb8494bebf89262471bd491882dfe45fe720d6d95b64f03a8f16c99402",
-    "parquet/edges.parquet": "3ecddebf4cefe2acacdaff7778fbd9ea492f0d0cfcd94c9196ff093a1ed8f485",
-    "parquet/nodes.parquet": "4c674333f60cfbeecc9e5da36e7bca9d0bbe7cbc0089a4cbf54d199bb3b88cff"
+    "drug-layer.json": "dacf68478af5b388949668a433d266f0ef699a0954dc38a22652a9dac26b633f",
+    "mtor-graph.graphml": "3f78da137f2bb4f9a456cd40f9ba4cf8cc6cf30f5e4c3cb7b07c08708628a228",
+    "mtor-graph.json": "662fbbc072354afdf81f424b650e3c2e41e82f3372d42a97bedc770e5bea3971",
+    "mtor-graph.jsonld": "32d76a88ae1ede65beb1dfa55eec0989fbcb579b4d421d730f7e5de945d324d3",
+    "parquet/edges.parquet": "4feef29bd1b6d724f3242a8ba00611eb719d5fe6209bec1bfbeba1856ed2f797",
+    "parquet/nodes.parquet": "f91684bbd0fb1fcdbb0185ce24c754f339c47bec148f33a2229291a4cf529b24"
   },
   "schema_version": "0.2.0"
 }

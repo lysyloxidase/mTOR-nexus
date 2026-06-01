@@ -56,3 +56,9 @@ sources:
     license: "COSMIC-non-commercial-use-terms"
     redistribution: "segregated-non-commercial"
     note: "Raw COSMIC records require a local licensed snapshot and are never committed."
+  chembl:
+    version: "2026-06-public-api-derived-snapshot"
+    url: "https://www.ebi.ac.uk/chembl/api/data"
+    license: "CC-BY-SA-3.0"
+    redistribution: "open"
+    note: "Committed drug overlays retain RDKit-standardized structures and selected bioactivity labels."

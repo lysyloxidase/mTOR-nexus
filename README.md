@@ -5,11 +5,14 @@ AI-assisted drug discovery.**
 
 mTOR-NEXUS models proteins, complexes, metabolites, and small molecules as a
 heterogeneous graph. Every interaction carries a pre-registered evidence tier,
-one or more species-provenance flags, and primary citations. Phase 2 ships a
-curated pathway graph with 261 nodes and 234 evidence-tagged interactions,
+one or more species-provenance flags, and primary citations. The current
+release ships a curated pathway graph with 263 nodes and 240 evidence-tagged
+interactions,
 deterministic exchange formats, and a Neo4j loader. Phase 3 adds a React Three
 Fiber global explorer and seven synchronized Cytoscape.js SBGN-PD diagrams.
 Phase 4 adds eight disease-class overlays and HGVS-validated mutation mappings.
+Phase 5 adds an alias-normalized inhibitor catalog, RDKit-standardized ChEMBL
+counter-screen labels, and a Mol* binding-mode viewer.
 
 ## Why this atlas is strict
 
@@ -28,8 +31,9 @@ uv run pytest
 docker compose up --build
 ```
 
-The API serves `GET /health`, `GET /graph`, and `GET /diseases` on port `8000`. The Phase 4
-webapp is exposed on port `3000`, with Neo4j on ports `7474` and `7687`.
+The API serves `GET /health`, `GET /graph`, `GET /diseases`, and `GET /drugs` on
+port `8000`. The webapp is exposed on port `3000`, with Neo4j on ports `7474`
+and `7687`.
 
 ## Provenance and FAIR governance
 
@@ -39,6 +43,7 @@ webapp is exposed on port `3000`, with Neo4j on ports `7474` and `7687`.
 - Pinned source policy lives in `src/mtor_nexus/config/data_sources.yaml`.
 - Licensed PhosphoSitePlus raw exports remain segregated and uncommitted.
 - Licensed COSMIC raw exports remain local-only; open artifacts retain a reconciliation boundary.
+- Public ChEMBL-derived structures and counter-screen labels are refreshed with `make drug-refresh`.
 - Citation metadata lives in `CITATION.cff`, `codemeta.json`, and `zenodo.json`.
 - Weekly CI resolves bibliography DOIs, UniProt accessions, and PDB IDs.
 

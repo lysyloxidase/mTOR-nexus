@@ -9,6 +9,7 @@ nav:
   - Graph schema: graph-schema.md
   - Visualization: visualization.md
   - Disease layer: disease-layer.md
+  - Drug-discovery layer: drug-discovery-layer.md
   - Tier and species rubric: tier-species-rubric.md
   - Data sources: data-sources.md
   - Nomenclature guards: nomenclature-guards.md

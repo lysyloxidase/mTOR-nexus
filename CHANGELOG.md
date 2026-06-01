@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-01
+
+### Added
+
+- Five inhibitor classes spanning rapalogs, TORKi, dual PI3K-mTOR inhibitors,
+  bi-sterics, and an mTORC2-selective research tool.
+- Alias-normalized drug nodes, 27 evidence-tagged mechanism edges, and enforced
+  separation of RAS(ON) compounds from the mTOR inhibitor catalog.
+- RDKit-standardized ChEMBL structures and a five-target MTOR, PIK3CA, ATM,
+  ATR, and PRKDC counter-screen snapshot for Phase 6 selectivity modeling.
+- Mol* binding-mode routes with FRB, ATP-pocket, mTORC2, and resistance-residue
+  context.
+
 ## [0.4.0] - 2026-06-01
 
 ### Added
@@ -46,7 +59,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Typed heterogeneous graph schema with tier and species evidence enforcement.
 - Curated seed graph, nomenclature guards, and identifier validation workflows.
 
-[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.5.0
 [0.4.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.4.0
 [0.3.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.3.0
 [0.2.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.2.0

@@ -15,6 +15,7 @@ The machine-readable handling index is `data/sources/source-index.json`.
 | ClinVar | `2026-06-live-eutils` | Open germline variant references |
 | cBioPortal | `2026-06-public-api` | Derived cohort frequencies and API references |
 | COSMIC | `licensed-local-snapshot` | Segregated local reconciliation overlay only |
+| ChEMBL | `2026-06-public-api-derived-snapshot` | RDKit-standardized structures and PIKK counter-screen labels |
 
 ## Refresh boundaries
 
@@ -29,3 +30,10 @@ breast PIK3CA mutation-only frequency through cBioPortal and verifies the MTOR
 
 The public live endpoints can move independently of the pins. A live probe is
 an availability check, not permission to mutate a release artifact.
+
+`make drug-refresh` resolves all Phase 5 inhibitor structures through the
+public ChEMBL API, standardizes SMILES with RDKit, and refreshes IC50, Ki, and
+Kd labels for MTOR (`CHEMBL2842`), PIK3CA (`CHEMBL4005`), ATM (`CHEMBL3797`),
+ATR (`CHEMBL5024`), and PRKDC/DNA-PK (`CHEMBL3142`). The supplied report IDs
+were reconciled against the public API before use: for example, `CHEMBL4040`
+is MAPK1 rather than PIK3CA.

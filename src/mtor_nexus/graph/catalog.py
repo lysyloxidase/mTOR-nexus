@@ -8,6 +8,7 @@ snapshot by ``mtor_nexus.ingest.uniprot_refresh``.
 from dataclasses import dataclass, field
 from typing import cast
 
+from mtor_nexus.drugs.catalog import DRUGS as PHARMACOLOGY_DRUGS
 from mtor_nexus.schema import NodeType, SubcellularLocation
 
 CORE = "01-core-complexes"
@@ -345,40 +346,15 @@ NON_PROTEIN_SEEDS = [
 ]
 
 
-def _drug(node_id: str, chembl_id: str, *aliases: str) -> NonProteinSeed:
-    """Build an explicit ChEMBL-backed small-molecule seed."""
-
-    return NonProteinSeed(
-        node_id=node_id,
+DRUG_SEEDS = [
+    NonProteinSeed(
+        node_id=drug.drug_id.upper(),
         module=DRUGS,
         node_type=NodeType.SMALL_MOLECULE,
-        role="Curated mTOR-pathway pharmacology node.",
-        aliases=aliases,
-        chembl_id=chembl_id,
-        source_refs=(f"chembl:{chembl_id}",),
+        role=drug.mechanism,
+        aliases=tuple(alias.upper() for alias in drug.aliases),
+        chembl_id=drug.chembl_id,
+        source_refs=tuple(drug.source_refs),
     )
-
-
-DRUG_SEEDS = [
-    _drug("SIROLIMUS", "CHEMBL413", "RAPAMYCIN"),
-    _drug("TEMSIROLIMUS", "CHEMBL1201182"),
-    _drug("EVEROLIMUS", "CHEMBL1908360"),
-    _drug("RIDAFOROLIMUS", "CHEMBL2103839"),
-    _drug("ZOTAROLIMUS", "CHEMBL219410"),
-    _drug("TORIN1", "CHEMBL1256459"),
-    _drug("TORIN2", "CHEMBL1765602"),
-    _drug("PP242", "CHEMBL1241674"),
-    _drug("AZD8055", "CHEMBL1801204"),
-    _drug("VISTUSERTIB", "CHEMBL2336325", "AZD2014"),
-    _drug("SAPANISERTIB", "CHEMBL3545097", "MLN0128", "INK128", "TAK-228"),
-    _drug("OSI-027", "CHEMBL3120215"),
-    _drug("ONATASERTIB", "CHEMBL3586404", "CC-223"),
-    _drug("GDC-0349", "CHEMBL2139930"),
-    _drug("DACTOLISIB", "CHEMBL1879463", "BEZ235"),
-    _drug("GEDATOLISIB", "CHEMBL592445"),
-    _drug("OMIPALISIB", "CHEMBL1236962"),
-    _drug("RAPALINK-1", "CHEMBL4303783"),
-    _drug("RMC-5552", "CHEMBL5314926"),
-    _drug("RMC-6272", "CHEMBL5441038"),
-    _drug("JR-AB2-011", "CHEMBL5274229"),
+    for drug in PHARMACOLOGY_DRUGS.values()
 ]

@@ -1360,6 +1360,110 @@
           "target": "IRS1",
           "tier": "robust"
         }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "chembl",
+            "curated"
+          ],
+          "id": "e44",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "DACTOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL1879463"
+          ],
+          "species_evidence": [
+            "in_vitro_biochemical"
+          ],
+          "target": "PIK3CA",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "chembl",
+            "curated"
+          ],
+          "id": "e45",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "GEDATOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL592445"
+          ],
+          "species_evidence": [
+            "in_vitro_biochemical"
+          ],
+          "target": "PIK3CA",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "chembl",
+            "curated"
+          ],
+          "id": "e46",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "OMIPALISIB",
+          "source_refs": [
+            "chembl:CHEMBL1236962"
+          ],
+          "species_evidence": [
+            "in_vitro_biochemical"
+          ],
+          "target": "PIK3CA",
+          "tier": "plausible"
+        }
+      },
+      {
+        "data": {
+          "citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "directionality": true,
+          "evidence_sources": [
+            "chembl",
+            "curated"
+          ],
+          "id": "e47",
+          "mechanism": "inhibits",
+          "phospho_site": null,
+          "phosphositeplus_id": null,
+          "recruitment_mode": "none",
+          "source": "VOXTALISIB",
+          "source_refs": [
+            "chembl:CHEMBL3545366"
+          ],
+          "species_evidence": [
+            "in_vitro_biochemical"
+          ],
+          "target": "PIK3CA",
+          "tier": "plausible"
+        }
       }
     ],
     "nodes": [
@@ -2250,6 +2354,120 @@
           ],
           "protein_name": "PIP3",
           "source_refs": [],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "BEZ235"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1879463",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "DACTOLISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "DACTOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL1879463"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "PKI-587",
+            "PF-05212384"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL592445",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "GEDATOLISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "GEDATOLISIB",
+          "source_refs": [
+            "chembl:CHEMBL592445"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "GSK2126458"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL1236962",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "OMIPALISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "OMIPALISIB",
+          "source_refs": [
+            "chembl:CHEMBL1236962"
+          ],
+          "uniprot_id": null
+        }
+      },
+      {
+        "data": {
+          "aliases": [
+            "XL765",
+            "SAR245409"
+          ],
+          "chebi_id": null,
+          "chembl_id": "CHEMBL3545366",
+          "complex_membership": [],
+          "disease_associations": [],
+          "domains": [],
+          "druggable": false,
+          "gene_symbol": null,
+          "localization": [],
+          "module": "12-drugs",
+          "node_id": "VOXTALISIB",
+          "node_type": "small_molecule",
+          "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
+          "pdb_ids": [],
+          "primary_citations": [
+            "10.1016/j.cell.2017.02.004"
+          ],
+          "protein_name": "VOXTALISIB",
+          "source_refs": [
+            "chembl:CHEMBL3545366"
+          ],
           "uniprot_id": null
         }
       }

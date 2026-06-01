@@ -12,3 +12,5 @@ These constraints are enforced by `tests/unit/test_nomenclature.py`.
    predominant in MTORC2. It is not an external-kinase target.
 5. Sapanisertib, MLN0128, INK128, and TAK-228 are the same molecule and must be
    represented by one alias-unified node.
+6. PIK3CA counter-screen labels use ChEMBL target `CHEMBL4005`. The supplied
+   report identifier `CHEMBL4040` resolves to MAPK1 and must not be used.

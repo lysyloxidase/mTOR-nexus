@@ -5905,7 +5905,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -5914,12 +5914,13 @@
       "recruitment_mode": "none",
       "source": "SIROLIMUS",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL413"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "human",
+        "in_vitro_biochemical"
       ],
-      "target": "MTOR",
+      "target": "MTORC1",
       "tier": "robust"
     },
     {
@@ -5928,7 +5929,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -5937,10 +5938,11 @@
       "recruitment_mode": "none",
       "source": "TEMSIROLIMUS",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1201182"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "human",
+        "in_vitro_biochemical"
       ],
       "target": "MTORC1",
       "tier": "robust"
@@ -5951,7 +5953,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -5960,10 +5962,11 @@
       "recruitment_mode": "none",
       "source": "EVEROLIMUS",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1908360"
       ],
       "species_evidence": [
-        "rodent"
+        "human",
+        "in_vitro_biochemical"
       ],
       "target": "MTORC1",
       "tier": "robust"
@@ -5974,7 +5977,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -5983,10 +5986,11 @@
       "recruitment_mode": "none",
       "source": "RIDAFOROLIMUS",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL2103839"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "human",
+        "in_vitro_biochemical"
       ],
       "target": "MTORC1",
       "tier": "robust"
@@ -5997,7 +6001,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6006,10 +6010,11 @@
       "recruitment_mode": "none",
       "source": "ZOTAROLIMUS",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL219410"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "human",
+        "in_vitro_biochemical"
       ],
       "target": "MTORC1",
       "tier": "robust"
@@ -6020,7 +6025,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6029,10 +6034,10 @@
       "recruitment_mode": "none",
       "source": "TORIN1",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1256459"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "robust"
@@ -6043,7 +6048,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6052,13 +6057,13 @@
       "recruitment_mode": "none",
       "source": "TORIN2",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1765602"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6066,7 +6071,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6075,13 +6080,13 @@
       "recruitment_mode": "none",
       "source": "PP242",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1241674"
       ],
       "species_evidence": [
-        "rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6089,7 +6094,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6098,13 +6103,13 @@
       "recruitment_mode": "none",
       "source": "AZD8055",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1801204"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6112,7 +6117,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6121,13 +6126,13 @@
       "recruitment_mode": "none",
       "source": "VISTUSERTIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL2336325"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6135,7 +6140,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6144,13 +6149,13 @@
       "recruitment_mode": "none",
       "source": "SAPANISERTIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL3545097"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6158,7 +6163,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6167,13 +6172,13 @@
       "recruitment_mode": "none",
       "source": "OSI-027",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL3120215"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
-      "tier": "robust"
+      "tier": "plausible"
     },
     {
       "citations": [
@@ -6181,7 +6186,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6190,10 +6195,10 @@
       "recruitment_mode": "none",
       "source": "ONATASERTIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL3586404"
       ],
       "species_evidence": [
-        "rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "plausible"
@@ -6204,7 +6209,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6213,10 +6218,10 @@
       "recruitment_mode": "none",
       "source": "GDC-0349",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL2139930"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "plausible"
@@ -6227,7 +6232,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6236,10 +6241,10 @@
       "recruitment_mode": "none",
       "source": "DACTOLISIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1879463"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "plausible"
@@ -6250,7 +6255,30 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "DACTOLISIB",
+      "source_refs": [
+        "chembl:CHEMBL1879463"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "PIK3CA",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6259,10 +6287,10 @@
       "recruitment_mode": "none",
       "source": "GEDATOLISIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL592445"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "plausible"
@@ -6273,7 +6301,30 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "GEDATOLISIB",
+      "source_refs": [
+        "chembl:CHEMBL592445"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "PIK3CA",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6282,10 +6333,10 @@
       "recruitment_mode": "none",
       "source": "OMIPALISIB",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL1236962"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTOR",
       "tier": "plausible"
@@ -6296,44 +6347,163 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
-      "mechanism": "binds",
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "OMIPALISIB",
+      "source_refs": [
+        "chembl:CHEMBL1236962"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "PIK3CA",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "VOXTALISIB",
+      "source_refs": [
+        "chembl:CHEMBL3545366"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "MTOR",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "VOXTALISIB",
+      "source_refs": [
+        "chembl:CHEMBL3545366"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "PIK3CA",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1038/nature17963"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
       "phospho_site": null,
       "phosphositeplus_id": null,
       "recruitment_mode": "none",
       "source": "RAPALINK-1",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL4303783",
+        "literature:10.1038/nature17963"
       ],
       "species_evidence": [
-        "rodent"
+        "in_vitro_biochemical"
       ],
-      "target": "MTOR",
+      "target": "MTORC1",
       "tier": "plausible"
     },
     {
       "citations": [
-        "10.1016/j.cell.2017.02.004"
+        "10.1021/acs.jmedchem.2c01658"
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
-      "mechanism": "binds",
+      "mechanism": "inhibits",
       "phospho_site": null,
       "phosphositeplus_id": null,
       "recruitment_mode": "none",
       "source": "RMC-5552",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL5314926",
+        "literature:10.1021/acs.jmedchem.2c01658"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
-      "target": "MTOR",
+      "target": "MTORC1",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1021/acs.jmedchem.2c01658"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "RMC-6272",
+      "source_refs": [
+        "chembl:CHEMBL5441038",
+        "literature:10.1021/acs.jmedchem.2c01658"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "MTORC1",
+      "tier": "plausible"
+    },
+    {
+      "citations": [
+        "10.1021/acs.jmedchem.2c01658"
+      ],
+      "directionality": true,
+      "evidence_sources": [
+        "chembl",
+        "curated"
+      ],
+      "mechanism": "inhibits",
+      "phospho_site": null,
+      "phosphositeplus_id": null,
+      "recruitment_mode": "none",
+      "source": "RMC-4627",
+      "source_refs": [
+        "chembl:CHEMBL5440792",
+        "literature:10.1021/acs.jmedchem.2c01658"
+      ],
+      "species_evidence": [
+        "in_vitro_biochemical"
+      ],
+      "target": "MTORC1",
       "tier": "plausible"
     },
     {
@@ -6342,30 +6512,7 @@
       ],
       "directionality": true,
       "evidence_sources": [
-        "literature",
-        "curated"
-      ],
-      "mechanism": "binds",
-      "phospho_site": null,
-      "phosphositeplus_id": null,
-      "recruitment_mode": "none",
-      "source": "RMC-6272",
-      "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
-      ],
-      "species_evidence": [
-        "human_and_rodent"
-      ],
-      "target": "MTOR",
-      "tier": "speculative"
-    },
-    {
-      "citations": [
-        "10.1016/j.cell.2017.02.004"
-      ],
-      "directionality": true,
-      "evidence_sources": [
-        "literature",
+        "chembl",
         "curated"
       ],
       "mechanism": "inhibits",
@@ -6374,10 +6521,10 @@
       "recruitment_mode": "none",
       "source": "JR-AB2-011",
       "source_refs": [
-        "literature:10.1016/j.cell.2017.02.004"
+        "chembl:CHEMBL5274229"
       ],
       "species_evidence": [
-        "human_and_rodent"
+        "in_vitro_biochemical"
       ],
       "target": "MTORC2",
       "tier": "speculative"
@@ -12180,7 +12327,7 @@
       "module": "12-drugs",
       "node_id": "SIROLIMUS",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Allosteric, FKBP12-dependent inhibitors that bind the FRB domain.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12204,7 +12351,7 @@
       "module": "12-drugs",
       "node_id": "TEMSIROLIMUS",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Allosteric, FKBP12-dependent inhibitors that bind the FRB domain.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12228,7 +12375,7 @@
       "module": "12-drugs",
       "node_id": "EVEROLIMUS",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Allosteric, FKBP12-dependent inhibitors that bind the FRB domain.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12252,7 +12399,7 @@
       "module": "12-drugs",
       "node_id": "RIDAFOROLIMUS",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Allosteric, FKBP12-dependent inhibitors that bind the FRB domain.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12276,7 +12423,7 @@
       "module": "12-drugs",
       "node_id": "ZOTAROLIMUS",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Allosteric, FKBP12-dependent inhibitors that bind the FRB domain.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12300,7 +12447,7 @@
       "module": "12-drugs",
       "node_id": "TORIN1",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12324,7 +12471,7 @@
       "module": "12-drugs",
       "node_id": "TORIN2",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12348,7 +12495,7 @@
       "module": "12-drugs",
       "node_id": "PP242",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12372,7 +12519,7 @@
       "module": "12-drugs",
       "node_id": "AZD8055",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12398,7 +12545,7 @@
       "module": "12-drugs",
       "node_id": "VISTUSERTIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12426,7 +12573,7 @@
       "module": "12-drugs",
       "node_id": "SAPANISERTIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12450,7 +12597,7 @@
       "module": "12-drugs",
       "node_id": "OSI-027",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12476,7 +12623,7 @@
       "module": "12-drugs",
       "node_id": "ONATASERTIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12500,7 +12647,7 @@
       "module": "12-drugs",
       "node_id": "GDC-0349",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of the mTOR kinase active site and mTORC1/2.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12526,7 +12673,7 @@
       "module": "12-drugs",
       "node_id": "DACTOLISIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12538,7 +12685,10 @@
       "uniprot_id": null
     },
     {
-      "aliases": [],
+      "aliases": [
+        "PKI-587",
+        "PF-05212384"
+      ],
       "chebi_id": null,
       "chembl_id": "CHEMBL592445",
       "complex_membership": [],
@@ -12550,7 +12700,7 @@
       "module": "12-drugs",
       "node_id": "GEDATOLISIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12562,7 +12712,9 @@
       "uniprot_id": null
     },
     {
-      "aliases": [],
+      "aliases": [
+        "GSK2126458"
+      ],
       "chebi_id": null,
       "chembl_id": "CHEMBL1236962",
       "complex_membership": [],
@@ -12574,7 +12726,7 @@
       "module": "12-drugs",
       "node_id": "OMIPALISIB",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
@@ -12582,6 +12734,33 @@
       "protein_name": "OMIPALISIB",
       "source_refs": [
         "chembl:CHEMBL1236962"
+      ],
+      "uniprot_id": null
+    },
+    {
+      "aliases": [
+        "XL765",
+        "SAR245409"
+      ],
+      "chebi_id": null,
+      "chembl_id": "CHEMBL3545366",
+      "complex_membership": [],
+      "disease_associations": [],
+      "domains": [],
+      "druggable": false,
+      "gene_symbol": null,
+      "localization": [],
+      "module": "12-drugs",
+      "node_id": "VOXTALISIB",
+      "node_type": "small_molecule",
+      "pathway_role": "ATP-competitive inhibitors of PI3K p110 and mTOR.",
+      "pdb_ids": [],
+      "primary_citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "protein_name": "VOXTALISIB",
+      "source_refs": [
+        "chembl:CHEMBL3545366"
       ],
       "uniprot_id": null
     },
@@ -12598,14 +12777,15 @@
       "module": "12-drugs",
       "node_id": "RAPALINK-1",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Rapamycin and MLN0128 joined by a 39-atom linker.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
       ],
       "protein_name": "RAPALINK-1",
       "source_refs": [
-        "chembl:CHEMBL4303783"
+        "chembl:CHEMBL4303783",
+        "literature:10.1038/nature17963"
       ],
       "uniprot_id": null
     },
@@ -12622,14 +12802,15 @@
       "module": "12-drugs",
       "node_id": "RMC-5552",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Bi-steric mTORC1-selective inhibitor.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
       ],
       "protein_name": "RMC-5552",
       "source_refs": [
-        "chembl:CHEMBL5314926"
+        "chembl:CHEMBL5314926",
+        "literature:10.1021/acs.jmedchem.2c01658"
       ],
       "uniprot_id": null
     },
@@ -12646,14 +12827,40 @@
       "module": "12-drugs",
       "node_id": "RMC-6272",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Bivalent inhibitors link an FKBP12-rapamycin FRB binder to an ATP-site inhibitor.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"
       ],
       "protein_name": "RMC-6272",
       "source_refs": [
-        "chembl:CHEMBL5441038"
+        "chembl:CHEMBL5441038",
+        "literature:10.1021/acs.jmedchem.2c01658"
+      ],
+      "uniprot_id": null
+    },
+    {
+      "aliases": [],
+      "chebi_id": null,
+      "chembl_id": "CHEMBL5440792",
+      "complex_membership": [],
+      "disease_associations": [],
+      "domains": [],
+      "druggable": false,
+      "gene_symbol": null,
+      "localization": [],
+      "module": "12-drugs",
+      "node_id": "RMC-4627",
+      "node_type": "small_molecule",
+      "pathway_role": "Bivalent inhibitors link an FKBP12-rapamycin FRB binder to an ATP-site inhibitor.",
+      "pdb_ids": [],
+      "primary_citations": [
+        "10.1016/j.cell.2017.02.004"
+      ],
+      "protein_name": "RMC-4627",
+      "source_refs": [
+        "chembl:CHEMBL5440792",
+        "literature:10.1021/acs.jmedchem.2c01658"
       ],
       "uniprot_id": null
     },
@@ -12670,7 +12877,7 @@
       "module": "12-drugs",
       "node_id": "JR-AB2-011",
       "node_type": "small_molecule",
-      "pathway_role": "Curated mTOR-pathway pharmacology node.",
+      "pathway_role": "Reported blocker of RICTOR-mTOR association.",
       "pdb_ids": [],
       "primary_citations": [
         "10.1016/j.cell.2017.02.004"

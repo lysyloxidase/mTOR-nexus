@@ -328,8 +328,10 @@ class MTORGraphBuilder:
         for module in sorted({node.module for node in graph.nodes}):
             self.to_cytoscape_json(module, str(cytoscape_path / f"{module}.json"))
         from mtor_nexus.disease.export import write_disease_exports
+        from mtor_nexus.drugs.export import write_drug_exports
 
         write_disease_exports(processed_path=str(root_path / "disease-layer.json"))
+        write_drug_exports(processed_path=str(root_path / "drug-layer.json"))
         artifact_paths = sorted(
             path
             for path in root_path.rglob("*")
