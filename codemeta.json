@@ -6,7 +6,7 @@
   "version": "0.6.0",
   "datePublished": "2026-06-01",
   "codeRepository": "https://github.com/lysyloxidase/mtor-nexus",
-  "license": "https://spdx.org/licenses/Apache-2.0",
+  "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": ["Python", "TypeScript"],
   "author": [
     {

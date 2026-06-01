@@ -18,5 +18,5 @@ identifier. Use the issue templates for additions or citation corrections.
 
 ## Licensing
 
-Code contributions are accepted under Apache-2.0. Figures and data
+Code contributions are accepted under MIT. Figures and data
 contributions are accepted under CC-BY-4.0.

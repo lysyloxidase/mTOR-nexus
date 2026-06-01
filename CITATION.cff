@@ -7,7 +7,7 @@ authors:
   - family-names: "lysyloxidase"
     affiliation: "Independent"
 type: software
-license: Apache-2.0
+license: MIT
 repository-code: "https://github.com/lysyloxidase/mtor-nexus"
 keywords:
   - mTOR signaling

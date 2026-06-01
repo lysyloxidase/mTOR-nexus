@@ -37,7 +37,9 @@ def test_deterministic_figure_export_and_checksum_tamper_detection(
     assert figure_exports_reproduce(str(root))
     assert "abc123" in (root / "5" / "provenance.md").read_text(encoding="utf-8")
     assert figures.TFEB_STRUCTURE_DOI in (root / "5" / "provenance.md").read_text(encoding="utf-8")
-    assert "<svg" in (root / "hero" / "hero.svg").read_text(encoding="utf-8")
+    chart = (root / "readme" / "atlas-summary.svg").read_text(encoding="utf-8")
+    assert "<svg" in chart
+    assert "263 nodes | 240 evidence-tagged interactions" in chart
     (root / "1" / "module.svg").write_text("tampered\n", encoding="utf-8")
     assert not figure_checksums_match(str(root))
     assert not figure_exports_reproduce(str(root))

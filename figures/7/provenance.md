@@ -1,6 +1,6 @@
 # Fig 7 Provenance
 
-- Source-data commit SHA: `dc71ae11a0a96440a29cf4627b599942b153f829`
+- Source-data commit SHA: `63d28bacf265643c828a088e0dbdc73ab6551f32`
 - Layout seed: `mtor-nexus-deterministic-svg-v1`
 - Input artifact(s): `webapp/public/data/modules/7.json`
 - Primary source DOI(s): `10.1016/j.cell.2017.02.004`

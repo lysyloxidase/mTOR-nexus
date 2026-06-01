@@ -5,6 +5,7 @@ import argparse
 import html
 import json
 import subprocess
+from collections import Counter
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Any, cast
@@ -114,29 +115,74 @@ def _module_svg(document: dict[str, Any]) -> str:
     )
 
 
-def _hero_svg(document: dict[str, Any]) -> str:
-    """Render a deterministic projected overview of the frozen 3D layout."""
+def _bar_chart(
+    title: str,
+    items: list[tuple[str, int]],
+    *,
+    origin_x: int,
+    origin_y: int,
+    width: int,
+    color: str,
+) -> str:
+    """Render one stable horizontal-bar group."""
 
-    raw_nodes = cast(list[dict[str, Any]], document["nodes"])
-    projected = sorted(
+    max_value = max(value for _, value in items)
+    bars = [
         (
-            _text(node["id"]),
-            _number(node["x"]) + _number(node["z"]) * 0.22,
-            _number(node["y"]) - _number(node["z"]) * 0.18,
+            f'<text x="{origin_x}" y="{origin_y + index * 38}" fill="#dff9e8" '
+            f'font-family="Arial, sans-serif" font-size="16">{_text(label)}</text>'
+            f'<rect x="{origin_x + 135}" y="{origin_y + index * 38 - 17}" '
+            f'width="{value / max_value * width:.3f}" height="20" rx="4" fill="{color}"/>'
+            f'<text x="{origin_x + 150 + value / max_value * width:.3f}" '
+            f'y="{origin_y + index * 38}" fill="#dff9e8" '
+            f'font-family="Arial, sans-serif" font-size="16">{value}</text>'
         )
-        for node in raw_nodes
-    )
-    circles = [
-        f'<circle cx="{x:.3f}" cy="{y:.3f}" r="3.4"><title>{node_id}</title></circle>'
-        for node_id, x, y in projected
+        for index, (label, value) in enumerate(items)
     ]
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="-330 -330 660 660" role="img">'
-        "<title>mTOR-NEXUS deterministic 3D-atlas hero projection</title>"
-        '<rect x="-330" y="-330" width="660" height="660" fill="#08130f"/>'
-        '<g fill="#8be7aa" fill-opacity="0.76" stroke="#dff9e8" stroke-width="0.35">'
-        + "".join(circles)
-        + "</g></svg>\n"
+        f'<text x="{origin_x}" y="{origin_y - 42}" fill="#8be7aa" '
+        f'font-family="Arial, sans-serif" font-size="22" font-weight="bold">{_text(title)}</text>'
+        + "".join(bars)
+    )
+
+
+def _summary_chart_svg(document: dict[str, Any]) -> str:
+    """Render a deterministic README chart from the committed graph export."""
+
+    raw_nodes = cast(list[dict[str, Any]], document["nodes"])
+    raw_edges = cast(list[dict[str, Any]], document["edges"])
+    tiers = Counter(_text(edge["tier"]) for edge in raw_edges)
+    mechanisms = Counter(_text(edge["mechanism"]) for edge in raw_edges)
+    tier_items = [(tier, tiers[tier]) for tier in ["robust", "plausible", "speculative"]]
+    mechanism_items = sorted(mechanisms.items(), key=lambda item: (-item[1], item[0]))
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 650" role="img">'
+        "<title>mTOR-NEXUS atlas summary chart</title>"
+        '<rect width="1280" height="650" fill="#08130f"/>'
+        '<text x="70" y="65" fill="#dff9e8" font-family="Arial, sans-serif" '
+        'font-size="34" font-weight="bold">mTOR-NEXUS atlas summary</text>'
+        f'<text x="70" y="103" fill="#a9c9bc" font-family="Arial, sans-serif" font-size="18">'
+        f"{len(raw_nodes)} nodes | {len(raw_edges)} evidence-tagged interactions</text>"
+        + _bar_chart(
+            "Evidence tiers",
+            tier_items,
+            origin_x=70,
+            origin_y=195,
+            width=330,
+            color="#8be7aa",
+        )
+        + _bar_chart(
+            "Interaction mechanisms",
+            mechanism_items,
+            origin_x=650,
+            origin_y=195,
+            width=300,
+            color="#60a5fa",
+        )
+        + '<text x="70" y="610" fill="#a9c9bc" font-family="Arial, sans-serif" '
+        'font-size="15">Generated deterministically by Python from the committed atlas '
+        "export.</text>"
+        "</svg>\n"
     )
 
 
@@ -170,7 +216,7 @@ def write_figures(
     *,
     source_revision: str | None = None,
 ) -> list[Path]:
-    """Write seven module SVGs, one hero SVG, provenance, and checksums."""
+    """Write seven module SVGs, one README chart, provenance, and checksums."""
 
     output_root = Path(root)
     source_root = Path(web_root)
@@ -193,17 +239,17 @@ def write_figures(
             encoding="utf-8",
         )
         written.extend([svg, provenance])
-    hero_source = source_root / "mtor-3d-layout.json"
-    hero_directory = output_root / "hero"
-    hero_directory.mkdir(parents=True, exist_ok=True)
-    hero_svg = hero_directory / "hero.svg"
-    hero_provenance = hero_directory / "provenance.md"
-    hero_svg.write_text(_hero_svg(_read_json(hero_source)), encoding="utf-8")
-    hero_provenance.write_text(
-        _provenance("3D hero", revision, [str(hero_source)]),
+    chart_source = source_root / "mtor-graph.json"
+    chart_directory = output_root / "readme"
+    chart_directory.mkdir(parents=True, exist_ok=True)
+    chart_svg = chart_directory / "atlas-summary.svg"
+    chart_provenance = chart_directory / "provenance.md"
+    chart_svg.write_text(_summary_chart_svg(_read_json(chart_source)), encoding="utf-8")
+    chart_provenance.write_text(
+        _provenance("README atlas-summary chart", revision, [str(chart_source)]),
         encoding="utf-8",
     )
-    written.extend([hero_svg, hero_provenance])
+    written.extend([chart_svg, chart_provenance])
     checksums = output_root / "checksums.sha256"
     checksums.write_text(
         "".join(

@@ -26,13 +26,13 @@ signaling knowledge graph, disease overlays, inhibitor annotations, and a
 fail-closed AI research-triage layer. The atlas is designed for transparent
 mechanistic exploration rather than clinical decision-making.
 
-## Atlas graph
+## Atlas summary
 
-![Deterministic projection of the mTOR-NEXUS atlas graph](figures/hero/hero.svg)
+![Python-generated summary chart of the mTOR-NEXUS atlas](figures/readme/atlas-summary.svg)
 
-The overview above is regenerated deterministically from the committed atlas
-layout. Explore the synchronized module diagrams in the web application or
-browse the [figure provenance record](figures/hero/provenance.md).
+The chart above is regenerated deterministically by Python from the committed
+atlas export. Explore the synchronized module diagrams in the web application
+or browse the [figure provenance record](figures/readme/provenance.md).
 
 ## Why this atlas is strict
 
@@ -57,7 +57,7 @@ with Neo4j on ports `7474` and `7687`.
 
 ## Provenance and FAIR governance
 
-- Code is Apache-2.0 licensed.
+- Code is MIT licensed.
 - Figures and data are CC-BY-4.0 licensed.
 - Downloaded source snapshots are recorded in `data/provenance.jsonl`.
 - Pinned source policy lives in `src/mtor_nexus/config/data_sources.yaml`.
