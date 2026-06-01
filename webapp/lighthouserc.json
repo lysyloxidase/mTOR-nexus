@@ -10,7 +10,7 @@
         "http://localhost:3000/node/MTOR",
         "http://localhost:3000/predict"
       ],
-      "numberOfRuns": 1,
+      "numberOfRuns": 3,
       "settings": {
         "chromeFlags": "--no-sandbox"
       }
