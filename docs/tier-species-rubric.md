@@ -1,5 +1,7 @@
 # Tier + Species Rubric for mTOR-NEXUS
 
+Author: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 Every edge **must** carry a tier badge and at least one species-evidence flag.
 
 ## Tier definitions

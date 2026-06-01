@@ -1,5 +1,7 @@
 # Nomenclature Guards
 
+Author: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 These constraints are enforced by `tests/unit/test_nomenclature.py`.
 
 1. `RMC-6236`, `RMC-6291`, and `RMC-9805` are Revolution Medicines RAS(ON)

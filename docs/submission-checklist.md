@@ -1,5 +1,7 @@
 # Submission Checklist
 
+Author: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 This checklist is intentionally fail-closed. An unchecked item blocks the
 `v1.0.0` production tag.
 

@@ -1,5 +1,7 @@
 # AI Model Cards
 
+Author: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 ## Release Policy
 
 The Phase 6 prerelease exposes an applicability-domain gate, transparent

@@ -1,5 +1,7 @@
 # Selectivity Training-Set Datasheet
 
+Author: [`lysyloxidase`](https://github.com/lysyloxidase).
+
 This datasheet follows the documentation goals of Gebru et al. (2021) for the
 committed Phase 6 selectivity-training snapshot. It describes the available
 data honestly; it is not a statement that the registered model is trainable or
