@@ -18,7 +18,7 @@ import zipfile
 from pathlib import Path
 from typing import Any, cast
 
-from mtor_nexus.release.readiness import write_publication_readiness
+from mtor_nexus.release.readiness import publication_readiness, write_publication_readiness
 
 DEFAULT_API_BASE = "https://zenodo.org/api"
 DEFAULT_TAG = "v1.0.0"
@@ -167,7 +167,11 @@ def main() -> int:
     parser.add_argument("--require-production", action="store_true")
     args = parser.parse_args()
 
-    report = write_publication_readiness(allow_pending_zenodo_doi=args.publish)
+    report = (
+        publication_readiness(allow_pending_zenodo_doi=True)
+        if args.publish
+        else write_publication_readiness()
+    )
     if not report["required_gates_passed"]:
         print("Zenodo publication blocked:", file=sys.stderr)
         for reason in report["blocking_reasons"]:

@@ -9,7 +9,7 @@ description = "Interactive mTOR pathway atlas and AI drug-discovery engine"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
-authors = [{ name = "Mikolaj Stanczak" }]
+authors = [{ name = "lysyloxidase" }]
 dependencies = [
   "fastapi>=0.115,<1",
   "neo4j>=5.28,<7",

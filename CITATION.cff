@@ -4,8 +4,7 @@ title: "mTOR-NEXUS: An Interactive mTOR Pathway Atlas and AI Drug-Discovery Engi
 version: 0.6.0
 date-released: 2026-06-01
 authors:
-  - family-names: "Stanczak"
-    given-names: "Mikolaj"
+  - family-names: "lysyloxidase"
     affiliation: "Independent"
 type: software
 license: Apache-2.0

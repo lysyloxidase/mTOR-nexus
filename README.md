@@ -18,6 +18,22 @@ readiness audit, explicit out-of-domain handling, an external Boltz-2 handoff,
 resistance triage, and red-tagged scaffold exploration. Numerical selectivity
 prediction remains locked until the registered scientific gates pass.
 
+## About
+
+mTOR-NEXUS is an open research-software project maintained by
+[`lysyloxidase`](https://github.com/lysyloxidase). It combines an auditable mTOR
+signaling knowledge graph, disease overlays, inhibitor annotations, and a
+fail-closed AI research-triage layer. The atlas is designed for transparent
+mechanistic exploration rather than clinical decision-making.
+
+## Atlas graph
+
+![Deterministic projection of the mTOR-NEXUS atlas graph](figures/hero/hero.svg)
+
+The overview above is regenerated deterministically from the committed atlas
+layout. Explore the synchronized module diagrams in the web application or
+browse the [figure provenance record](figures/hero/provenance.md).
+
 ## Why this atlas is strict
 
 Mechanistic confidence and translational relevance are separate questions.

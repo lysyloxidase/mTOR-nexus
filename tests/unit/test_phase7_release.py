@@ -118,8 +118,10 @@ def test_release_cli_modes_report_blocked_state(
 
 
 def test_zenodo_publish_command_refuses_before_network_access() -> None:
-    """Block irreversible DOI publication before looking for a token."""
+    """Block irreversible DOI publication without mutating the strict audit."""
 
+    readiness = Path("data/release/publication-readiness.json")
+    before = readiness.read_bytes()
     result = subprocess.run(
         [sys.executable, "scripts/zenodo_release.py", "--publish"],
         check=False,
@@ -128,6 +130,7 @@ def test_zenodo_publish_command_refuses_before_network_access() -> None:
     )
     assert result.returncode == 1
     assert "Zenodo publication blocked" in result.stderr
+    assert readiness.read_bytes() == before
 
 
 def test_clean_runner_attestation_writer_records_structured_provenance(tmp_path: Path) -> None:
