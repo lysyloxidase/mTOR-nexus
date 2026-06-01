@@ -16,3 +16,4 @@ site/
 data/sources/restricted/*
 !data/sources/restricted/README.md
 !data/sources/restricted/phosphositeplus-manifest.json
+!data/sources/restricted/cosmic-manifest.json

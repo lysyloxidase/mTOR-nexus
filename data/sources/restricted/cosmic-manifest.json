@@ -1,0 +1,12 @@
+{
+  "committed_raw_records": false,
+  "expected_local_format": "tab-separated values",
+  "expected_local_headers": [
+    "COSMIC_ID",
+    "GENE_SYMBOL",
+    "HGVSP"
+  ],
+  "license": "COSMIC-non-commercial-use-terms",
+  "source": "COSMIC",
+  "url": "https://cancer.sanger.ac.uk/cosmic/download/cosmic"
+}

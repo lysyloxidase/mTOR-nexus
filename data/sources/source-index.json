@@ -1,5 +1,13 @@
 {
   "derived_artifacts": {
+    "disease_layer": {
+      "fields": [
+        "disease_classes",
+        "associations",
+        "mutations"
+      ],
+      "path": "data/processed/disease-layer.json"
+    },
     "normalized_graph": {
       "fields": [
         "nodes",
@@ -17,8 +25,9 @@
       "record_count": 219
     }
   },
-  "schema_version": "0.2.0",
+  "schema_version": "0.4.0",
   "segregated_raw_sources": [
+    "cosmic",
     "phosphositeplus"
   ],
   "sources": {
@@ -29,6 +38,34 @@
       "redistribution": "open",
       "url": "https://downloads.thebiogrid.org",
       "version": "4.4.X"
+    },
+    "cbioportal": {
+      "handling": "derived-cohort-frequency-overlay",
+      "license": "study-specific",
+      "options": {
+        "note": "Committed disease overlays retain derived cohort frequencies and API references only."
+      },
+      "redistribution": "metadata-only",
+      "url": "https://www.cbioportal.org/api",
+      "version": "2026-06-public-api"
+    },
+    "clinvar": {
+      "handling": "open-germline-variant-references",
+      "license": "US-government-public-resource",
+      "options": {},
+      "redistribution": "open",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "version": "2026-06-live-eutils"
+    },
+    "cosmic": {
+      "handling": "segregated-licensed-local-reconciliation-overlay",
+      "license": "COSMIC-non-commercial-use-terms",
+      "options": {
+        "note": "Raw COSMIC records require a local licensed snapshot and are never committed."
+      },
+      "redistribution": "segregated-non-commercial",
+      "url": "https://cancer.sanger.ac.uk/cosmic/download/cosmic",
+      "version": "licensed-local-snapshot"
     },
     "kegg": {
       "handling": "pinned-pathway-overlay-metadata-only",

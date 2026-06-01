@@ -8,8 +8,9 @@ timestamp before it enters an ingestion workflow.
 The Phase 2 normalized graph is `processed/mtor-graph.json`. GraphML, JSON-LD,
 Parquet, and per-module Cytoscape exports are regenerated with `make data`.
 `processed/export-manifest.json` records SHA-256 digests for each exchange
-artifact.
+artifact. The Phase 4 disease and mutation overlay is
+`processed/disease-layer.json`.
 
 `sources/source-index.json` records pinned source handling. Raw
-PhosphoSitePlus snapshots remain under `sources/restricted/` locally and are
-never committed because their license is non-commercial.
+PhosphoSitePlus and COSMIC snapshots remain under `sources/restricted/` locally
+and are never committed because their licenses require segregation.

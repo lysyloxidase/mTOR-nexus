@@ -11,10 +11,12 @@ export function EdgeLine({
   edge,
   source,
   target,
+  colorOverride,
 }: {
   edge: MTOREdge;
   source: PositionedNode;
   target: PositionedNode;
+  colorOverride?: string;
 }) {
   const geometry = useMemo(() => {
     const start = new THREE.Vector3(source.x, source.y, source.z);
@@ -26,7 +28,7 @@ export function EdgeLine({
     );
     return { start, end, midpoint, quaternion };
   }, [source, target]);
-  const color = edgeColor(edge);
+  const color = colorOverride ?? edgeColor(edge);
   const dashed = edge.mechanism === "binds";
   return (
     <>

@@ -10,6 +10,7 @@ class Settings:
 
     environment: str = getenv("MTOR_NEXUS_ENV", "development")
     graph_path: str = getenv("MTOR_NEXUS_GRAPH_PATH", "data/processed/mtor-graph.json")
+    disease_path: str = getenv("MTOR_NEXUS_DISEASE_PATH", "data/processed/disease-layer.json")
     neo4j_uri: str = getenv("NEO4J_URI", "bolt://neo4j:7687")
 
 

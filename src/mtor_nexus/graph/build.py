@@ -313,7 +313,7 @@ class MTORGraphBuilder:
         return normalized
 
     def write_all(self, root: str = "data/processed") -> None:
-        """Generate every committed Phase 2 exchange format."""
+        """Generate every committed graph and overlay exchange format."""
 
         graph = self._require_graph()
         root_path = Path(root)
@@ -327,6 +327,9 @@ class MTORGraphBuilder:
             stale_export.unlink()
         for module in sorted({node.module for node in graph.nodes}):
             self.to_cytoscape_json(module, str(cytoscape_path / f"{module}.json"))
+        from mtor_nexus.disease.export import write_disease_exports
+
+        write_disease_exports(processed_path=str(root_path / "disease-layer.json"))
         artifact_paths = sorted(
             path
             for path in root_path.rglob("*")

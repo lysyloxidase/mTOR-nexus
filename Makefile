@@ -1,6 +1,6 @@
-.PHONY: all quality test docs data graph graph-validate source-probe web web-lint web-build train figs
+.PHONY: all quality test docs data graph graph-validate disease-validate source-probe disease-probe web web-lint web-build train figs
 
-all: quality test docs graph-validate
+all: quality test docs graph-validate disease-validate
 
 quality:
 	uv run ruff check .
@@ -23,8 +23,14 @@ graph:
 graph-validate:
 	uv run python -m mtor_nexus.graph.validate
 
+disease-validate:
+	uv run python -m mtor_nexus.disease.validate
+
 source-probe:
 	uv run python -m mtor_nexus.ingest.live_probe
+
+disease-probe:
+	uv run python -m mtor_nexus.disease.live_probe
 
 web:
 	docker run --rm -v "$(CURDIR)/webapp:/app" -w /app node:20-alpine npm run dev

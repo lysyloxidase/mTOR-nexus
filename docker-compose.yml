@@ -20,6 +20,7 @@ services:
       dockerfile: Dockerfile
     environment:
       MTOR_NEXUS_GRAPH_PATH: data/processed/mtor-graph.json
+      MTOR_NEXUS_DISEASE_PATH: data/processed/disease-layer.json
       NEO4J_URI: bolt://neo4j:7687
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8000/health"]

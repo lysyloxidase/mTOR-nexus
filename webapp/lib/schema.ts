@@ -103,3 +103,91 @@ export interface ModuleDocument {
     edges: CytoscapeEdge[];
   };
 }
+
+export type PerturbationDirection = "hyperactivation" | "loss" | "mixed" | "uncertain";
+
+export interface DiseaseAssociation {
+  disease_id: string;
+  pathway_node_id: string;
+  perturbation: PerturbationDirection;
+  tier: Tier;
+  species_evidence: SpeciesEvidence[];
+  source_refs: string[];
+}
+
+export interface CohortFrequency {
+  gene_symbol: string;
+  cohort: string;
+  altered_cases: number;
+  profiled_cases: number;
+  frequency_percent: number;
+  source_url: string;
+}
+
+export interface ApprovedDrug {
+  name: string;
+  indication: string;
+  status: string;
+  source_url: string;
+}
+
+export interface TrialLink {
+  nct_id: string;
+  title: string;
+  url: string;
+}
+
+export interface RareSyndrome {
+  syndrome_id: string;
+  genes: string[];
+  drug?: string | null;
+  inheritance?: string | null;
+  recurrent_variant?: string | null;
+  omim?: string | null;
+}
+
+export interface DiseaseClass {
+  disease_id: string;
+  title: string;
+  key_nodes: string[];
+  tier: Tier;
+  species_evidence: SpeciesEvidence[];
+  mechanism: string;
+  diseases: string[];
+  indications: string[];
+  species_caveat?: string | null;
+  approved_drugs: ApprovedDrug[];
+  trial_links: TrialLink[];
+  rare_syndromes: RareSyndrome[];
+  cohort_frequencies: CohortFrequency[];
+  source_refs: string[];
+}
+
+export interface MutationRecord {
+  mutation_id: string;
+  gene_symbol: string;
+  hgvs_protein?: string | null;
+  hgvs_coding: string;
+  clinical_significance?: string | null;
+  oncogenicity?: string | null;
+  functional_effect: "activating" | "loss_of_function" | "unknown";
+  tier: Tier;
+  species_evidence: SpeciesEvidence[];
+  sources: string[];
+  source_refs: string[];
+  cancer_frequencies: CohortFrequency[];
+  cosmic_reconciliation?: string | null;
+}
+
+export interface DiseaseDocument {
+  schema_version: string;
+  metadata: {
+    title: string;
+    cosmic_raw_redistributed: boolean;
+    cosmic_handling: string;
+    cbioportal_frequency_note: string;
+  };
+  disease_classes: DiseaseClass[];
+  associations: DiseaseAssociation[];
+  mutations: MutationRecord[];
+}

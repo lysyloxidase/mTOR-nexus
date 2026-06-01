@@ -6395,6 +6395,9 @@
     "reactome_root": "R-HSA-165159",
     "source_versions": {
       "biogrid": "4.4.X",
+      "cbioportal": "2026-06-public-api",
+      "clinvar": "2026-06-live-eutils",
+      "cosmic": "licensed-local-snapshot",
       "kegg": "2025-05",
       "pdb": "2025-05-snapshot",
       "phosphositeplus": "2025-snapshot",

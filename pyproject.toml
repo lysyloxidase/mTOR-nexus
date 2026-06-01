@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mtor-nexus"
-version = "0.3.0"
+version = "0.4.0"
 description = "Interactive mTOR pathway atlas and AI drug-discovery engine"
 readme = "README.md"
 requires-python = ">=3.11"

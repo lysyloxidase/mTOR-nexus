@@ -43,6 +43,22 @@ export const sbgnStyles: StylesheetStyle[] = [
     },
   },
   {
+    selector: "node.disease-affected",
+    style: { "border-width": 6, height: 52, width: 68 },
+  },
+  {
+    selector: "node.disease-hyperactivation",
+    style: { "background-color": "#6e2424", "border-color": "#ff6b6b" },
+  },
+  {
+    selector: "node.disease-loss",
+    style: { "background-color": "#194f6e", "border-color": "#55c7ff" },
+  },
+  {
+    selector: "node.disease-mixed, node.disease-uncertain",
+    style: { "background-color": "#625414", "border-color": "#feca57" },
+  },
+  {
     selector: "edge",
     style: {
       "curve-style": "bezier",
@@ -76,5 +92,13 @@ export const sbgnStyles: StylesheetStyle[] = [
   {
     selector: "edge[recruitment_mode = 'flcn_ragc_gdp']",
     style: { "line-color": "#feca57", "target-arrow-color": "#feca57", width: 3 },
+  },
+  {
+    selector: "edge.disease-hyperactivation",
+    style: { "line-color": "#ff6b6b", "target-arrow-color": "#ff6b6b", opacity: 1, width: 3.2 },
+  },
+  {
+    selector: "edge.disease-loss",
+    style: { "line-color": "#55c7ff", "target-arrow-color": "#55c7ff", opacity: 1, width: 3.2 },
   },
 ];

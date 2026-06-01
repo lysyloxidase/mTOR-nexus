@@ -7,6 +7,8 @@ Phase 2 provides a 261-node, 234-edge pathway graph, evidence governance,
 stable-identifier checks, deterministic exchange artifacts, and a Neo4j load
 path. Phase 3 adds a global 3D pathway explorer, seven synchronized SBGN-PD
 module views, structure embeds, and publication-oriented SVG export.
+Phase 4 adds eight disease overlays with open mutation-source references,
+species caveats, and a segregated licensed-source boundary for COSMIC.
 
 !!! warning "Research use only"
     mTOR-NEXUS is not a clinical decision support system.

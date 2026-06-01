@@ -43,6 +43,7 @@ function InstancedShape({
   lens,
   evidence,
   selectedNode,
+  diseaseNodes,
   onSelect,
 }: {
   entries: PositionedNode[];
@@ -50,6 +51,7 @@ function InstancedShape({
   lens: Lens;
   evidence: Map<string, { tier: Tier; species: SpeciesEvidence[] }>;
   selectedNode: string | null;
+  diseaseNodes: Map<string, number>;
   onSelect: (node: PositionedNode) => void;
 }) {
   const mesh = useRef<THREE.InstancedMesh>(null);
@@ -59,14 +61,15 @@ function InstancedShape({
     const color = new THREE.Color();
     entries.forEach((node, index) => {
       transform.position.set(node.x, node.y, node.z);
-      transform.scale.setScalar(node.node_id === selectedNode ? 1.65 : 1);
+      const diseaseScale = diseaseNodes.get(node.node_id) ?? 0;
+      transform.scale.setScalar(node.node_id === selectedNode ? 1.65 : 1 + diseaseScale);
       transform.updateMatrix();
       mesh.current?.setMatrixAt(index, transform.matrix);
       mesh.current?.setColorAt(index, color.set(nodeColor(node, lens, evidence)));
     });
     mesh.current.instanceMatrix.needsUpdate = true;
     if (mesh.current.instanceColor) mesh.current.instanceColor.needsUpdate = true;
-  }, [entries, evidence, lens, selectedNode]);
+  }, [diseaseNodes, entries, evidence, lens, selectedNode]);
   const selectInstance = (event: ThreeEvent<MouseEvent>) => {
     event.stopPropagation();
     if (event.instanceId !== undefined) onSelect(entries[event.instanceId]);
@@ -90,12 +93,14 @@ export function NodeMesh({
   lens,
   evidence,
   selectedNode,
+  diseaseNodes,
   onSelect,
 }: {
   nodes: PositionedNode[];
   lens: Lens;
   evidence: Map<string, { tier: Tier; species: SpeciesEvidence[] }>;
   selectedNode: string | null;
+  diseaseNodes: Map<string, number>;
   onSelect: (node: PositionedNode) => void;
 }) {
   const groups = useMemo(() => {
@@ -116,6 +121,7 @@ export function NodeMesh({
         return entries.length ? (
           <InstancedShape
             entries={entries}
+            diseaseNodes={diseaseNodes}
             evidence={evidence}
             key={type}
             lens={lens}

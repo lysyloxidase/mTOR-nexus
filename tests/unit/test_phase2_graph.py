@@ -101,13 +101,13 @@ def test_committed_export_manifest_matches_artifacts() -> None:
         assert sha256_file(str(Path("data/processed") / relative_path)) == digest
 
 
-def test_source_registry_segregates_phosphositeplus() -> None:
-    """Keep non-commercial PSP raw records outside open exports."""
+def test_source_registry_segregates_licensed_sources() -> None:
+    """Keep non-commercial raw records outside open exports."""
 
     registry = load_source_registry()
-    assert restricted_sources(registry) == {"phosphositeplus"}
+    assert restricted_sources(registry) == {"cosmic", "phosphositeplus"}
     index = build_source_index()
-    assert index["segregated_raw_sources"] == ["phosphositeplus"]
+    assert index["segregated_raw_sources"] == ["cosmic", "phosphositeplus"]
     assert index["derived_artifacts"]["uniprot_accessions"]["record_count"] >= 200
 
 

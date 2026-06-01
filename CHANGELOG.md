@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-01
+
+### Added
+
+- Eight evidence-tagged disease classes with 37 synchronized pathway overlays.
+- Twelve HGVS-validated mutation records with open ClinVar and cBioPortal
+  references plus a licensed-local COSMIC reconciliation boundary.
+- Disease selector, 3D pulse and size modifiers, Cytoscape perturbation
+  highlights, rare-syndrome detail pages, species caveats, and clinical links.
+
 ## [0.3.0] - 2026-05-31
 
 ### Added
@@ -36,7 +46,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Typed heterogeneous graph schema with tier and species evidence enforcement.
 - Curated seed graph, nomenclature guards, and identifier validation workflows.
 
-[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/lysyloxidase/mtor-nexus/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.4.0
 [0.3.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.3.0
 [0.2.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.2.0
 [0.1.0]: https://github.com/lysyloxidase/mtor-nexus/releases/tag/v0.1.0

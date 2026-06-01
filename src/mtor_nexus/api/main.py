@@ -1,4 +1,4 @@
-"""Minimal API surface for health checks and graph retrieval."""
+"""API surface for health checks, pathway retrieval, and disease overlays."""
 
 import json
 from pathlib import Path
@@ -25,3 +25,11 @@ def graph() -> dict[str, Any]:
 
     with Path(settings.graph_path).open(encoding="utf-8") as graph_file:
         return json.load(graph_file)
+
+
+@app.get("/diseases")
+def diseases() -> dict[str, Any]:
+    """Return the normalized disease and mutation overlay."""
+
+    with Path(settings.disease_path).open(encoding="utf-8") as disease_file:
+        return json.load(disease_file)

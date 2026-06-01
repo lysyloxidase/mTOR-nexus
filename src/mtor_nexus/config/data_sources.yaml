@@ -39,3 +39,20 @@ sources:
     license: "CC-BY-NC-SA-2.0"
     redistribution: "segregated-non-commercial"
     note: "Required for every phosphorylation edge; raw licensed exports are never committed."
+  clinvar:
+    version: "2026-06-live-eutils"
+    url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+    license: "US-government-public-resource"
+    redistribution: "open"
+  cbioportal:
+    version: "2026-06-public-api"
+    url: "https://www.cbioportal.org/api"
+    license: "study-specific"
+    redistribution: "metadata-only"
+    note: "Committed disease overlays retain derived cohort frequencies and API references only."
+  cosmic:
+    version: "licensed-local-snapshot"
+    url: "https://cancer.sanger.ac.uk/cosmic/download/cosmic"
+    license: "COSMIC-non-commercial-use-terms"
+    redistribution: "segregated-non-commercial"
+    note: "Raw COSMIC records require a local licensed snapshot and are never committed."

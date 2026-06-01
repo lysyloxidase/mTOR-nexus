@@ -12,8 +12,9 @@
     "cytoscape/10-mtorc2-outputs.json": "9a139f0b689c7432b24d0af0ec704491331dc3f996792aa7c5b722de930e4715",
     "cytoscape/11-feedback-crosstalk.json": "037664b30cd7894d7a2957f0ab0b94244c3a23e914eb948069540a81f6233ce0",
     "cytoscape/12-drugs.json": "2e2494146ba33d7b53c8ea57ff428c8b67e319a0a9ffb738c1b58ce8e0ad7ee2",
+    "disease-layer.json": "6cb812f8d85e8a33f387fb1ee259dcd4b4c73c57987881331fcd7759910f96d8",
     "mtor-graph.graphml": "e8e206616d9d4c803fde5a0fad74d8293e3ed1dc267553e0e79ab354f825ac52",
-    "mtor-graph.json": "74864c8a22cf249c954f44b7016beefb4c7affe9acc690a0fcf7e00b54430bb1",
+    "mtor-graph.json": "25199ac1381bda9cd5dbe5b175bafc4794d4bbebecf129c65d66dcd193025d2c",
     "mtor-graph.jsonld": "867399fb8494bebf89262471bd491882dfe45fe720d6d95b64f03a8f16c99402",
     "parquet/edges.parquet": "3ecddebf4cefe2acacdaff7778fbd9ea492f0d0cfcd94c9196ff093a1ed8f485",
     "parquet/nodes.parquet": "4c674333f60cfbeecc9e5da36e7bca9d0bbe7cbc0089a4cbf54d199bb3b88cff"

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { ModuleDiagram } from "@/components/cytoscape/ModuleDiagram";
 import { MTORGraph3D } from "@/components/three/MTORGraph3D";
+import { DiseaseOverlay } from "@/components/disease/DiseaseOverlay";
 import type { GraphDocument } from "@/lib/schema";
 import { manuscriptModules } from "@/lib/visual";
 import { useMTORStore } from "@/store/mtor";
@@ -36,6 +37,7 @@ export function GraphExplorer() {
       <section className="explorer-grid">
         <MTORGraph3D />
         <aside className="explorer-sidebar">
+          <DiseaseOverlay />
           <LegendPanel />
           {node && graph ? <NodeCard compact edges={graph.edges} node={node} /> : (
             <article className="node-card">

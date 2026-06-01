@@ -1,0 +1,1116 @@
+{
+  "associations": [
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "PIK3CA",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "PTEN",
+      "perturbation": "loss",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "TSC1",
+      "perturbation": "loss",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "TSC2",
+      "perturbation": "loss",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "AKT1",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "RHEB",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "STK11",
+      "perturbation": "loss",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cancer",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "DEPDC5",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "TSC1",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "TSC2",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "NPRL2",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "mtoropathies_epilepsy",
+      "pathway_node_id": "NPRL3",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "neurodegeneration",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:neurodegeneration-autophagy"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "plausible"
+    },
+    {
+      "disease_id": "neurodegeneration",
+      "pathway_node_id": "ULK1",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:neurodegeneration-autophagy"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "plausible"
+    },
+    {
+      "disease_id": "neurodegeneration",
+      "pathway_node_id": "TFEB",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:neurodegeneration-autophagy"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "plausible"
+    },
+    {
+      "disease_id": "neurodegeneration",
+      "pathway_node_id": "BECN1",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:neurodegeneration-autophagy"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "plausible"
+    },
+    {
+      "disease_id": "aging_longevity",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:itp-lifespan",
+        "curated:pearl-healthspan"
+      ],
+      "species_evidence": [
+        "rodent",
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "aging_longevity",
+      "pathway_node_id": "RPTOR",
+      "perturbation": "mixed",
+      "source_refs": [
+        "curated:itp-lifespan",
+        "curated:pearl-healthspan"
+      ],
+      "species_evidence": [
+        "rodent",
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "aging_longevity",
+      "pathway_node_id": "RPS6KB1",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:itp-lifespan",
+        "curated:pearl-healthspan"
+      ],
+      "species_evidence": [
+        "rodent",
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "metabolic",
+      "pathway_node_id": "RPS6KB1",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "metabolic",
+      "pathway_node_id": "RICTOR",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "metabolic",
+      "pathway_node_id": "IRS1",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "metabolic",
+      "pathway_node_id": "SREBF1",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "metabolic",
+      "pathway_node_id": "AKT2",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "TSC1",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "TSC2",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "STRADA",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "PTEN",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "rare_syndromes",
+      "pathway_node_id": "STK11",
+      "perturbation": "loss",
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "immunology_transplant",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:immunology-transplant",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "immunology_transplant",
+      "pathway_node_id": "RPTOR",
+      "perturbation": "mixed",
+      "source_refs": [
+        "curated:immunology-transplant",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "immunology_transplant",
+      "pathway_node_id": "RICTOR",
+      "perturbation": "loss",
+      "source_refs": [
+        "curated:immunology-transplant",
+        "fda:021083"
+      ],
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cardiovascular",
+      "pathway_node_id": "MTOR",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:cardiovascular-stents"
+      ],
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust"
+    },
+    {
+      "disease_id": "cardiovascular",
+      "pathway_node_id": "RPS6KB1",
+      "perturbation": "hyperactivation",
+      "source_refs": [
+        "curated:cardiovascular-stents"
+      ],
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust"
+    }
+  ],
+  "disease_classes": [
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [
+        {
+          "altered_cases": 271,
+          "cohort": "TCGA Firehose Legacy breast cancer, ER_STATUS_BY_IHC=Positive",
+          "frequency_percent": 33.539603960396036,
+          "gene_symbol": "PIK3CA",
+          "profiled_cases": 808,
+          "source_url": "https://www.cbioportal.org/study/summary?id=brca_tcga"
+        }
+      ],
+      "disease_id": "cancer",
+      "diseases": [],
+      "indications": [
+        "breast_ER+",
+        "RCC",
+        "endometrial",
+        "NSCLC",
+        "pancreatic",
+        "glioblastoma",
+        "lymphoma"
+      ],
+      "key_nodes": [
+        "PIK3CA",
+        "PTEN",
+        "TSC1",
+        "TSC2",
+        "AKT1",
+        "RHEB",
+        "STK11",
+        "MTOR"
+      ],
+      "mechanism": "Oncogenic activation and suppressor loss converge on mTORC1 signaling.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "cbioportal:brca_tcga",
+        "cosmic:restricted-local-overlay"
+      ],
+      "species_caveat": null,
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust",
+      "title": "Cancer",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [],
+      "disease_id": "mtoropathies_epilepsy",
+      "diseases": [
+        "FCD_type_II",
+        "familial_focal_epilepsy",
+        "hemimegalencephaly",
+        "TSC"
+      ],
+      "indications": [],
+      "key_nodes": [
+        "DEPDC5",
+        "TSC1",
+        "TSC2",
+        "MTOR",
+        "NPRL2",
+        "NPRL3"
+      ],
+      "mechanism": "Two-hit germline and somatic DEPDC5 loss; mosaic MTOR activation.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "clinvar:VCV000217823.74"
+      ],
+      "species_caveat": null,
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust",
+      "title": "mTORopathies and epilepsy",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [],
+      "disease_id": "neurodegeneration",
+      "diseases": [
+        "Alzheimer",
+        "Parkinson",
+        "Huntington",
+        "ALS_FTD"
+      ],
+      "indications": [],
+      "key_nodes": [
+        "MTOR",
+        "ULK1",
+        "TFEB",
+        "BECN1"
+      ],
+      "mechanism": "Autophagy impairment with temporal dependence of rapamycin response.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "curated:neurodegeneration-autophagy"
+      ],
+      "species_caveat": "Rapamycin benefit is strongest before pathology in disease models.",
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "plausible",
+      "title": "Neurodegeneration",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [],
+      "disease_id": "aging_longevity",
+      "diseases": [],
+      "indications": [],
+      "key_nodes": [
+        "MTOR",
+        "RPTOR",
+        "RPS6KB1"
+      ],
+      "mechanism": "Reduced nutrient signaling is associated with rodent lifespan extension.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "curated:itp-lifespan",
+        "curated:pearl-healthspan"
+      ],
+      "species_caveat": "RODENT for lifespan; HUMAN evidence remains early and limited for healthspan.",
+      "species_evidence": [
+        "rodent",
+        "human"
+      ],
+      "tier": "robust",
+      "title": "Aging and longevity",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [],
+      "disease_id": "metabolic",
+      "diseases": [
+        "T2D",
+        "obesity",
+        "NAFLD_NASH",
+        "insulin_resistance"
+      ],
+      "indications": [],
+      "key_nodes": [
+        "RPS6KB1",
+        "RICTOR",
+        "IRS1",
+        "SREBF1",
+        "AKT2"
+      ],
+      "mechanism": "S6K1 feedback and mTORC2-AKT2 perturbation alter metabolic homeostasis.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "curated:s6k1-knockout",
+        "curated:liriko"
+      ],
+      "species_caveat": "MOSTLY RODENT models; translation to human metabolic disease remains qualified.",
+      "species_evidence": [
+        "rodent"
+      ],
+      "tier": "robust",
+      "title": "Metabolic disease",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [
+        {
+          "indication": "TSC-associated SEGA, renal AML, and seizures",
+          "name": "everolimus",
+          "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022334",
+          "status": "FDA-approved"
+        },
+        {
+          "indication": "lymphangioleiomyomatosis",
+          "name": "sirolimus",
+          "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021083",
+          "status": "FDA-approved"
+        }
+      ],
+      "cohort_frequencies": [],
+      "disease_id": "rare_syndromes",
+      "diseases": [],
+      "indications": [],
+      "key_nodes": [
+        "TSC1",
+        "TSC2",
+        "STRADA",
+        "MTOR",
+        "PTEN",
+        "STK11"
+      ],
+      "mechanism": "Germline pathway disruption creates syndrome-specific mTOR dysregulation.",
+      "rare_syndromes": [
+        {
+          "drug": "everolimus (FDA: SEGA, renal AML, and TSC-associated seizures)",
+          "genes": [
+            "TSC1",
+            "TSC2"
+          ],
+          "inheritance": null,
+          "omim": null,
+          "recurrent_variant": null,
+          "syndrome_id": "TSC"
+        },
+        {
+          "drug": "sirolimus (FDA; MILES trial evidence)",
+          "genes": [
+            "TSC1",
+            "TSC2"
+          ],
+          "inheritance": null,
+          "omim": null,
+          "recurrent_variant": null,
+          "syndrome_id": "LAM"
+        },
+        {
+          "drug": "rapamycin investigated for seizure prevention",
+          "genes": [
+            "STRADA"
+          ],
+          "inheritance": "recessive",
+          "omim": null,
+          "recurrent_variant": null,
+          "syndrome_id": "PMSE_Pretzel"
+        },
+        {
+          "drug": null,
+          "genes": [
+            "MTOR"
+          ],
+          "inheritance": null,
+          "omim": "616638",
+          "recurrent_variant": "p.Glu1799Lys",
+          "syndrome_id": "Smith_Kingsmore"
+        },
+        {
+          "drug": null,
+          "genes": [
+            "PTEN"
+          ],
+          "inheritance": null,
+          "omim": null,
+          "recurrent_variant": null,
+          "syndrome_id": "Cowden"
+        },
+        {
+          "drug": null,
+          "genes": [
+            "STK11"
+          ],
+          "inheritance": null,
+          "omim": null,
+          "recurrent_variant": null,
+          "syndrome_id": "Peutz_Jeghers"
+        }
+      ],
+      "source_refs": [
+        "clinvar:gene-overlay",
+        "fda:022334",
+        "fda:021083"
+      ],
+      "species_caveat": null,
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust",
+      "title": "Rare syndromes",
+      "trial_links": [
+        {
+          "nct_id": "NCT01289912",
+          "title": "Trial of RAD001 and neurocognition in tuberous sclerosis complex",
+          "url": "https://clinicaltrials.gov/study/NCT01289912"
+        },
+        {
+          "nct_id": "NCT03253913",
+          "title": "Resveratrol and sirolimus in lymphangioleiomyomatosis trial",
+          "url": "https://clinicaltrials.gov/study/NCT03253913"
+        }
+      ]
+    },
+    {
+      "approved_drugs": [
+        {
+          "indication": "transplant immunosuppression",
+          "name": "sirolimus",
+          "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021083",
+          "status": "FDA-approved"
+        }
+      ],
+      "cohort_frequencies": [],
+      "disease_id": "immunology_transplant",
+      "diseases": [],
+      "indications": [],
+      "key_nodes": [
+        "MTOR",
+        "RPTOR",
+        "RICTOR"
+      ],
+      "mechanism": "mTOR balances Th1/Th17 versus Treg and effector versus memory CD8 states.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "curated:immunology-transplant",
+        "fda:021083"
+      ],
+      "species_caveat": null,
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust",
+      "title": "Immunology and transplant",
+      "trial_links": []
+    },
+    {
+      "approved_drugs": [],
+      "cohort_frequencies": [],
+      "disease_id": "cardiovascular",
+      "diseases": [
+        "cardiac_hypertrophy",
+        "atherosclerosis",
+        "restenosis"
+      ],
+      "indications": [],
+      "key_nodes": [
+        "MTOR",
+        "RPS6KB1"
+      ],
+      "mechanism": "mTORC1-S6K1 activity contributes to remodeling and restenosis.",
+      "rare_syndromes": [],
+      "source_refs": [
+        "curated:cardiovascular-stents"
+      ],
+      "species_caveat": null,
+      "species_evidence": [
+        "human_and_rodent"
+      ],
+      "tier": "robust",
+      "title": "Cardiovascular disease",
+      "trial_links": []
+    }
+  ],
+  "metadata": {
+    "cbioportal_frequency_note": "PIK3CA ER-positive breast frequency is a live-source-derived mutation-only reference, not a pan-alteration prevalence estimate.",
+    "cosmic_handling": "licensed-local-reconciliation-overlay-only",
+    "cosmic_raw_redistributed": false,
+    "title": "mTOR-NEXUS Phase 4 disease layer"
+  },
+  "mutations": [
+    {
+      "cancer_frequencies": [
+        {
+          "altered_cases": 271,
+          "cohort": "TCGA Firehose Legacy breast cancer, ER_STATUS_BY_IHC=Positive",
+          "frequency_percent": 33.539603960396036,
+          "gene_symbol": "PIK3CA",
+          "profiled_cases": 808,
+          "source_url": "https://www.cbioportal.org/study/summary?id=brca_tcga"
+        }
+      ],
+      "clinical_significance": null,
+      "cosmic_reconciliation": "licensed-local-overlay-required",
+      "functional_effect": "activating",
+      "gene_symbol": "PIK3CA",
+      "hgvs_coding": "c.1633G>A",
+      "hgvs_protein": "p.Glu545Lys",
+      "mutation_id": "MUT:PIK3CA:p.Glu545Lys",
+      "oncogenicity": "oncogenic hotspot",
+      "source_refs": [
+        "cbioportal:brca_tcga:E545K"
+      ],
+      "sources": [
+        "cbioportal",
+        "curated"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [
+        {
+          "altered_cases": 271,
+          "cohort": "TCGA Firehose Legacy breast cancer, ER_STATUS_BY_IHC=Positive",
+          "frequency_percent": 33.539603960396036,
+          "gene_symbol": "PIK3CA",
+          "profiled_cases": 808,
+          "source_url": "https://www.cbioportal.org/study/summary?id=brca_tcga"
+        }
+      ],
+      "clinical_significance": null,
+      "cosmic_reconciliation": "licensed-local-overlay-required",
+      "functional_effect": "activating",
+      "gene_symbol": "PIK3CA",
+      "hgvs_coding": "c.3140A>G",
+      "hgvs_protein": "p.His1047Arg",
+      "mutation_id": "MUT:PIK3CA:p.His1047Arg",
+      "oncogenicity": "oncogenic hotspot",
+      "source_refs": [
+        "cbioportal:brca_tcga:H1047R"
+      ],
+      "sources": [
+        "cbioportal",
+        "curated"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "PTEN",
+      "hgvs_coding": "c.388C>T",
+      "hgvs_protein": "p.Arg130Ter",
+      "mutation_id": "MUT:PTEN:p.Arg130Ter",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV000007819.128"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "curated loss-of-function signature",
+      "cosmic_reconciliation": "licensed-local-overlay-required",
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "PTEN",
+      "hgvs_coding": "c.697C>T",
+      "hgvs_protein": "p.Arg233Ter",
+      "mutation_id": "MUT:PTEN:p.Arg233Ter",
+      "oncogenicity": null,
+      "source_refs": [
+        "curated:PTEN:R233*"
+      ],
+      "sources": [
+        "curated"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": null,
+      "cosmic_reconciliation": "licensed-local-overlay-required",
+      "functional_effect": "activating",
+      "gene_symbol": "AKT1",
+      "hgvs_coding": "c.49G>A",
+      "hgvs_protein": "p.Glu17Lys",
+      "mutation_id": "MUT:AKT1:p.Glu17Lys",
+      "oncogenicity": "oncogenic hotspot",
+      "source_refs": [
+        "cbioportal:pan-cancer:AKT1:E17K"
+      ],
+      "sources": [
+        "cbioportal",
+        "curated"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": null,
+      "cosmic_reconciliation": "licensed-local-overlay-required",
+      "functional_effect": "activating",
+      "gene_symbol": "MTOR",
+      "hgvs_coding": "c.6981G>A",
+      "hgvs_protein": "p.Met2327Ile",
+      "mutation_id": "MUT:MTOR:p.Met2327Ile",
+      "oncogenicity": "curated activating signature",
+      "source_refs": [
+        "curated:MTOR:M2327I"
+      ],
+      "sources": [
+        "curated"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "plausible"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "activating",
+      "gene_symbol": "MTOR",
+      "hgvs_coding": "c.5395G>A",
+      "hgvs_protein": "p.Glu1799Lys",
+      "mutation_id": "MUT:MTOR:p.Glu1799Lys",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV000217823.74",
+        "omim:616638"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "TSC1",
+      "hgvs_coding": "c.2491del",
+      "hgvs_protein": "p.Val831fs",
+      "mutation_id": "MUT:TSC1:p.Val831fs",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV004852004.1"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "TSC2",
+      "hgvs_coding": "c.1750dup",
+      "hgvs_protein": "p.Thr584fs",
+      "mutation_id": "MUT:TSC2:p.Thr584fs",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV004851321.1"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Likely pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "DEPDC5",
+      "hgvs_coding": "c.3041del",
+      "hgvs_protein": "p.Gly1014fs",
+      "mutation_id": "MUT:DEPDC5:p.Gly1014fs",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV004845712.1"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "STK11",
+      "hgvs_coding": "c.842del",
+      "hgvs_protein": "p.Pro281fs",
+      "mutation_id": "MUT:STK11:p.Pro281fs",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV000192227.17"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    },
+    {
+      "cancer_frequencies": [],
+      "clinical_significance": "Likely pathogenic",
+      "cosmic_reconciliation": null,
+      "functional_effect": "loss_of_function",
+      "gene_symbol": "STRADA",
+      "hgvs_coding": "c.95-2A>C",
+      "hgvs_protein": null,
+      "mutation_id": "MUT:STRADA:c.95-2A>C",
+      "oncogenicity": null,
+      "source_refs": [
+        "clinvar:VCV004772793.1"
+      ],
+      "sources": [
+        "clinvar"
+      ],
+      "species_evidence": [
+        "human"
+      ],
+      "tier": "robust"
+    }
+  ],
+  "schema_version": "0.4.0"
+}

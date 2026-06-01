@@ -17,10 +17,11 @@ jobs:
       - run: uv run ruff check .
       - run: uv run ruff format --check .
       - run: uv run pyright
-      - run: uv run pytest --cov=mtor_nexus.graph --cov=mtor_nexus.schema --cov=mtor_nexus.ingest.source_registry --cov=mtor_nexus.ingest.source_index --cov-fail-under=85
+      - run: uv run pytest --cov=mtor_nexus.graph --cov=mtor_nexus.schema --cov=mtor_nexus.disease --cov=mtor_nexus.ingest.source_registry --cov=mtor_nexus.ingest.source_index --cov-fail-under=85
       - run: uv run python -m mtor_nexus.ingest.source_index
       - run: uv run python -m mtor_nexus.graph.build
       - run: uv run python -m mtor_nexus.graph.validate
+      - run: uv run python -m mtor_nexus.disease.validate
       - run: git diff --exit-code -- data/processed data/sources/source-index.json webapp/public/data
       - run: uv run python -m mtor_nexus.utils.codemeta_check
       - run: uv run cffconvert --validate

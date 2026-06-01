@@ -20,6 +20,7 @@ export default function RootLayout({
           <nav aria-label="Primary navigation">
             <Link href="/graph">3D atlas</Link>
             <Link href="/module/1">SBGN modules</Link>
+            <Link href="/disease/cancer">Disease</Link>
             <Link href="/predict">Predict</Link>
           </nav>
         </header>
